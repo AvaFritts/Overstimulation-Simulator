@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: May 7th, 2022
+ * Last Edited: May 10th, 2022
  * 
  * Description: Basic GameManager Template
 ****/
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     [Header("GENERAL SETTINGS")]
     public string gameTitle = "Untitled Game";  //name of the game
     public string gameCredits = "Made by Me"; //game creator(s)
-    public string copyrightDate = "Copyright " + thisDay; //date cretaed
+    public string copyrightDate = "Copyright " + thisDay; //date created
 
     [Header("GAME SETTINGS")]
 
@@ -60,12 +60,6 @@ public class GameManager : MonoBehaviour
 
     [Space(10)]
 
-    //static vairables can not be updated in the inspector, however private serialized fileds can be
-    [SerializeField] //Access to private variables in editor
-    private int numberOfLives; //set number of lives in the inspector
-    static public int lives; // number of lives for player 
-    public int Lives { get { return lives; } set { lives = value; } }//access to private variable died [get/set methods]
-
     static public int score;  //score value
     public int Score { get { return score; } set { score = value; } }//access to private variable died [get/set methods]
 
@@ -76,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     [Space(10)]
     public string defaultEndMessage = "Game Over";//the end screen message, depends on winning outcome
-    public string looseMessage = "You Loose"; //Message if player looses
+    public string loseMessage = "You Lose"; //Message if player looses
     public string winMessage = "You Win"; //Message if player wins
     [HideInInspector] public string endMsg;//the end screen message, depends on winning outcome
 
@@ -84,6 +78,12 @@ public class GameManager : MonoBehaviour
 
     [Tooltip("Name of the start scene")]
     public string startScene;
+
+    [Tooltip("Name of the settings scene")]
+    public string settingsScene;
+
+    [Tooltip("Name of the level select scene")]
+    public string levelSelectScene;
 
     [Tooltip("Name of the game over scene")]
     public string gameOverScene;
@@ -100,21 +100,22 @@ public class GameManager : MonoBehaviour
     public bool nextLevel = false; //test for next level
     
 
-    //Game State Varaiables
+    //Game State Variables
     [HideInInspector] public enum gameStates { Idle, Playing, Death, GameOver, BeatLevel };//enum of game states
     [HideInInspector] public gameStates gameState = gameStates.Idle;//current game state
 
-    //Timer Varaibles
+    //Timer Variables
     private float currentTime; //sets current time for timer
     private bool gameStarted = false; //test if games has started
 
-    //Win/Loose conditon
+    //Win/Lose conditon
     //[SerializeField] //to test in inspector
     public bool playerWon = false; //changed from private to public in hopes of making the game winable.
 
     //reference to system time
     private static string thisDay = System.DateTime.Now.ToString("yyyy"); //today's date as string
 
+    public float difficulty = 0; //the starting variable for the slider.
 
     /*** MEHTODS ***/
 
@@ -136,7 +137,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //if ESC is pressed , pause game
+        //if ESC is pressed, pause game
         //if (Input.GetKey("escape")) { PauseGame(); }
 
         //Check for next level
@@ -146,37 +147,40 @@ public class GameManager : MonoBehaviour
         if (gameState == gameStates.Playing)
         {
             //if we have died and have no more lives, go to game over
-            if (levelLost && (lives == 0)) { GameOver(); }
+            if (levelLost) { GameOver(); }
 
         }//end if (gameState == gameStates.Playing)
 
         //Check Score
-        CheckScore();
+        //CheckScore();
 
     }//end Update
 
-
-    //LOAD THE GAME FOR THE FIRST TIME OR RESTART
+    //START LEVEL SELECT
     public void StartGame()
+    {
+        SceneManager.LoadScene(levelSelectScene);
+    }
+
+    //LOAD THE LEVEL FOR THE FIRST TIME OR RESTART
+    public void PlayGame()
     {
         //SET ALL GAME LEVEL VARIABLES FOR START OF GAME
 
-        gameLevelsCount = 1; //set the count for the game levels
-        loadLevel = gameLevelsCount - 1; //the level from the array
+        loadLevel = gameLevelsCount; //the level from the array as set in the Level_Select_Manager
         SceneManager.LoadScene(gameLevels[loadLevel]); //load first game level
 
         gameState = gameStates.Playing; //set the game state to playing
 
-        lives = numberOfLives; //set the number of lives
         score = 0; //set starting score
 
         //set High Score
         if (recordHighScore) //if we are recording highscore
         {
-            //if the high score, is less than the default high score
+            //if the high score is less than the default high score
             if (highScore <= defaultHighScore)
             {
-                highScore = defaultHighScore; //set the high score to defulat
+                highScore = defaultHighScore; //set the high score to default
                 PlayerPrefs.SetInt("HighScore", highScore); //update high score PlayerPref
             }//end if (highScore <= defaultHighScore)
         }//end  if (recordHighScore) 
@@ -194,16 +198,21 @@ public class GameManager : MonoBehaviour
         Debug.Log("Exited Game");
     }//end ExitGame()
 
+    //Go to Settings Scene
+    public void SettingsScene()
+    {
+        SceneManager.LoadScene(settingsScene); //load the game over scene
+    }//end ExitGame()
 
     //GO TO THE GAME OVER SCENE
     public void GameOver()
     {
         gameState = gameStates.GameOver; //set the game state to gameOver
 
-        if (playerWon) { endMsg = winMessage; } else { endMsg = looseMessage; } //set the end message
+        if (playerWon) { endMsg = winMessage; } else { endMsg = loseMessage; } //set the end message
 
         SceneManager.LoadScene(gameOverScene); //load the game over scene
-        Debug.Log("Gameover");
+        Debug.Log("Game Over");
     }
 
 
@@ -242,7 +251,7 @@ public class GameManager : MonoBehaviour
     void GetHighScore()
     {//Get the saved highscore
 
-        //if the PlayerPref alredy exists for the high score
+        //if the PlayerPref already exists for the high score
         if (PlayerPrefs.HasKey("HighScore"))
         {
             Debug.Log("Has Key");

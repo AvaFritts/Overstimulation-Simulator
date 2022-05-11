@@ -1,7 +1,8 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: May 6th 2022
+// Last edited: May 10th 2022
+//Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ public class Overstimulation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        stimulationGauge.value = GameManager.GM.difficulty;
     }
 
     // Update is called once per frame
@@ -47,22 +48,24 @@ public class Overstimulation : MonoBehaviour
     }
 
     public void CalmingDown(float delay)
-    {
-            stimulationGauge.value -= delay;
+    {    
+        stimulationGauge.value -= delay;
            /* if (overStimMult < 0) //if the value isn't going up
             {
                 //Now, this value WILL need to be changed. But it is just a concept.
                 Invoke("CalmingDown(float)", delay);
-            } */
-        }
+            } */    
+    }
 
-        public void WindingUp()
-        {
-            if(stimulationGauge.value >= activateLarge)
-            {
-                smallButton.interactable = true;
-                mediumButton.interactable = true;
+        
+    public void WindingUp()    
+    {
+        if(stimulationGauge.value >= activateLarge)    
+        {       
+            smallButton.interactable = true; 
+            mediumButton.interactable = true;  
             largeButton.interactable = true;
+        
         }
         else if (stimulationGauge.value >= activateMedium)
         {

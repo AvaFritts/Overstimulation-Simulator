@@ -2,6 +2,7 @@
 //Date Created: May 6th 2022
 
 // Last edited: May 6th 2022
+//Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
