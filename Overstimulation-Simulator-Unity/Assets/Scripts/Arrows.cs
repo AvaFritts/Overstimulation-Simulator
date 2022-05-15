@@ -1,24 +1,22 @@
 // Creator: Ava Fritts
-//Date Created: May 10th 2022
+//Date Created: May 13th 2022
 
-// Last edited: May 12th 2022
-// Description: The base script for the settings.
+// Last edited: May 15th 2022
+// Description: The base script for the arrows.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class Arrows : MonoBehaviour
 {
-
+    //VARIABLES 
     private bool isPaused = true; //if the player isn't in range, it "pauses" the effects
 
-    public int taskNumber;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Movement Vectors: Set in Inspector")]
+    public Vector3 positionOffset;
+    public Vector3 cameraPositionOffset;
+
+    public GameObject playerGO;
 
     // Update is called once per frame
     void Update()
@@ -27,10 +25,11 @@ public class Collectible : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1")) //if the player interacts with it.
             {
-                Debug.Log("Recieved Piece for task");
+                Debug.Log("Moving up");
                 //update task
 
-                this.gameObject.SetActive(false);
+                playerGO.transform.position += positionOffset;
+                Camera.main.transform.position += cameraPositionOffset; //Moves the camera.
             }
         }
     }

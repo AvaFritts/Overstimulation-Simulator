@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: May 10th, 2022
+ * Last Edited: May 11th, 2022
  * 
  * Description: Basic GameManager Template
 ****/
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     [Space(10)]
     public string defaultEndMessage = "Game Over";//the end screen message, depends on winning outcome
-    public string loseMessage = "You Lose"; //Message if player looses
+    public string loseMessage = "You Lose"; //Message if player loses
     public string winMessage = "You Win"; //Message if player wins
     [HideInInspector] public string endMsg;//the end screen message, depends on winning outcome
 
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
 
     /*** MEHTODS ***/
 
-    //Awake is called when the game loads (before Start).  Awake only once during the lifetime of the script instance.
+    //Awake is called when the game loads (before Start). Awake only once during the lifetime of the script instance.
     void Awake()
     {
         //runs the method to check for the GameManager
@@ -166,28 +166,33 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         //SET ALL GAME LEVEL VARIABLES FOR START OF GAME
-
-        loadLevel = gameLevelsCount; //the level from the array as set in the Level_Select_Manager
-        SceneManager.LoadScene(gameLevels[loadLevel]); //load first game level
-
-        gameState = gameStates.Playing; //set the game state to playing
-
-        score = 0; //set starting score
-
-        //set High Score
-        if (recordHighScore) //if we are recording highscore
+        if (gameLevelsCount < 0)
         {
-            //if the high score is less than the default high score
-            if (highScore <= defaultHighScore)
+            ExitGame();  //-1 is the menu scene, implemented to make adding more levels easier
+        } else
+        {
+            loadLevel = gameLevelsCount; //the level from the array as set in the Level_Select_Manager
+            SceneManager.LoadScene(gameLevels[loadLevel]); //load first game level
+
+            gameState = gameStates.Playing; //set the game state to playing
+
+            score = 0; //set starting score
+
+            //set High Score
+            if (recordHighScore) //if we are recording highscore
             {
-                highScore = defaultHighScore; //set the high score to default
-                PlayerPrefs.SetInt("HighScore", highScore); //update high score PlayerPref
-            }//end if (highScore <= defaultHighScore)
-        }//end  if (recordHighScore) 
+                //if the high score is less than the default high score
+                if (highScore <= defaultHighScore)
+                {
+                    highScore = defaultHighScore; //set the high score to default
+                    PlayerPrefs.SetInt("HighScore", highScore); //update high score PlayerPref
+                }//end if (highScore <= defaultHighScore)
+            }//end  if (recordHighScore) 
 
-        endMsg = defaultEndMessage; //set the end message default
+            endMsg = defaultEndMessage; //set the end message default
 
-        playerWon = false; //set player winning condition to false
+            playerWon = false; //set player winning condition to false
+        }
     }//end StartGame()
     
 

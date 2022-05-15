@@ -14,20 +14,40 @@ public class StimulationSource : MonoBehaviour
 
     [Header("Set in Inspector")]
     public float multModifier; //the modifier for the stimulation.
+    public float maxModifier;
 
     public Overstimulation overstimGO;
+    public GameObject playerChar;
+    public bool paused;
     
-    // Start is called before the first frame update
+    //public Transform target;
+    public SphereCollider objectCollider;
+    private ParticleSystem _stimulationSystem;
+
+
     void Start()
     {
-
-        //overstimGO = GetComponent<Overstimulation>();
+        paused = true;
+        _stimulationSystem = this.GetComponent<ParticleSystem>();
+        _stimulationSystem.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
-        
+        if (!paused) //DO NOT UPDATE IF YOU ARE NOT IN RANGE
+        {
+            float distanceToTarget = Vector3.Distance(playerChar.transform.position, objectCollider.transform.position);
+
+            Debug.Log("Current Position: " + playerChar.transform.position);
+            Debug.Log("Current Distance: " + distanceToTarget);
+            if (distanceToTarget < 1) { distanceToTarget = 1; }
+            //if (distanceToTarget < objectCollider.radius)
+            //{
+                multModifier = maxModifier / distanceToTarget;
+            //}
+
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,7 +55,9 @@ public class StimulationSource : MonoBehaviour
         GameObject colGO = other.gameObject;
         if (colGO.tag.Equals("Player"))
         {
-            overstimGO.overStimMult += multModifier; //add the multiplier to the modifier
+            paused = false;
+            _stimulationSystem.Play();
+            //overstimGO.overStimMult += multModifier; //add the multiplier to the modifier
         }
     }
 
@@ -44,7 +66,10 @@ public class StimulationSource : MonoBehaviour
         GameObject colGO = other.gameObject;
         if (colGO.tag.Equals("Player"))
         {
-            overstimGO.overStimMult -= multModifier; //add the multiplier to the modifier
+            paused = true;
+            _stimulationSystem.Stop();
+            //overstimGO.overStimMult -= multModifier; //add the multiplier to the modifier
         }
     }
+
 }

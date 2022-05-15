@@ -26,7 +26,10 @@ public class Overstimulation : MonoBehaviour
     public float activateMedium;
     public float activateLarge;
 
+    public GameObject[] stimulantSources;
+
     public float overStimMult = 0;
+    public bool paused;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,15 +39,19 @@ public class Overstimulation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        stimulationGauge.value += overStimMult * Time.deltaTime;
-        if (stimulationGauge.value.Equals(stimulationGauge.maxValue))
+        if (!paused) 
         {
-            smallButton.interactable = false;
-            mediumButton.interactable = false;
-            largeButton.interactable = false;
+            overStimMult = StimulationUpdater();
+            stimulationGauge.value += overStimMult * Time.deltaTime;
+            if (stimulationGauge.value.Equals(stimulationGauge.maxValue))
+            {
+                smallButton.interactable = false;
+                mediumButton.interactable = false;
+                largeButton.interactable = false;
 
-            meltdownButton.interactable = true;
-        }
+                meltdownButton.interactable = true;
+            }
+        } 
     }
 
     public void CalmingDown(float delay)
@@ -98,5 +105,24 @@ public class Overstimulation : MonoBehaviour
     void GameOverCall()
     {
         GameManager.GM.GameOver();
+    }
+
+    private float StimulationUpdater()
+    {
+        float baseCount = 0;
+        foreach (GameObject stimulants in stimulantSources) 
+        {
+            StimulationSource modGO = stimulants.GetComponent<StimulationSource>();
+            if (!modGO.paused)
+            {
+                baseCount += modGO.multModifier;
+            }
+            
+        }
+        /*if (baseCount == 0) //if there are no stimulants in the area
+        {
+            return 2;
+        }*/
+        return baseCount + 2; //it will always have a base number. Currently it is 2.
     }
 }
