@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 10th 2022
+// Last edited: May 16th 2022
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ public class StimulationSource : MonoBehaviour
     public bool paused;
     
     //public Transform target;
-    public SphereCollider objectCollider;
+    public Collider objectCollider; //was originally SphereCollider. Might Change back.
     private ParticleSystem _stimulationSystem;
 
 
@@ -39,8 +39,8 @@ public class StimulationSource : MonoBehaviour
         {
             float distanceToTarget = Vector3.Distance(playerChar.transform.position, objectCollider.transform.position);
 
-            Debug.Log("Current Position: " + playerChar.transform.position);
-            Debug.Log("Current Distance: " + distanceToTarget);
+            //Debug.Log("Current Position: " + playerChar.transform.position);
+            //Debug.Log("Current Distance: " + distanceToTarget);
             if (distanceToTarget < 1) { distanceToTarget = 1; }
             //if (distanceToTarget < objectCollider.radius)
             //{

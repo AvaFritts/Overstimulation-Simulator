@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 13th 2022
 
-// Last edited: May 15th 2022
+// Last edited: May 17th 2022
 // Description: The base script for the arrows.
 using System.Collections;
 using System.Collections.Generic;
@@ -11,20 +11,27 @@ public class Arrows : MonoBehaviour
 {
     //VARIABLES 
     private bool isPaused = true; //if the player isn't in range, it "pauses" the effects
+    GameManager GM;
 
     [Header("Movement Vectors: Set in Inspector")]
     public Vector3 positionOffset;
     public Vector3 cameraPositionOffset;
 
     public GameObject playerGO;
+    public bool isBossArrow;
+    public Encounter_Manager bossEnabeler; //only needed for the boss task
 
     // Update is called once per frame
     void Update()
     {
-        if (!isPaused)
+        if (!isPaused && (GameManager.GM.gameState == GameManager.gameStates.Playing || GameManager.GM.isTesting))
         {
             if (Input.GetButtonDown("Fire1")) //if the player interacts with it.
             {
+                if (isBossArrow)
+                {
+                    //bossEnabeler.StartEncounter(true);
+                }
                 Debug.Log("Moving up");
                 //update task
 

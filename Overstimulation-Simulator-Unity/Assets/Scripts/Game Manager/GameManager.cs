@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: May 11th, 2022
+ * Last Edited: May 17th, 2022
  * 
  * Description: Basic GameManager Template
 ****/
@@ -98,10 +98,11 @@ public class GameManager : MonoBehaviour
 
     [Header("FOR TESTING")]
     public bool nextLevel = false; //test for next level
+    public bool isTesting = false; //used to allow me to test game stuff without having to deal with the different cameras and such.
     
 
     //Game State Variables
-    [HideInInspector] public enum gameStates { Idle, Playing, Death, GameOver, BeatLevel };//enum of game states
+    [HideInInspector] public enum gameStates { Idle, Playing, Battle, Death, GameOver, BeatLevel };//enum of game states
     [HideInInspector] public gameStates gameState = gameStates.Idle;//current game state
 
     //Timer Variables
@@ -146,8 +147,8 @@ public class GameManager : MonoBehaviour
         //if we are playing the game
         if (gameState == gameStates.Playing)
         {
-            //if we have died and have no more lives, go to game over
-            if (levelLost) { GameOver(); }
+            //if we have died or overcame the boss, go to game over screen
+            if (levelLost || playerWon) { GameOver(); }
 
         }//end if (gameState == gameStates.Playing)
 
