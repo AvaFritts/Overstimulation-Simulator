@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 17th 2022
+// Last edited: May 20th 2022
 // Description: The base script for the settings.
 using System.Collections;
 using System.Collections.Generic;
@@ -15,12 +15,7 @@ public class Collectible : MonoBehaviour
     GameManager GM;
 
     public Task associatedTask;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +31,12 @@ public class Collectible : MonoBehaviour
                 this.gameObject.SetActive(false);
             }
         }
+    }
+
+    //For endless mode.
+    private void OnDisable()
+    {
+        isPaused = true;
     }
 
     private void OnTriggerEnter(Collider other)

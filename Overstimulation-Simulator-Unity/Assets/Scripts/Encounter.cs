@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: May 17th 2022
+// Last edited: May 20th 2022
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -68,7 +68,7 @@ public class Encounter : MonoBehaviour
         }
     }//end Update
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         GameObject colGO = collision.gameObject;
         if (colGO.tag.Equals("Player"))
@@ -77,13 +77,19 @@ public class Encounter : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
         GameObject colGO = collision.gameObject;
         if (colGO.tag.Equals("Player"))
         {
             canActivate = false;
         }
+    }
+
+    //Prevents the player from activating the encounter on the other side of the map.
+    private void OnDisable()
+    {
+        canActivate = false;
     }
 
     public void CorrectResponse()
@@ -144,18 +150,20 @@ public class Encounter : MonoBehaviour
     //pick the answer for the fight.
     public void PickAnswers()
     {
-        if (!battleCanvas.activeSelf)
+        if (!battleCanvas.activeSelf) //if the encounter isn't already active
         {
             battleCanvas.SetActive(true);
             meterChecker.paused = true;
         }
-        //if the gague is over 75%
-        /*if (meterChecker.stimulationGauge.value > (meterChecker.stimulationGauge.maxValue * 3 / 4))
+        
+
+        if (!isBoss) 
         {
-            if (!isBoss)
+            //if the gague is over 75%
+            if (meterChecker.stimulationGauge.value >= (meterChecker.stimulationGauge.maxValue * 3 / 4))
             {
-                //currently, do not do anything with this. It is for 
-                //later development when I make the options vary based off the gague.
+                scaryMode = true;
+
                 int taskPicked = Random.Range(0, scaryEncounterText.Length); //picks a random task
                 activeString = scaryEncounterText[taskPicked];
                 activeAnswer = scaryCorrectAnswer[taskPicked];
@@ -163,27 +171,22 @@ public class Encounter : MonoBehaviour
             }
             else
             {
-                activeString = encounterText[0];
-                activeAnswer = correctAnswer[0];
-                //activeSprite = associatedSprite[0];
-            }
-        } 
-        else //if the meter is below 75%
-        {*/
-            if (!isBoss)
-            {
+                scaryMode = false;
+
                 int taskPicked = Random.Range(0, encounterText.Length); //picks a random task
                 activeString = encounterText[taskPicked];
                 activeAnswer = correctAnswer[taskPicked];
                 //activeSprite = associatedSprite[taskPicked];
+                
             }
-            else
-            {
-                activeString = encounterText[questionsAnswered];
-                activeAnswer = correctAnswer[questionsAnswered];
-                //activeSprite = associatedSprite[0];
-            }
-        //}
+
+        } //end "If encounter isn't a boss"
+        else //if it is a boss encounter
+        {      
+            activeString = encounterText[questionsAnswered];    
+            activeAnswer = correctAnswer[questionsAnswered];  
+            //activeSprite = associatedSprite[0];  
+        } 
         conversationStarter.StartEncounter(this.gameObject); //starts an encounter.
     }//end pick answers
 

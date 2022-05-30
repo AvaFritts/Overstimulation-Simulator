@@ -707,9 +707,10 @@ MonoBehaviour:
   levelSelectScene: Level_Select
   gameOverScene: End_Scene
   gameLevels:
-  - Level_Test
+  - Level_1-Store
   gameLevelsCount: 0
   nextLevel: 0
+  isTesting: 0
   gameState: 0
   playerWon: 0
   difficulty: 0

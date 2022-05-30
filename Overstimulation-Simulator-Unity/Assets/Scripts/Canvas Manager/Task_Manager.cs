@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022?
 
-// Last edited: May 16th 2022
+// Last edited: May 20th 2022
 // Description: The script to manage all the tasks in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -65,12 +65,24 @@ public class Task_Manager : MonoBehaviour
 
     } //end Start
 
-   /* void CreateTasks() //USE ONLY WHEN WORKING ON ENDLESS MODE
+    void CreateEndlessTasks(int indexForText) //USE ONLY WHEN WORKING ON ENDLESS MODE
     {
-        int taskPicked = Random.Range(0, tasks.Count);
-        activeTasks.Add(tasks[taskPicked]);
+        //Dev log: The way the list is being worked, if the completed task is not at the end, the text goes weird
+
+        //Pick a task from the range
+        int taskPicked = Random.Range(0, tasks.Count - 1); //it is minus 1 since the newest task is at the end.
+
+        //put the task into the active list
+        //activeTasks.Add(tasks[taskPicked]);
+        activeTasks.Insert(indexForText, tasks[taskPicked]);
+        //set the parent active
+        activeTasks[indexForText].SetActive(true);
+        Task taskText = tasks[taskPicked].GetComponent<Task>();
+
         tasks.RemoveAt(taskPicked);
-    } */
+        taskText.RestartTask(); //re-enable the children.
+        //activeText[indexForText].text = taskText.CurrentText(); //get the new, updated text.
+    } 
 
     public void UpdateList(GameObject targetTask)
     {
@@ -88,7 +100,7 @@ public class Task_Manager : MonoBehaviour
         {
             tasks.Add(activeTasks[taskNumber]); //put the task back in the list
             activeTasks.RemoveAt(taskNumber); //remove from the completed list
-            //CreateTasks();
+            CreateEndlessTasks(taskNumber);
         }
         else
         {

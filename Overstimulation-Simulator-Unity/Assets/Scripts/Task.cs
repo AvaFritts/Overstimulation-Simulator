@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 15th 2022
 
-// Last edited: May 16th 2022
+// Last edited: May 20th 2022
 // Description: The script for the individual tasks in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -52,11 +52,15 @@ public class Task : MonoBehaviour
     //A method only needed for endless mode: It re-enables each child so that the task can start anew. 
     public void RestartTask()
     {
-        foreach(GameObject needyChild in taskChildren)
-        {
-            needyChild.SetActive(true);
-        }
+        //taskParent.SetActive(true); //set the parent active
         itemsCollected = 0;
+
+        foreach (GameObject needyChild in taskChildren)
+        {
+            needyChild.SetActive(true); //set each child active as well
+        }
+        //reset each collected item
+
         toDoList.UpdateList(taskParent);
         
     }

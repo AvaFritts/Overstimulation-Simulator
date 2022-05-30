@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 11th 2022
+// Last edited: May 22th 2022
 // Description: The UI manager for the Level Select.
 using System.Collections;
 using System.Collections.Generic;
@@ -23,9 +23,9 @@ public class Level_Select_Manager : MonoBehaviour
     public int speed = 20; // Number of frames to completely interpolate between the 2 positions
 
     //Awake is called when the game loads (before Start).  Awake only once during the lifetime of the script instance.
-    void Awake()
+   void Awake()
     {
-        destinationPosition = new Vector3(3.3f, 0.1f, 0f); //sprite is placed at Home
+        destinationPosition = new Vector3(3f, -1.33f, 0f); //sprite is placed at Home
         UpdateLevel(-1);
     }
 
@@ -56,19 +56,19 @@ public class Level_Select_Manager : MonoBehaviour
         {
             case -1:
                 levelDescription.text = "Click a location to select it.";
-                destinationPosition = new Vector3(3.3f, 0.1f, 0f);
+                destinationPosition = new Vector3(3f, -1.33f, 0f);
                 break;
             case 0: //The Store
                 levelDescription.text = "Every human needs to get groceries somehow. Sadly, your time is now.";
-                destinationPosition = new Vector3(-3.7f, 4.8f, 0f);
+                destinationPosition = new Vector3(-2.37f, 3.59f, 0f);
                 break;
             case 1: //The Office
                 levelDescription.text = "Humans have jobs. Hope you survive yours.";
-                destinationPosition = new Vector3(3.28f, 3.26f, 0f);
+                destinationPosition = new Vector3(6.25f, 2.15f, 0f);
                 break;
             case 2: //The Party
                 levelDescription.text = "Humans go to parties to be seen as 'social'.";
-                destinationPosition = new Vector3(-2.86f, 0.6f, 0f);
+                destinationPosition = new Vector3(-2.5f, -1f, 0f);
                 break;
             default:
                 levelDescription.text = "An Error has occured. Please try again.";

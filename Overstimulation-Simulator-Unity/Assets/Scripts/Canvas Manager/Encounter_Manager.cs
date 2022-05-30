@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: May 17th 2022
+// Last edited: May 18th 2022
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -11,12 +11,22 @@ using UnityEngine.UI;
 public class Encounter_Manager : MonoBehaviour
 {
     //Variables//
+    [Header("Set in Inspector")]
+    public Text[] theFourButtons; //the four buttons used in the encounters
+    [Tooltip("The strings here should have the button labels for the 'good' responses")]
+    public string[] theCalmChoices;
+    [Tooltip("The strings here should have the button labels for the 'scary mode' responses")]
+    public string[] theAnxiousChoices;
+
+    [Space(5)]
+
+    public Text battleQuestion;
+
     [Header("Set Dynamically")]
     public int numberOfQuestions = 1; //Bosses usually have multiple: everyone else has one.
 
     public Encounter currentBattle;
 
-    public Text battleQuestion;
     public int correctAnswer;
     public Sprite enemySprite;
 
@@ -31,17 +41,28 @@ public class Encounter_Manager : MonoBehaviour
             currentBattle = encounterBase.GetComponent<Encounter>();
 
             currentBattle.battleCamera.SetActive(true);
-        }
+
+            if (currentBattle.scaryMode) //if scary mode is active
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    theFourButtons[i].text = theAnxiousChoices[i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    theFourButtons[i].text = theCalmChoices[i];
+                }
+            } //end else;
+        }//end If (GameManager's state isn't in battle)
 
 
         //put up the current question, set the correct answer, and change the sprite accordingly.
         battleQuestion.text = currentBattle.activeString;
         correctAnswer = currentBattle.activeAnswer;
         enemySprite = currentBattle.activeSprite;
-        /*if (currentBattle.scaryMode)
-        {
-            //change the button names
-        }*/
 
 
         //disable any sound save for the music, if any. Probably through a boolean.

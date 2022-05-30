@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 16th 2022
+// Last edited: May 20th 2022
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -60,6 +60,19 @@ public class StimulationSource : MonoBehaviour
             //overstimGO.overStimMult += multModifier; //add the multiplier to the modifier
         }
     }
+
+    //for Endless Mode
+    private void OnDisable()
+    {
+        _stimulationSystem.Stop();
+        paused = true;
+    }
+
+    /*private void OnEnable()
+    {
+        _stimulationSystem.Stop();
+        paused = true;
+    }*/
 
     private void OnTriggerExit(Collider other)
     {
