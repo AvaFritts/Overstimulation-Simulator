@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 20th 2022
+// Last edited: June 5th 2022
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -23,12 +23,18 @@ public class StimulationSource : MonoBehaviour
     //public Transform target;
     public Collider objectCollider; //was originally SphereCollider. Might Change back.
     private ParticleSystem _stimulationSystem;
-
+    public int minParticles;
+    //public int normalParticles; //uncomment if the particle number doesn't reset between rounds.
 
     void Start()
     {
         paused = true;
-        _stimulationSystem = this.GetComponent<ParticleSystem>();
+        _stimulationSystem = this.GetComponent<ParticleSystem>(); //get the particle system
+        if (GameManager.GM.stilumationReducer) //if the stimulation reducer is on, reduce particles
+        {
+            var main = _stimulationSystem.main;
+            main.maxParticles = minParticles;
+        }
         _stimulationSystem.Stop();
     }
 

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 11th 2022
+// Last edited: June 2nd 2022
 // Description: The UI manager for the settings.
 using System.Collections;
 using System.Collections.Generic;
@@ -15,13 +15,16 @@ public class Settings_Manager : MonoBehaviour
 
     [Header ("Change Dynamically")]
     public float difficultyMode = 0; //is it easy, medium, or hard?
+    public Toggle irlOverstimulation;
 
-    public Text DifficultyButton; //the text for the button.
+    public Text difficultyText; //the text for the button.
+    public Image difficultyButton;
     // Start is called before the first frame update
      void Awake()
     {
         difficultyMode = GameManager.GM.difficulty; //gets the difficulty from the GM
         LoadDifficulty(); //Loads the current Difficulty.
+        StimulationLoader(); //loads the stimulation toggle
     }
 
     // Changes how stimulated the player is at the start of the game
@@ -33,26 +36,54 @@ public class Settings_Manager : MonoBehaviour
         //on each case, change the difficulty 
     }
 
+    public void StimulationChanger()
+    {
+        if (irlOverstimulation.isOn)
+        {
+            GameManager.GM.stilumationReducer = true;
+        }
+        else
+        {
+            GameManager.GM.stilumationReducer = false;
+        }
+    }
+
+    public void StimulationLoader()
+    {
+        if (GameManager.GM.stilumationReducer)
+        {
+            irlOverstimulation.isOn = true;
+        }
+        else
+        {
+            irlOverstimulation.isOn = false;
+        }
+    }
+
     void LoadDifficulty()
     {
         switch (difficultyMode)
         {
             case 0:
-                DifficultyButton.text = "Easy";
-                DifficultyButton.color = Color.green;
+                difficultyText.text = "Easy";
+                difficultyText.color = Color.black; //make the text easier to see.
+                difficultyButton.color = Color.green;
                 break;
             case 5:
-                DifficultyButton.text = "Medium";
-                DifficultyButton.color = Color.yellow;
+                difficultyText.text = "Medium";
+                difficultyText.color = Color.black;
+                difficultyButton.color = Color.yellow;
                 break;
             case 10:
-                DifficultyButton.text = "Hard";
-                DifficultyButton.color = Color.red;
+                difficultyText.text = "Hard";
+                difficultyText.color = Color.white; //make the text easier to see.
+                difficultyButton.color = Color.red;
                 break;
             default:
                 difficultyMode = 0;
-                DifficultyButton.text = "Easy";
-                DifficultyButton.color = Color.green;
+                difficultyText.text = "Easy";
+                difficultyText.color = Color.black; //make the text easier to see.
+                difficultyButton.color = Color.green;
                 break;
         }
         GameManager.GM.difficulty = difficultyMode; //stores the difficulty in the GM

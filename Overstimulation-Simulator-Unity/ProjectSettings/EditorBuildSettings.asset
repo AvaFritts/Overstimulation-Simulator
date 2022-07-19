@@ -15,12 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes/Level_Select.unity
     guid: 76200fec2c11c0544818466ffaf8e383
   - enabled: 1
+    path: Assets/Scenes/Game Levels/Level_0-Tutorial.unity
+    guid: 8616d8ebe6d931844b84c8b828fa0ab6
+  - enabled: 1
     path: Assets/Scenes/Game Levels/Level_1-Store.unity
     guid: 5ff284baefe5bca4e9f88c15e4a28b23
   - enabled: 1
     path: Assets/Scenes/Scenes/End_Scene.unity
     guid: 6e8bb78643db9044589fbd835cffa652
-  - enabled: 1
-    path: Assets/Scenes/Test Levels/Level_Test.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

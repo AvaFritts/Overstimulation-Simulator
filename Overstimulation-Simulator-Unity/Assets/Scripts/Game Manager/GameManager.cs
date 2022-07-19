@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: May 17th, 2022
+ * Last Edited: June 2nd, 2022
  * 
  * Description: Basic GameManager Template
 ****/
@@ -117,6 +117,8 @@ public class GameManager : MonoBehaviour
     private static string thisDay = System.DateTime.Now.ToString("yyyy"); //today's date as string
 
     public float difficulty = 0; //the starting variable for the slider.
+    [Tooltip("Activate this to reduce spinnning, volume, and particles")]
+    public bool stilumationReducer;
 
     /*** MEHTODS ***/
 

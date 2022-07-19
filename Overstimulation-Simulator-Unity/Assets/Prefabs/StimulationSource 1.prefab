@@ -78,6 +78,7 @@ MonoBehaviour:
   playerChar: {fileID: 0}
   paused: 0
   objectCollider: {fileID: 7826268463433142065}
+  minParticles: 2
 --- !u!198 &2686140362920986098
 ParticleSystem:
   m_ObjectHideFlags: 0

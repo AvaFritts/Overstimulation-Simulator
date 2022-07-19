@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 226421118}
   - component: {fileID: 226421117}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -700,7 +700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyMode: 0
-  DifficultyButton: {fileID: 226421117}
+  irlOverstimulation: {fileID: 1643450395}
+  difficultyText: {fileID: 226421117}
+  difficultyButton: {fileID: 813614123}
 --- !u!114 &771383537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,7 +885,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 226421116}
+      - m_Target: {fileID: 771383535}
         m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -967,8 +969,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 90.18503, y: -0.000016212463}
-  m_SizeDelta: {x: 122.71, y: -0.000061035}
+  m_AnchoredPosition: {x: 104.30001, y: 1.102}
+  m_SizeDelta: {x: 150.59999, y: 14.7763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199224961
 MonoBehaviour:
@@ -992,12 +994,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1180,7 +1182,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216420539
 MonoBehaviour:
@@ -1195,7 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.03184676, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1231,7 +1233,7 @@ GameObject:
   - component: {fileID: 1643450394}
   - component: {fileID: 1643450395}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: Stimulation Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1297,14 +1299,26 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1873053556}
   toggleTransition: 1
   graphic: {fileID: 1216420539}
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771383536}
+        m_TargetAssemblyTypeName: Settings_Manager, Assembly-CSharp
+        m_MethodName: StimulationChanger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1714832585
 GameObject:
@@ -1421,7 +1435,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0.30000305, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873053556
 MonoBehaviour:
@@ -1452,7 +1466,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.7
 --- !u!222 &1873053557
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1741,12 +1755,15 @@ MonoBehaviour:
   levelSelectScene: Level_Select
   gameOverScene: End_Scene
   gameLevels:
-  - Level_Test
+  - Level_0-Tutorial
+  - Level_1-Store
   gameLevelsCount: 0
   nextLevel: 0
+  isTesting: 0
   gameState: 0
   playerWon: 0
   difficulty: 0
+  stilumationReducer: 0
 --- !u!4 &2110464080
 Transform:
   m_ObjectHideFlags: 0

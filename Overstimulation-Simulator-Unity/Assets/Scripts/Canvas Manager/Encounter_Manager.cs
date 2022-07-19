@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: May 18th 2022
+// Last edited: June 2nd 2022
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +13,8 @@ public class Encounter_Manager : MonoBehaviour
     //Variables//
     [Header("Set in Inspector")]
     public Text[] theFourButtons; //the four buttons used in the encounters
+    public GameObject background;
+    public float rotationSpeed;
     [Tooltip("The strings here should have the button labels for the 'good' responses")]
     public string[] theCalmChoices;
     [Tooltip("The strings here should have the button labels for the 'scary mode' responses")]
@@ -24,13 +26,30 @@ public class Encounter_Manager : MonoBehaviour
 
     [Header("Set Dynamically")]
     public int numberOfQuestions = 1; //Bosses usually have multiple: everyone else has one.
+    public float rotatZ;
+
+    [Space(10)]
 
     public Encounter currentBattle;
 
     public int correctAnswer;
     public Sprite enemySprite;
 
-    
+
+    public void Update()
+    {
+        if (!GameManager.GM.stilumationReducer) //if IRL stimultaion Reduction is turned off
+        {
+            rotatZ += Time.deltaTime * rotationSpeed; //adding to a rotation counter over time
+
+            if (rotatZ < -360.0f || rotatZ > 360.0f) //if it has gone through a loop, reset it
+            {
+                rotatZ = 0.0f;
+            }
+                background.transform.localRotation = Quaternion.Euler(0, 0, rotatZ); //apply to the background
+        }
+    }
+
     //for whenever an encounter is started
     public void StartEncounter(GameObject encounterBase)
     {

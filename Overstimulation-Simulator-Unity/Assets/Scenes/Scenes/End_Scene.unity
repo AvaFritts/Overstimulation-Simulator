@@ -620,7 +620,6 @@ MonoBehaviour:
   copyrightDate: Copyright 2022
   recordHighScore: 0
   defaultHighScore: 1000
-  numberOfLives: 0
   levelLost: 0
   defaultEndMessage: Game Over
   loseMessage: Meltdown
@@ -631,12 +630,15 @@ MonoBehaviour:
   levelSelectScene: Level_Select
   gameOverScene: End_Scene
   gameLevels:
-  - Level_Test
+  - Level_0-Tutorial
+  - Level_1-Store
   gameLevelsCount: 0
   nextLevel: 0
+  isTesting: 0
   gameState: 0
   playerWon: 0
   difficulty: 0
+  stilumationReducer: 0
 --- !u!4 &658762741
 Transform:
   m_ObjectHideFlags: 0

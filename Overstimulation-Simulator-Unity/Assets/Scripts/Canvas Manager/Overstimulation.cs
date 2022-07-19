@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: May 10th 2022
+// Last edited: July 18th 2022
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -42,6 +42,7 @@ public class Overstimulation : MonoBehaviour
         if (!paused) 
         {
             overStimMult = StimulationUpdater();
+            //overStimMult = Mathf.Clamp(StimulationUpdater(), 2f, 100f);
             stimulationGauge.value += overStimMult * Time.deltaTime;
             if (stimulationGauge.value.Equals(stimulationGauge.maxValue))
             {
@@ -109,13 +110,13 @@ public class Overstimulation : MonoBehaviour
 
     private float StimulationUpdater()
     {
-        float baseCount = 0;
+        float baseCount = 2;
         foreach (GameObject stimulants in stimulantSources) 
         {
             StimulationSource modGO = stimulants.GetComponent<StimulationSource>();
-            if (!modGO.paused)
+            if (!modGO.paused) //if the item is active
             {
-                baseCount += modGO.multModifier;
+                baseCount += modGO.multModifier; //add the multiplier of the item to the count
             }
             
         }
@@ -123,6 +124,6 @@ public class Overstimulation : MonoBehaviour
         {
             return 2;
         }*/
-        return baseCount + 2; //it will always have a base number. Currently it is 2.
+        return baseCount; //it will always have a base number. Currently it is 2.
     }
 }

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: May 6th 2022
+// Last edited: July 17 2022
 //Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
@@ -9,10 +9,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Sprite idleSprite;
+    public Sprite walkingSprite;
+
+    private SpriteRenderer playerSprites;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerSprites = this.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,6 +27,21 @@ public class Player : MonoBehaviour
         //get the position
         pos.x = this.transform.position.x;
         pos.x += Input.GetAxis("Horizontal") * 2 * Time.deltaTime;
+        //if(walking) in opposite direction, flip the sprite
+        if (Input.GetAxis("Horizontal") < 0) //walking Left
+        {
+            playerSprites.sprite = walkingSprite;
+            playerSprites.flipX = true;
+        }
+        else if (Input.GetAxis("Horizontal") > 0) //walking Right
+        {
+            playerSprites.sprite = walkingSprite;
+            playerSprites.flipX = false;
+        }
+        else //standing Still
+        {
+            playerSprites.sprite = idleSprite;
+        }
 
         //set the position
         this.transform.position = pos;

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 22th 2022
+// Last edited: July 18th 2022
 // Description: The UI manager for the Level Select.
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +34,20 @@ public class Level_Select_Manager : MonoBehaviour
         if (!movingCar.transform.position.Equals(destinationPosition)) //if a new position is selected
         {
             Vector3 newCarPosition = Vector3.MoveTowards(movingCar.transform.position, destinationPosition, speed * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, destinationPosition) > 5) //if you are in a certain distance
+            {
+                if (movingCar.transform.position.x - destinationPosition.x < 0)
+                {
+                    movingCar.transform.eulerAngles = new Vector3(0, 180, 0);
+                }
+                else
+                {
+                    movingCar.transform.eulerAngles = new Vector3(0, 0, 0);
+                }
+            }
             
+
             movingCar.transform.position = newCarPosition;
            
         }
@@ -58,15 +71,19 @@ public class Level_Select_Manager : MonoBehaviour
                 levelDescription.text = "Click a location to select it.";
                 destinationPosition = new Vector3(3f, -1.33f, 0f);
                 break;
-            case 0: //The Store
+            case 0: //Tutorial
+                levelDescription.text = "Ah. Home sweet home: A great place to relax without the gaze of total strangers.";
+                destinationPosition = new Vector3(3f, -1.33f, 0f);
+                break;
+            case 1: //The Store
                 levelDescription.text = "Every human needs to get groceries somehow. Sadly, your time is now.";
                 destinationPosition = new Vector3(-2.37f, 3.59f, 0f);
                 break;
-            case 1: //The Office
+            case 2: //The Office
                 levelDescription.text = "Humans have jobs. Hope you survive yours.";
                 destinationPosition = new Vector3(6.25f, 2.15f, 0f);
                 break;
-            case 2: //The Party
+            case 3: //The Party
                 levelDescription.text = "Humans go to parties to be seen as 'social'.";
                 destinationPosition = new Vector3(-2.5f, -1f, 0f);
                 break;

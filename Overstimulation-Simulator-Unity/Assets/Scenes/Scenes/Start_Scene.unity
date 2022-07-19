@@ -707,6 +707,7 @@ MonoBehaviour:
   levelSelectScene: Level_Select
   gameOverScene: End_Scene
   gameLevels:
+  - Level_0-Tutorial
   - Level_1-Store
   gameLevelsCount: 0
   nextLevel: 0
@@ -714,6 +715,7 @@ MonoBehaviour:
   gameState: 0
   playerWon: 0
   difficulty: 0
+  stilumationReducer: 0
 --- !u!4 &777300364
 Transform:
   m_ObjectHideFlags: 0
