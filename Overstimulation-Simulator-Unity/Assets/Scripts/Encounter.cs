@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: May 20th 2022
+// Last edited: July 20th 2022
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -35,7 +35,7 @@ public class Encounter : MonoBehaviour
     [Tooltip("How many questions does the player have to answer to finish the encounter?")]
     public int numberOfQuestions = 1; //Bosses usually have multiple: everyone else has one.
 
-    public Sprite[] associatedSprite; //the sprites for the 
+    public Sprite[] associatedSprite; //the sprites for the encounter. Might make them only have one scary sprite idk.
     public string[] encounterText; // the text used for the encounter
     [Tooltip("The numbers should range from 1-4 and be ordered according to the encounter text")]
     public int[] correctAnswer; //the value of the correct answer.
@@ -44,9 +44,10 @@ public class Encounter : MonoBehaviour
 
     public string[] scaryEncounterText; // the text used for the encounter
     public int[] scaryCorrectAnswer; //the value of the correct answer.
+    public Sprite[] associatedScarySprite; //the sprites used for the scary encounters
 
-    
-    
+
+
     [Header("Set Dynamically")]
     public bool canActivate; //is the player in range?
     public bool scaryMode;
@@ -167,7 +168,7 @@ public class Encounter : MonoBehaviour
                 int taskPicked = Random.Range(0, scaryEncounterText.Length); //picks a random task
                 activeString = scaryEncounterText[taskPicked];
                 activeAnswer = scaryCorrectAnswer[taskPicked];
-                //activeSprite = associatedSprite[taskPicked * 2];
+                activeSprite = associatedScarySprite[taskPicked];
             }
             else
             {
@@ -176,7 +177,7 @@ public class Encounter : MonoBehaviour
                 int taskPicked = Random.Range(0, encounterText.Length); //picks a random task
                 activeString = encounterText[taskPicked];
                 activeAnswer = correctAnswer[taskPicked];
-                //activeSprite = associatedSprite[taskPicked];
+                activeSprite = associatedSprite[taskPicked];
                 
             }
 

@@ -828,7 +828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300881557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 741843941}
@@ -1159,7 +1159,8 @@ MonoBehaviour:
   winningPunishment: 0
   losingPunishment: 5
   numberOfQuestions: 3
-  associatedSprite: []
+  associatedSprite:
+  - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   encounterText:
   - 'The Cashier waves as you approach their aisle, a small section of droning beeps
     and conversations. They smile while you put your items on the captivating conveyer
@@ -1178,6 +1179,7 @@ MonoBehaviour:
   correctAnswer: 030000000400000001000000
   scaryEncounterText: []
   scaryCorrectAnswer: 
+  associatedScarySprite: []
   canActivate: 0
   scaryMode: 0
   questionsAnswered: 0
@@ -1468,8 +1470,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.data[0]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.data[1]
@@ -1477,10 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: encounterText.Array.data[0]
-      value: The butcher is a thin kid, carefully weighing the ham as you approach.
-        It would appear as if it was his first day... Except it isn't. Marco has
-        worked here as long as you can remember. And he spends so long on those darn
-        scales it will be 30 minutes before he notices you unless you speak up.
+      value: William looks anxious. Be nice
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: encounterText.Array.data[1]
@@ -1498,17 +1501,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.data[0]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryEncounterText.Array.data[0]
-      value: "The clinging of metal drowns your ears as you walk closer to the cold
-        booth. The butcher slams his knife as hard as he can, creating a cut so clean
-        you would never tell they were both one piece. He slowly looks up, eyes cold
-        and brow furrowed. \u201CAre you wanting something\u2026\u201D He says in
-        a manner that singles you out."
+      value: Be mad.
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.data[0]
+      value: 
+      objectReference: {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
     - target: {fileID: 825243680879704408, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: Restocker speech range (1)
@@ -2406,8 +2417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316.9, y: 86}
-  m_SizeDelta: {x: 531.67, y: 531.35}
+  m_AnchoredPosition: {x: 316.47, y: -2.9}
+  m_SizeDelta: {x: 600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758334140
 MonoBehaviour:
@@ -2422,7 +2433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7254902, g: 0.6666667, b: 0.49803925, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2566,7 +2577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867424090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 960790397}
@@ -2837,7 +2848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882552509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811586721}
@@ -3267,7 +3278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068086082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0.75}
+  m_LocalPosition: {x: 0, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 254036621}
@@ -3519,7 +3530,7 @@ MonoBehaviour:
   rotatZ: 0
   currentBattle: {fileID: 0}
   correctAnswer: 0
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 758334138}
 --- !u!114 &1083520941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5374,6 +5385,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.data[0]
       value: 2
       objectReference: {fileID: 0}
@@ -5404,6 +5419,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.data[0]
       value: 4
       objectReference: {fileID: 0}
@@ -5415,6 +5438,10 @@ PrefabInstance:
         and brow furrowed. \u201CAre you wanting something\u2026\u201D He says in
         a manner that singles you out."
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.data[0]
+      value: 
+      objectReference: {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
     - target: {fileID: 825243680879704408, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: Butcher speech range
@@ -6104,6 +6131,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2042753422}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: losingPunishment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: winningPunishment
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: conversationStarter
       value: 
       objectReference: {fileID: 1083520940}
@@ -6113,6 +6148,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: encounterText.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
@@ -6146,6 +6185,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 7396088475455461908, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedSprite.Array.data[1]
+      value: 
+      objectReference: {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.data[0]
       value: 4
       objectReference: {fileID: 0}
@@ -6153,6 +6204,10 @@ PrefabInstance:
       propertyPath: scaryEncounterText.Array.data[0]
       value: Adam Looks Mad. Be Scared
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: associatedScarySprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 458983883660841382, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
     - target: {fileID: 825243680879704408, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: NPC speech range

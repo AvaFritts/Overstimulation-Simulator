@@ -33,7 +33,7 @@ public class Encounter_Manager : MonoBehaviour
     public Encounter currentBattle;
 
     public int correctAnswer;
-    public Sprite enemySprite;
+    public GameObject enemySprite;
 
 
     public void Update()
@@ -81,7 +81,7 @@ public class Encounter_Manager : MonoBehaviour
         //put up the current question, set the correct answer, and change the sprite accordingly.
         battleQuestion.text = currentBattle.activeString;
         correctAnswer = currentBattle.activeAnswer;
-        enemySprite = currentBattle.activeSprite;
+        enemySprite.GetComponent<Image>().sprite = currentBattle.activeSprite;
 
 
         //disable any sound save for the music, if any. Probably through a boolean.
