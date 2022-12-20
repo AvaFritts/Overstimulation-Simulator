@@ -42,7 +42,7 @@ public class Task : MonoBehaviour
     {
         itemsCollected++;
         toDoList.UpdateList(taskParent);
-        if (itemsCollected.Equals(numItems) || isTypeHuman) //Human tasks do not have items.
+        if (isTypeHuman || itemsCollected.Equals(numItems)) //Human tasks do not have items.
         {
             toDoList.FinishedTask(taskParent);
             taskParent.SetActive(false); //deactivates the task. Really only matters for Endless Mode

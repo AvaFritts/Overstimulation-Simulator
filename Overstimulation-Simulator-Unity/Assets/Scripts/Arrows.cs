@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 13th 2022
 
-// Last edited: May 17th 2022
+// Last edited: December 1st 2022
 // Description: The base script for the arrows.
 using System.Collections;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ public class Arrows : MonoBehaviour
     {
         if (!isPaused && (GameManager.GM.gameState == GameManager.gameStates.Playing || GameManager.GM.isTesting))
         {
-            if (Input.GetButtonDown("Fire1")) //if the player interacts with it.
+            if (Input.GetButtonDown("Jump")) //if the player interacts with it.
             {
                 if (isBossArrow)
                 {

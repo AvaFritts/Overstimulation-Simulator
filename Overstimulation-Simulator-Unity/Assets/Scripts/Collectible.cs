@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: May 20th 2022
+// Last edited: December 1st 2022
 // Description: The base script for the settings.
 using System.Collections;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ public class Collectible : MonoBehaviour
     {
         if (!isPaused && (GameManager.GM.gameState == GameManager.gameStates.Playing || GameManager.GM.isTesting))
         {
-            if (Input.GetButtonDown("Fire1")) //if the player interacts with it.
+            if (Input.GetButtonDown("Jump")) //if the player interacts with it.
             {
                 Debug.Log("Recieved Piece for task");
                 //update task

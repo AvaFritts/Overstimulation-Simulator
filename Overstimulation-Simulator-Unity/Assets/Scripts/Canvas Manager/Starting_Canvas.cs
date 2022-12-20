@@ -24,6 +24,7 @@ public class Starting_Canvas : MonoBehaviour
     public void LoadSettings()
     {
         GameManager.GM.SettingsScene();
+
     }
 
     public void StartingGame()

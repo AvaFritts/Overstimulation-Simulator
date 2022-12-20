@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: July 20th 2022
+// Last edited: December 2nd, 2022
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -102,25 +102,29 @@ public class Encounter : MonoBehaviour
             {
                 GameManager.GM.playerWon = true;
             }
-            meterChecker.stimulationGauge.value += winningPunishment;
-            
-            //set game state to "Playing"
-            GameManager.GM.gameState = GameManager.gameStates.Playing;
-            
-            //deactivate the encounter camera
-            battleCamera.SetActive(false);
+            else
+            {
+                meterChecker.stimulationGauge.value += winningPunishment;
 
-            associatedTask.UpdateTask();
+                //set game state to "Playing"
+                GameManager.GM.gameState = GameManager.gameStates.Playing;
 
-            battleCanvas.SetActive(false);
-            //maybe put some text in?
+                //deactivate the encounter camera
+                battleCamera.SetActive(false);
+
+                associatedTask.UpdateTask();
+
+                battleCanvas.SetActive(false);
+                //maybe put some text in?
+                meterChecker.paused = false;
+            }
+            
         }
         else //only happens in bosses
         {
             PickAnswers();
         }
 
-        meterChecker.paused = false;
     } //end correct response
 
     public void IncorrectResponse()

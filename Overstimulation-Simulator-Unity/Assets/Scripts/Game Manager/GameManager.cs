@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: June 2nd, 2022
+ * Last Edited: December 2nd, 2022
  * 
  * Description: Basic GameManager Template
 ****/
@@ -104,6 +104,8 @@ public class GameManager : MonoBehaviour
     //Game State Variables
     [HideInInspector] public enum gameStates { Idle, Playing, Battle, Death, GameOver, BeatLevel };//enum of game states
     [HideInInspector] public gameStates gameState = gameStates.Idle;//current game state
+    //[Tooltip("0 is start Screen, 1 is Level Select, and 2 is Settings.")]
+    //[SerializeField] public int mainMenuState = 0; //the current item in the main menus.
 
     //Timer Variables
     private float currentTime; //sets current time for timer
@@ -147,7 +149,7 @@ public class GameManager : MonoBehaviour
         //if (nextLevel) { NextLevel(); }
 
         //if we are playing the game
-        if (gameState == gameStates.Playing)
+        if (gameState == gameStates.Playing || gameState == gameStates.Battle)
         {
             //if we have died or overcame the boss, go to game over screen
             if (levelLost || playerWon) { GameOver(); }
@@ -162,7 +164,11 @@ public class GameManager : MonoBehaviour
     //START LEVEL SELECT
     public void StartGame()
     {
+        //mainMenuState = 1;
+        //SceneManager.LoadScene(startScene);
+
         SceneManager.LoadScene(levelSelectScene);
+        AudioManager.AM.MenuMusic();
     }
 
     //LOAD THE LEVEL FOR THE FIRST TIME OR RESTART
@@ -175,9 +181,11 @@ public class GameManager : MonoBehaviour
         } else
         {
             loadLevel = gameLevelsCount; //the level from the array as set in the Level_Select_Manager
-            SceneManager.LoadScene(gameLevels[loadLevel]); //load first game level
+            SceneManager.LoadScene(gameLevels[loadLevel]); //load first game level 
 
             gameState = gameStates.Playing; //set the game state to playing
+
+            AudioManager.AM.LevelMusic(loadLevel); //play the new song
 
             score = 0; //set starting score
 
@@ -202,14 +210,19 @@ public class GameManager : MonoBehaviour
     //EXIT THE GAME
     public void ExitGame()
     {
+        //mainMenuState = 0;
         SceneManager.LoadScene(startScene); //load the game over scene
+        AudioManager.AM.MenuMusic();
         Debug.Log("Exited Game");
     }//end ExitGame()
 
-    //Go to Settings Scene
+   //Go to Settings Scene. Only accessible from start screen.
     public void SettingsScene()
     {
-        SceneManager.LoadScene(settingsScene); //load the game over scene
+        //mainMenuState = 2;
+        //SceneManager.LoadScene(startScene);
+        SceneManager.LoadScene(settingsScene); //load the Settings Scene
+        //AudioManager.AM.MenuMusic();
     }//end ExitGame()
 
     //GO TO THE GAME OVER SCENE
@@ -220,6 +233,7 @@ public class GameManager : MonoBehaviour
         if (playerWon) { endMsg = winMessage; } else { endMsg = loseMessage; } //set the end message
 
         SceneManager.LoadScene(gameOverScene); //load the game over scene
+        AudioManager.AM.LevelEndMusic();
         Debug.Log("Game Over");
     }
 

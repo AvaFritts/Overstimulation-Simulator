@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: July 18th 2022
+// Last edited: October 22 2022
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -14,6 +14,8 @@ public class Overstimulation : MonoBehaviour
     //VARIABLES
 
     GameManager GM;
+
+    public Animator stateControll;
 
     public Slider stimulationGauge;
     public Button smallButton;
@@ -51,13 +53,33 @@ public class Overstimulation : MonoBehaviour
                 largeButton.interactable = false;
 
                 meltdownButton.interactable = true;
+                GameManager.GM.gameState = GameManager.gameStates.Death;
             }
         } 
     }
 
-    public void CalmingDown(float delay)
+    public void PauseGame()
+    {
+        paused = true;
+    }
+
+    private void ResumeGame()
+    {
+        paused = false;
+    }
+
+    public void ButtonAnimation(string triggerName)
+    {
+        stateControll.SetTrigger(triggerName);
+    }
+
+
+    //I need two or three functions. One to pause the game, and another to run the animation. 
+    // The last thing needed is a way to reward the player
+    public void CalmingDown(float reward)
     {    
-        stimulationGauge.value -= delay;
+        stimulationGauge.value -= reward;
+
            /* if (overStimMult < 0) //if the value isn't going up
             {
                 //Now, this value WILL need to be changed. But it is just a concept.
@@ -65,7 +87,7 @@ public class Overstimulation : MonoBehaviour
             } */    
     }
 
-        
+ 
     public void WindingUp()    
     {
         if(stimulationGauge.value >= activateLarge)    
@@ -73,40 +95,44 @@ public class Overstimulation : MonoBehaviour
             smallButton.interactable = true; 
             mediumButton.interactable = true;  
             largeButton.interactable = true;
-        
+            stateControll.SetBool("stressed", true);
+
         }
         else if (stimulationGauge.value >= activateMedium)
         {
             smallButton.interactable = true;
             mediumButton.interactable = true;
             largeButton.interactable = false;
+            stateControll.SetBool("stressed", false);
         }
         else if (stimulationGauge.value >= activateSmall)
         {
             smallButton.interactable = true;
             mediumButton.interactable = false;
             largeButton.interactable = false;
+            stateControll.SetBool("stressed", false);
         }
         else
         {
             smallButton.interactable = false;
             mediumButton.interactable = false;
             largeButton.interactable = false;
+            stateControll.SetBool("stressed", false);
         }
     }
     public void MeltingDown()
     {
         //play animation and sound.
-
+        stateControll.SetBool("Meltdown", true);
         //go to game over screen.
         Debug.Log("Game Over");
-        Invoke("GameOverCall", 5f);
+        //Invoke("GameOverCall", 7f); //Player Takes care of this.
     }
 
-    void GameOverCall()
+   /* void GameOverCall()
     {
         GameManager.GM.GameOver();
-    }
+    }*/
 
     private float StimulationUpdater()
     {
