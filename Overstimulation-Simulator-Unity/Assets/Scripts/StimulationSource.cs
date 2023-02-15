@@ -16,9 +16,12 @@ public class StimulationSource : MonoBehaviour
     public float multModifier; //the modifier for the stimulation.
     public float maxModifier;
 
+    [Space(10)]
+
     public Overstimulation overstimGO;
-    public GameObject playerChar;
-    public bool paused;
+    public GameObject playerChar; 
+
+    [Space(10)]
     
     //public Transform target;
     public Collider objectCollider; //was originally SphereCollider. Might Change back.
@@ -26,10 +29,15 @@ public class StimulationSource : MonoBehaviour
     public int minParticles;
     //public int normalParticles; //uncomment if the particle number doesn't reset between rounds.
 
+    [Header("Set Dynamically")]
+    public bool paused;
+    public AudioSource badAudio;
+
     void Start()
     {
         paused = true;
         _stimulationSystem = this.GetComponent<ParticleSystem>(); //get the particle system
+        badAudio = this.GetComponent<AudioSource>();
         if (GameManager.GM.stilumationReducer) //if the stimulation reducer is on, reduce particles
         {
             var main = _stimulationSystem.main;
@@ -54,6 +62,8 @@ public class StimulationSource : MonoBehaviour
             //}
 
         }
+
+        //if(GameManager.GM.gameState != 
     }
 
     private void OnTriggerEnter(Collider other)

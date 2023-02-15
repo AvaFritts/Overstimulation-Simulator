@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: November 3rd 2022
+// Last edited: Feb 12th 2023
 //Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,10 @@ public class Player : MonoBehaviour
 {
     //public Sprite idleSprite;
     //public Sprite walkingSprite;
+    [Tooltip("This value is the player's max speed. Their actual speed will vary.")]
     public int playerSpeed = 2;
+
+    private int currentSpeed;
     //This is to prevent the "panic" animation from happening 100 times.
     private bool alreadyDead = false;
 
@@ -30,17 +33,20 @@ public class Player : MonoBehaviour
     {
         playerSprites = this.GetComponent<SpriteRenderer>();
         stateControll = this.GetComponent<Animator>();
+        currentSpeed = playerSpeed;
 
     }
 
     public void PauseDial()
     {
-        dialManager.paused = true;
+        dialManager.gaguePaused = true;
+        currentSpeed = 0;
     }
 
     public void ResumeDial()
     {
-        dialManager.paused = false;
+        dialManager.gaguePaused = false;
+        currentSpeed = playerSpeed;
     }
 
 
@@ -55,7 +61,7 @@ public class Player : MonoBehaviour
 
             if (GameManager.GM.gameState == GameManager.gameStates.Death && alreadyDead == false)
             {
-                playerSpeed = 0;
+                currentSpeed = 0;
                 stateControll.SetBool("Dead", true);
                 stateControll.SetBool("stressed", false);
                 stateControll.SetTrigger("Panic");
@@ -65,7 +71,7 @@ public class Player : MonoBehaviour
             //get the position
             pos.x = this.transform.position.x;
             //if not in Meltdown, let them move
-            pos.x += Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime;
+            pos.x += Input.GetAxis("Horizontal") * currentSpeed * Time.deltaTime;
             //if(walking) in opposite direction, flip the sprite
             if (Input.GetAxis("Horizontal") < 0) //walking Left
             {

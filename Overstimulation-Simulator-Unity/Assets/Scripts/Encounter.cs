@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: December 2nd, 2022
+// Last edited: Feb 13th, 2023
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -116,7 +116,8 @@ public class Encounter : MonoBehaviour
 
                 battleCanvas.SetActive(false);
                 //maybe put some text in?
-                meterChecker.paused = false;
+                meterChecker.gaguePaused = false;
+                meterChecker.buttonPaused = false;
             }
             
         }
@@ -149,7 +150,8 @@ public class Encounter : MonoBehaviour
         }
         //maybe put some text in?
 
-        meterChecker.paused = false;
+        meterChecker.gaguePaused = false;
+        meterChecker.buttonPaused = false;
     } //end incorrect response
 
     //pick the answer for the fight.
@@ -158,7 +160,8 @@ public class Encounter : MonoBehaviour
         if (!battleCanvas.activeSelf) //if the encounter isn't already active
         {
             battleCanvas.SetActive(true);
-            meterChecker.paused = true;
+            meterChecker.gaguePaused = true;
+            meterChecker.buttonPaused = true;
         }
         
 
@@ -190,7 +193,7 @@ public class Encounter : MonoBehaviour
         {      
             activeString = encounterText[questionsAnswered];    
             activeAnswer = correctAnswer[questionsAnswered];  
-            //activeSprite = associatedSprite[0];  
+            activeSprite = associatedSprite[questionsAnswered];  
         } 
         conversationStarter.StartEncounter(this.gameObject); //starts an encounter.
     }//end pick answers
