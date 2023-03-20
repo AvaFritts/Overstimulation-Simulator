@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: June 5th 2022
+// Last edited: Feb 16th 2023
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -19,13 +19,14 @@ public class StimulationSource : MonoBehaviour
     [Space(10)]
 
     public Overstimulation overstimGO;
-    public GameObject playerChar; 
+    public GameObject playerChar;
 
     [Space(10)]
-    
+
     //public Transform target;
     public Collider objectCollider; //was originally SphereCollider. Might Change back.
     private ParticleSystem _stimulationSystem;
+    private AudioReverbFilter muffler;
     public int minParticles;
     //public int normalParticles; //uncomment if the particle number doesn't reset between rounds.
 
@@ -33,21 +34,26 @@ public class StimulationSource : MonoBehaviour
     public bool paused;
     public AudioSource badAudio;
 
-    void Start()
+    void Awake()
     {
+        badAudio = GetComponent<AudioSource>();
         paused = true;
-        _stimulationSystem = this.GetComponent<ParticleSystem>(); //get the particle system
-        badAudio = this.GetComponent<AudioSource>();
+        muffler = this.GetComponent<AudioReverbFilter>();
+
+        _stimulationSystem = GetComponent<ParticleSystem>(); //get the particle system
+
         if (GameManager.GM.stilumationReducer) //if the stimulation reducer is on, reduce particles
         {
             var main = _stimulationSystem.main;
             main.maxParticles = minParticles;
         }
         _stimulationSystem.Stop();
+        GameManager.GM.MuffledNoises.AddListener(ActivateMuffle);
+        GameManager.GM.NormalNoises.AddListener(DeactivateMuffle);
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (!paused) //DO NOT UPDATE IF YOU ARE NOT IN RANGE
         {
@@ -58,12 +64,22 @@ public class StimulationSource : MonoBehaviour
             if (distanceToTarget < 1) { distanceToTarget = 1; }
             //if (distanceToTarget < objectCollider.radius)
             //{
-                multModifier = maxModifier / distanceToTarget;
+            multModifier = maxModifier / distanceToTarget;
             //}
 
         }
 
         //if(GameManager.GM.gameState != 
+    }
+
+    public void ActivateMuffle()
+    {
+        muffler.enabled = true;
+    }
+
+    public void DeactivateMuffle()
+    {
+        muffler.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)

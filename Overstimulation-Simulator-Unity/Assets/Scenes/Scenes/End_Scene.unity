@@ -326,7 +326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: Main Menu
 --- !u!222 &80500670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ GameObject:
   m_Layer: 5
   m_Name: End_Text
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -636,6 +636,13 @@ MonoBehaviour:
   nextLevel: 0
   isTesting: 0
   gameState: 0
+  MuffledNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  NormalNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  isHappy: 0
   playerWon: 0
   difficulty: 0
   stilumationReducer: 0
@@ -872,7 +879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Menu
+  m_Text: Level Select
 --- !u!222 &844388046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1346,3 +1353,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingText: {fileID: 219432603}
+  endingSprite: {fileID: 1508332367}
+  happySprite: {fileID: 21300000, guid: 0130602fe3333a04494f4145cbd3e670, type: 3}
+  sadSprite: {fileID: 21300000, guid: d5133f32c1b444748aac733fb196922e, type: 3}
+  topButton: {fileID: 1276836052}
+  midButton: {fileID: 69723799}
+  bottomButton: {fileID: 1195576836}
+  wonGame: 0

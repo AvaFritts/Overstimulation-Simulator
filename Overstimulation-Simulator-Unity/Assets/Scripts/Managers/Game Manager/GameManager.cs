@@ -3,7 +3,7 @@
  * Date Created: Feb 23, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: December 2nd, 2022
+ * Last Edited: Feb 17th, 2023
  * 
  * Description: Basic GameManager Template
 ****/
@@ -14,6 +14,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //libraries for accessing scenes
+using UnityEngine.Events;
 
 
 public class GameManager : MonoBehaviour
@@ -104,6 +105,12 @@ public class GameManager : MonoBehaviour
     //Game State Variables
     [HideInInspector] public enum gameStates { Idle, Playing, Battle, Death, GameOver, BeatLevel };//enum of game states
     [HideInInspector] public gameStates gameState = gameStates.Idle;//current game state
+    [HideInInspector] public UnityEvent MuffledNoises;
+    [HideInInspector] public UnityEvent NormalNoises;
+    [HideInInspector] private bool isMuffled;
+
+    //Good or bad ending???
+    [HideInInspector] public bool isHappy;
     //[Tooltip("0 is start Screen, 1 is Level Select, and 2 is Settings.")]
     //[SerializeField] public int mainMenuState = 0; //the current item in the main menus.
 
@@ -136,6 +143,10 @@ public class GameManager : MonoBehaviour
         //Get the saved high score
         GetHighScore();
 
+        //Events for the noises!
+        MuffledNoises = new UnityEvent();
+        NormalNoises = new UnityEvent();
+
     }//end Awake()
 
 
@@ -147,6 +158,20 @@ public class GameManager : MonoBehaviour
 
         //Check for next level
         //if (nextLevel) { NextLevel(); }
+        if (!isMuffled)
+        {
+            if (gameState == gameStates.Battle || gameState == gameStates.Death)
+            {
+                MuffledNoises.Invoke();
+                isMuffled = true;
+            }
+        }
+        else if (gameState == gameStates.Playing && isMuffled)
+        {   
+                isMuffled = false;
+                NormalNoises.Invoke();        
+        }
+
 
         //if we are playing the game
         if (gameState == gameStates.Playing || gameState == gameStates.Battle)
@@ -206,6 +231,10 @@ public class GameManager : MonoBehaviour
         }
     }//end StartGame()
     
+    public void AbortGame()
+    {
+        Application.Quit();
+    }
 
     //EXIT THE GAME
     public void ExitGame()
@@ -229,11 +258,13 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameState = gameStates.GameOver; //set the game state to gameOver
-
-        if (playerWon) { endMsg = winMessage; } else { endMsg = loseMessage; } //set the end message
+        
+        if (playerWon) { endMsg = winMessage; isHappy = true; } else { endMsg = loseMessage; isHappy = false; } //set the end message
 
         SceneManager.LoadScene(gameOverScene); //load the game over scene
         AudioManager.AM.LevelEndMusic();
+        //Ending_Canvas.SetScene(isHappy);
+
         Debug.Log("Game Over");
     }
 

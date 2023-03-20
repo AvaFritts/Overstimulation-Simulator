@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: Feb 13th, 2023
+// Last edited: Feb 21st, 2023
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -61,7 +61,7 @@ public class Encounter : MonoBehaviour
     {
         if (canActivate && (GameManager.GM.gameState == GameManager.gameStates.Playing || GameManager.GM.isTesting))
         {
-            if (Input.GetButtonDown("Fire2")) //if the player interacts with it.
+            if (Input.GetButtonDown("Jump")) //if the player interacts with it.
             {
                 //Initiate human interaction.
                 PickAnswers(); //starts an encounter.

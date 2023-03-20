@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: June 2nd 2022
+// Last edited: March 19th 2023
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -13,12 +13,15 @@ public class Encounter_Manager : MonoBehaviour
     //Variables//
     [Header("Set in Inspector")]
     public Text[] theFourButtons; //the four buttons used in the encounters
+    public Image[] theFourFaces;
     public GameObject background;
     public float rotationSpeed;
     [Tooltip("The strings here should have the button labels for the 'good' responses")]
-    public string[] theCalmChoices;
+    public Sprite[] theCalmFaces;
+    // public string[] theCalmChoices;
     [Tooltip("The strings here should have the button labels for the 'scary mode' responses")]
-    public string[] theAnxiousChoices;
+    public Sprite[] theStressedFaces;
+    //public string[] theAnxiousChoices;
 
     [Space(5)]
 
@@ -65,14 +68,16 @@ public class Encounter_Manager : MonoBehaviour
             {
                 for (int i = 0; i < 4; i++)
                 {
-                    theFourButtons[i].text = theAnxiousChoices[i];
+                    //theFourButtons[i].text = theAnxiousChoices[i];
+                    theFourFaces[i].sprite = theStressedFaces[i];
                 }
             }
             else
             {
                 for (int i = 0; i < 4; i++)
                 {
-                    theFourButtons[i].text = theCalmChoices[i];
+                    //theFourButtons[i].text = theCalmChoices[i];
+                    theFourFaces[i].sprite = theCalmFaces[i];
                 }
             } //end else;
         }//end If (GameManager's state isn't in battle)

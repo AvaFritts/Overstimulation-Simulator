@@ -197,7 +197,7 @@ MonoBehaviour:
   defaultHighScore: 1000
   levelLost: 0
   defaultEndMessage: Game Over
-  loseMessage: You Lose
+  loseMessage: ' '
   winMessage: You Survived!
   endMsg: 
   startScene: Start_Scene
@@ -209,8 +209,15 @@ MonoBehaviour:
   - Level_1-Store
   gameLevelsCount: 0
   nextLevel: 0
-  isTesting: 1
+  isTesting: 0
   gameState: 0
+  MuffledNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  NormalNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  isHappy: 0
   playerWon: 0
   difficulty: 0
   stilumationReducer: 0

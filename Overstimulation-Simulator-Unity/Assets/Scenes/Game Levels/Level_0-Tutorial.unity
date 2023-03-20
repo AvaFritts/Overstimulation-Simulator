@@ -280,6 +280,13 @@ MonoBehaviour:
   nextLevel: 0
   isTesting: 1
   gameState: 0
+  MuffledNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  NormalNoises:
+    m_PersistentCalls:
+      m_Calls: []
+  isHappy: 0
   playerWon: 0
   difficulty: 0
   stilumationReducer: 0
@@ -1266,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press "Alt" to initiate the boss round!
+  m_Text: Press "Space" to initiate the boss round!
 --- !u!222 &644468330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1949,9 +1956,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3787471121926926984, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
-      propertyPath: m_Type
-      value: 1
+    - target: {fileID: 3787471121790877551, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479000, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2016,6 +2023,10 @@ PrefabInstance:
     - target: {fileID: 3787471123423307686, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_Name
       value: Overstimulation Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787471123423307705, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
+      propertyPath: overStimMult
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3787471123423307705, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: stateControll
@@ -2564,7 +2575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press space to interract with the wold
+  m_Text: Press "Space" to interract with the world
 --- !u!222 &1299602845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2828,6 +2839,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7543590054818857267, guid: 279475380f203f042b98867664a537f7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 788478485146874773, guid: 2aaf89761798a8b47a15612b6f9bf427, type: 3}
     - target: {fileID: 7543590054818857269, guid: 279475380f203f042b98867664a537f7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3018,7 +3033,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1598478415}
   - component: {fileID: 1598478414}
-  - component: {fileID: 1598478413}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3026,14 +3040,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1598478413
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598478412}
-  m_Enabled: 1
 --- !u!20 &1598478414
 Camera:
   m_ObjectHideFlags: 0
@@ -3245,7 +3251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press "Alt" to have a conversation
+  m_Text: Press "Space" to have a conversation
 --- !u!222 &1639259260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3866,7 +3872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7826268463433142064, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.2490177
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7826268463433142064, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3923,7 +3929,7 @@ PrefabInstance:
     - target: {fileID: 8587484824043203193, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 730fca50f22aac54a8a0eb820ec89fea, type: 3}
+      objectReference: {fileID: 8300000, guid: b9e96ee30a43c5a49a9dd5f7535357fc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
 --- !u!4 &1971907206 stripped

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: Jan 13th, 2023
+// Last edited: Feb 21st, 2023
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -46,12 +46,15 @@ public class Overstimulation : MonoBehaviour
     public GameObject[] stimulantSources;
 
     public float overStimMult = 0;
+
+    [Header("Change Dynamically")]
+    public float currentStimMult;
     public bool buttonPaused;
     public bool gaguePaused;
     // Start is called before the first frame update
     void Start()
     {
-        stimulationGauge.value = GameManager.GM.difficulty;
+        //stimulationGauge.value = GameManager.GM.difficulty;
         //smallTimer = smallTimerDuration;
         //mediumTimer = mediumTimerDuration;
         //largeTimer = largeTimerDuration;
@@ -64,9 +67,9 @@ public class Overstimulation : MonoBehaviour
         {
             if (!gaguePaused)
             {
-                overStimMult = StimulationUpdater();
+                currentStimMult = StimulationUpdater();
                 //overStimMult = Mathf.Clamp(StimulationUpdater(), 2f, 100f);
-                stimulationGauge.value += overStimMult * Time.deltaTime;
+                stimulationGauge.value += currentStimMult * Time.deltaTime;
                 if (stimulationGauge.value.Equals(stimulationGauge.maxValue) && GameManager.GM.gameState != GameManager.gameStates.Death)
                 {
                     smallButton.interactable = false;
@@ -116,7 +119,7 @@ public class Overstimulation : MonoBehaviour
         } //end "If not Paused"
     }
 
-    public void PauseGame()
+    /*public void PauseGame()
     {
         gaguePaused = true;
         buttonPaused = true;
@@ -127,7 +130,7 @@ public class Overstimulation : MonoBehaviour
     {
         gaguePaused = false;
         buttonPaused = false;
-    }
+    }*/
 
     public void ButtonAnimation(string triggerName)
     {
@@ -213,7 +216,7 @@ public class Overstimulation : MonoBehaviour
 
     private float StimulationUpdater()
     {
-        float baseCount = 2;
+        float baseCount = overStimMult;
         foreach (GameObject stimulants in stimulantSources) 
         {
             StimulationSource modGO = stimulants.GetComponent<StimulationSource>();

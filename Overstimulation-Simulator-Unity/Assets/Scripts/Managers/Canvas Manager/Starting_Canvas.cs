@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 // Date Created: May 10th 2022
 
-// Last edited: May 10th 2022
+// Last edited: Feb 17th 2023
 // Description: The script for the starting scene.
 using System.Collections;
 using System.Collections.Generic;
@@ -25,6 +25,11 @@ public class Starting_Canvas : MonoBehaviour
     {
         GameManager.GM.SettingsScene();
 
+    }
+
+    public void QuittingGame()
+    {
+        GameManager.GM.AbortGame();
     }
 
     public void StartingGame()
