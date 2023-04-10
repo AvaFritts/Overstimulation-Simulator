@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: d65706f5461a41b438c303f602a18a9b
+guid: 21d5980d6b026974db7a73e2767e5530
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8716089300468154369
-    second: StressedSprites(Dress)_0
+      213: -1840629544022795350
+    second: Stressed Sprites1 (Dress)_0
   - first:
-      213: 309244269331130970
-    second: StressedSprites(Dress)_1
+      213: -3085289570843974370
+    second: Stressed Sprites1 (Dress)_1
   - first:
-      213: -252331414526647430
-    second: StressedSprites(Dress)_2
+      213: -7850990658369391174
+    second: Stressed Sprites1 (Dress)_2
   - first:
-      213: -7608310814444804887
-    second: StressedSprites(Dress)_3
+      213: -1566511191007855564
+    second: Stressed Sprites1 (Dress)_3
   - first:
-      213: -5860454391549400382
-    second: StressedSprites(Dress)_4
+      213: 2720593472710993855
+    second: Stressed Sprites1 (Dress)_4
   - first:
-      213: 8357437358689843910
-    second: StressedSprites(Dress)_5
+      213: -4610184250715804854
+    second: Stressed Sprites1 (Dress)_5
   - first:
-      213: 903651608616502292
-    second: StressedSprites(Dress)_6
+      213: 4779883122799297789
+    second: Stressed Sprites1 (Dress)_6
   - first:
-      213: 4158302521549165812
-    second: StressedSprites(Dress)_7
+      213: -8338904890546857729
+    second: Stressed Sprites1 (Dress)_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StressedSprites(Dress)_0
+      name: Stressed Sprites1 (Dress)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff330706fa3a0780800000000000000
-      internalID: -8716089300468154369
+      spriteID: aab9e698e25c476e0800000000000000
+      internalID: -1840629544022795350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_1
+      name: Stressed Sprites1 (Dress)_1
       rect:
         serializedVersion: 2
         x: 300
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5aae464608aa4400800000000000000
-      internalID: 309244269331130970
+      spriteID: e15a0ac5b79de25d0800000000000000
+      internalID: -3085289570843974370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_2
+      name: Stressed Sprites1 (Dress)_2
       rect:
         serializedVersion: 2
         x: 600
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73a7775ae98f7cf0800000000000000
-      internalID: -252331414526647430
+      spriteID: ab57bf0b79dab0390800000000000000
+      internalID: -7850990658369391174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_3
+      name: Stressed Sprites1 (Dress)_3
       rect:
         serializedVersion: 2
         x: 900
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e42144ff99d96690800000000000000
-      internalID: -7608310814444804887
+      spriteID: 43c7d4b1f52a24ae0800000000000000
+      internalID: -1566511191007855564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_4
+      name: Stressed Sprites1 (Dress)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cae159e7cb7baea0800000000000000
-      internalID: -5860454391549400382
+      spriteID: fb76f2f595d71c520800000000000000
+      internalID: 2720593472710993855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_5
+      name: Stressed Sprites1 (Dress)_5
       rect:
         serializedVersion: 2
         x: 300
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca79458ff49bf370800000000000000
-      internalID: 8357437358689843910
+      spriteID: a4bebfa89d55500c0800000000000000
+      internalID: -4610184250715804854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_6
+      name: Stressed Sprites1 (Dress)_6
       rect:
         serializedVersion: 2
         x: 600
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4140c4ca95a6a8c00800000000000000
-      internalID: 903651608616502292
+      spriteID: df44652106e855240800000000000000
+      internalID: 4779883122799297789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StressedSprites(Dress)_7
+      name: Stressed Sprites1 (Dress)_7
       rect:
         serializedVersion: 2
         x: 900
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f49c899c1245b930800000000000000
-      internalID: 4158302521549165812
+      spriteID: ff8df27fe22464c80800000000000000
+      internalID: -8338904890546857729
       vertices: []
       indices: 
       edges: []
@@ -309,7 +309,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 85413c33902e0024c8f7c7fbc457494d
+    spriteID: 1774d988bba066d4093525a3070bb995
     internalID: 0
     vertices: []
     indices: 

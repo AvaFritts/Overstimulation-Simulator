@@ -22,8 +22,16 @@ public class Level_Select_Manager : MonoBehaviour
 
     public int speed = 20; // Number of frames to completely interpolate between the 2 positions
 
+    public GameManager GameManager
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     //Awake is called when the game loads (before Start).  Awake only once during the lifetime of the script instance.
-   void Awake()
+    void Awake()
     {
         destinationPosition = new Vector3(3f, -1.33f, 0f); //sprite is placed at Home
         UpdateLevel(-1);

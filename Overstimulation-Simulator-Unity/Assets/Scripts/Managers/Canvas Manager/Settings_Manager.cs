@@ -19,8 +19,17 @@ public class Settings_Manager : MonoBehaviour
 
     public Text difficultyText; //the text for the button.
     public Image difficultyButton;
+
+    public GameManager GameManager
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     // Start is called before the first frame update
-     void Awake()
+    void Awake()
     {
         difficultyMode = GameManager.GM.difficulty; //gets the difficulty from the GM
         LoadDifficulty(); //Loads the current Difficulty.

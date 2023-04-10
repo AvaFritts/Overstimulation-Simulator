@@ -1,145 +1,133 @@
 fileFormatVersion: 2
-guid: a0b98650236c84942ab849ab5244b55c
+guid: 862d10096becbc448a3dc429ff8aa11e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5477870349970692354
-    second: GameOverSprites(Dress)_0
+      213: 7023695542634939778
+    second: GameOver Sprites3 (Dress)_0
   - first:
-      213: 6026144420388305533
-    second: GameOverSprites(Dress)_1
+      213: 8829215143053097612
+    second: GameOver Sprites3 (Dress)_1
   - first:
-      213: 7936172234789983101
-    second: GameOverSprites(Dress)_2
+      213: 2542439112877941174
+    second: GameOver Sprites3 (Dress)_2
   - first:
-      213: 1279838192338032063
-    second: GameOverSprites(Dress)_3
+      213: -8450854075834619214
+    second: GameOver Sprites3 (Dress)_3
   - first:
-      213: -7468180907884465445
-    second: GameOverSprites(Dress)_4
+      213: -3386076736574692516
+    second: GameOver Sprites3 (Dress)_4
   - first:
-      213: -6486401212430206156
-    second: GameOverSprites(Dress)_5
+      213: 2648010473980135927
+    second: GameOver Sprites3 (Dress)_5
   - first:
-      213: -8167196443035589932
-    second: GameOverSprites(Dress)_6
+      213: 5415334342294365591
+    second: GameOver Sprites3 (Dress)_6
   - first:
-      213: -6875169240574247274
-    second: GameOverSprites(Dress)_7
+      213: 2770128819547386937
+    second: GameOver Sprites3 (Dress)_7
   - first:
-      213: 8676570833459549971
-    second: GameOverSprites(Dress)_8
+      213: 6928959278160866324
+    second: GameOver Sprites3 (Dress)_8
   - first:
-      213: -5390904902702904028
-    second: GameOverSprites(Dress)_9
+      213: 8275447562655730510
+    second: GameOver Sprites3 (Dress)_9
   - first:
-      213: 7491930967450905807
-    second: GameOverSprites(Dress)_10
+      213: -752579343939013239
+    second: GameOver Sprites3 (Dress)_10
   - first:
-      213: 1104522867261032015
-    second: GameOverSprites(Dress)_11
+      213: 940434897905680999
+    second: GameOver Sprites3 (Dress)_11
   - first:
-      213: -7257350619126962197
-    second: GameOverSprites(Dress)_12
+      213: -2660762900189735591
+    second: GameOver Sprites3 (Dress)_12
   - first:
-      213: -8470957420367937727
-    second: GameOverSprites(Dress)_13
+      213: 4451421299924208415
+    second: GameOver Sprites3 (Dress)_13
   - first:
-      213: 7130562012258820985
-    second: GameOverSprites(Dress)_14
+      213: 7403933721702780793
+    second: GameOver Sprites3 (Dress)_14
   - first:
-      213: -5238772420866003857
-    second: GameOverSprites(Dress)_15
+      213: 9097604404486359171
+    second: GameOver Sprites3 (Dress)_15
   - first:
-      213: 1742377734247964174
-    second: GameOverSprites(Dress)_16
+      213: -6127076289703143398
+    second: GameOver Sprites3 (Dress)_16
   - first:
-      213: 8369065636378014493
-    second: GameOverSprites(Dress)_17
+      213: -6740224731887401134
+    second: GameOver Sprites3 (Dress)_17
   - first:
-      213: 3031640847485422112
-    second: GameOverSprites(Dress)_18
+      213: -3765757133759716939
+    second: GameOver Sprites3 (Dress)_18
   - first:
-      213: 5788247749484825849
-    second: GameOverSprites(Dress)_19
+      213: 7639058253532544742
+    second: GameOver Sprites3 (Dress)_19
   - first:
-      213: -2915176241873189765
-    second: GameOverSprites(Dress)_20
+      213: 3784715100592283836
+    second: GameOver Sprites3 (Dress)_20
   - first:
-      213: -2292706287876691263
-    second: GameOverSprites(Dress)_21
+      213: -1939394960420079569
+    second: GameOver Sprites3 (Dress)_21
   - first:
-      213: 4384039593087306911
-    second: GameOverSprites(Dress)_22
+      213: 3187401872848313196
+    second: GameOver Sprites3 (Dress)_22
   - first:
-      213: -4349266420428646755
-    second: GameOverSprites(Dress)_23
+      213: 5804671074676147242
+    second: GameOver Sprites3 (Dress)_23
   - first:
-      213: -7865654303196807077
-    second: GameOverSprites(Dress)_24
+      213: 7124157215805958854
+    second: GameOver Sprites3 (Dress)_24
   - first:
-      213: 3018717024091444688
-    second: GameOverSprites(Dress)_25
+      213: 5473837736469163583
+    second: GameOver Sprites3 (Dress)_25
   - first:
-      213: 8292587908755720988
-    second: GameOverSprites(Dress)_26
+      213: -5065217186433880121
+    second: GameOver Sprites3 (Dress)_26
   - first:
-      213: -3501122763033795515
-    second: GameOverSprites(Dress)_27
+      213: 3805130001197419650
+    second: GameOver Sprites3 (Dress)_27
   - first:
-      213: 4017787603403709033
-    second: GameOverSprites(Dress)_28
+      213: 4890850220507354912
+    second: GameOver Sprites3 (Dress)_28
   - first:
-      213: 2156197909093396671
-    second: GameOverSprites(Dress)_29
+      213: 7670352698177465372
+    second: GameOver Sprites3 (Dress)_29
   - first:
-      213: -7201727543356251790
-    second: GameOverSprites(Dress)_30
+      213: -1785883798726116717
+    second: GameOver Sprites3 (Dress)_30
   - first:
-      213: -4605211182267467017
-    second: GameOverSprites(Dress)_31
+      213: 8260766876748374348
+    second: GameOver Sprites3 (Dress)_31
   - first:
-      213: 4996812524882926063
-    second: GameOverSprites(Dress)_32
+      213: -5781955978240244310
+    second: GameOver Sprites3 (Dress)_32
   - first:
-      213: -4308549296109310767
-    second: GameOverSprites(Dress)_33
+      213: -1148310828331127260
+    second: GameOver Sprites3 (Dress)_33
   - first:
-      213: 7712370344195351123
-    second: GameOverSprites(Dress)_34
+      213: -3970198279614590004
+    second: GameOver Sprites3 (Dress)_34
   - first:
-      213: 9064065272764538604
-    second: GameOverSprites(Dress)_35
+      213: -8801051478250858314
+    second: GameOver Sprites3 (Dress)_35
   - first:
-      213: -3587890284649182699
-    second: GameOverSprites(Dress)_36
+      213: 1595804725940670680
+    second: GameOver Sprites3 (Dress)_36
   - first:
-      213: -5171764915420453534
-    second: GameOverSprites(Dress)_37
+      213: -9067578107906033138
+    second: GameOver Sprites3 (Dress)_37
   - first:
-      213: -6811798743640181970
-    second: GameOverSprites(Dress)_38
+      213: 2558800833755600241
+    second: GameOver Sprites3 (Dress)_38
   - first:
-      213: -6255899221440346818
-    second: GameOverSprites(Dress)_39
+      213: -3583761758319253563
+    second: GameOver Sprites3 (Dress)_39
   - first:
-      213: 1946286701776489454
-    second: GameOverSprites(Dress)_40
+      213: 6972649987880684871
+    second: GameOver Sprites3 (Dress)_40
   - first:
-      213: 8944913818153328890
-    second: GameOverSprites(Dress)_41
-  - first:
-      213: -1911081338569652723
-    second: GameOverSprites(Dress)_42
-  - first:
-      213: 6879797909126857479
-    second: GameOverSprites(Dress)_43
-  - first:
-      213: 1241432979135495448
-    second: GameOverSprites(Dress)_44
-  - first:
-      213: -373410796387157206
-    second: GameOverSprites(Dress)_45
+      213: 27732140840186751
+    second: GameOver Sprites3 (Dress)_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -180,7 +168,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -253,7 +241,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_0
+      name: GameOver Sprites3 (Dress)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285004502ed297160800000000000000
+      internalID: 7023695542634939778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8afd27b46ca78a70800000000000000
+      internalID: 8829215143053097612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1262a17ee884320800000000000000
+      internalID: 2542439112877941174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba27391ef888ba80800000000000000
+      internalID: -8450854075834619214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c536046f52d3201d0800000000000000
+      internalID: -3386076736574692516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9891f0f7f9fb420800000000000000
+      internalID: 2648010473980135927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795ed6484e1272b40800000000000000
+      internalID: 5415334342294365591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934b13f0c79717620800000000000000
+      internalID: 2770128819547386937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cece590cb982060800000000000000
+      internalID: 6928959278160866324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_9
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2400
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b877986bb48d270800000000000000
+      internalID: 8275447562655730510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver Sprites3 (Dress)_10
       rect:
         serializedVersion: 2
         x: 0
@@ -267,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef62a5090f1baf3b0800000000000000
-      internalID: -5477870349970692354
+      spriteID: 985f733f21d4e85f0800000000000000
+      internalID: -752579343939013239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_1
+      name: GameOver Sprites3 (Dress)_11
       rect:
         serializedVersion: 2
         x: 300
@@ -288,14 +486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a72762c6a21a350800000000000000
-      internalID: 6026144420388305533
+      spriteID: 7628c089e881d0d00800000000000000
+      internalID: 940434897905680999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_2
+      name: GameOver Sprites3 (Dress)_12
       rect:
         serializedVersion: 2
         x: 600
@@ -309,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7399f29992f22e60800000000000000
-      internalID: 7936172234789983101
+      spriteID: 95517a65d32131bd0800000000000000
+      internalID: -2660762900189735591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_3
+      name: GameOver Sprites3 (Dress)_13
       rect:
         serializedVersion: 2
         x: 900
@@ -330,14 +528,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb559481e06e2c110800000000000000
-      internalID: 1279838192338032063
+      spriteID: f1b079f6610a6cd30800000000000000
+      internalID: 4451421299924208415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_4
+      name: GameOver Sprites3 (Dress)_14
       rect:
         serializedVersion: 2
         x: 1200
@@ -351,14 +549,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2313b4801bb5890800000000000000
-      internalID: -7468180907884465445
+      spriteID: 97f41aefd7e00c660800000000000000
+      internalID: 7403933721702780793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_5
+      name: GameOver Sprites3 (Dress)_15
       rect:
         serializedVersion: 2
         x: 1500
@@ -372,14 +570,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43b3f66b67cabf5a0800000000000000
-      internalID: -6486401212430206156
+      spriteID: 3884074310f214e70800000000000000
+      internalID: 9097604404486359171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_6
+      name: GameOver Sprites3 (Dress)_16
       rect:
         serializedVersion: 2
         x: 1800
@@ -393,14 +591,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2a7025b1a48ae80800000000000000
-      internalID: -8167196443035589932
+      spriteID: a189680c39048faa0800000000000000
+      internalID: -6127076289703143398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_7
+      name: GameOver Sprites3 (Dress)_17
       rect:
         serializedVersion: 2
         x: 2100
@@ -414,14 +612,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e31ec700e7690a0800000000000000
-      internalID: -6875169240574247274
+      spriteID: 2578c8d4159e572a0800000000000000
+      internalID: -6740224731887401134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_8
+      name: GameOver Sprites3 (Dress)_18
       rect:
         serializedVersion: 2
         x: 2400
@@ -435,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3171fdcd33f596870800000000000000
-      internalID: 8676570833459549971
+      spriteID: 5b1ebd3b6d75dbbc0800000000000000
+      internalID: -3765757133759716939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_9
+      name: GameOver Sprites3 (Dress)_19
       rect:
         serializedVersion: 2
         x: 2700
@@ -456,14 +654,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d4b70ad88af25b0800000000000000
-      internalID: -5390904902702904028
+      spriteID: 6eeb2541203630a60800000000000000
+      internalID: 7639058253532544742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_10
+      name: GameOver Sprites3 (Dress)_20
       rect:
         serializedVersion: 2
         x: 0
@@ -477,14 +675,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcce8ac558fa8f760800000000000000
-      internalID: 7491930967450905807
+      spriteID: cb02cdae452068430800000000000000
+      internalID: 3784715100592283836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_11
+      name: GameOver Sprites3 (Dress)_21
       rect:
         serializedVersion: 2
         x: 300
@@ -498,14 +696,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46c36d12bd045f00800000000000000
-      internalID: 1104522867261032015
+      spriteID: f287af01f82e515e0800000000000000
+      internalID: -1939394960420079569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_12
+      name: GameOver Sprites3 (Dress)_22
       rect:
         serializedVersion: 2
         x: 600
@@ -519,14 +717,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be7e9702016b84b90800000000000000
-      internalID: -7257350619126962197
+      spriteID: c6bd983ad1deb3c20800000000000000
+      internalID: 3187401872848313196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_13
+      name: GameOver Sprites3 (Dress)_23
       rect:
         serializedVersion: 2
         x: 900
@@ -540,14 +738,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14f72837b1d117a80800000000000000
-      internalID: -8470957420367937727
+      spriteID: a248e0486955e8050800000000000000
+      internalID: 5804671074676147242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_14
+      name: GameOver Sprites3 (Dress)_24
       rect:
         serializedVersion: 2
         x: 1200
@@ -561,14 +759,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 973e49dee58d4f260800000000000000
-      internalID: 7130562012258820985
+      spriteID: 6ca662c0e371ed260800000000000000
+      internalID: 7124157215805958854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_15
+      name: GameOver Sprites3 (Dress)_25
       rect:
         serializedVersion: 2
         x: 1500
@@ -582,14 +780,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6c2b2b4d342c47b0800000000000000
-      internalID: -5238772420866003857
+      spriteID: f3e6f507b6af6fb40800000000000000
+      internalID: 5473837736469163583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_16
+      name: GameOver Sprites3 (Dress)_26
       rect:
         serializedVersion: 2
         x: 1800
@@ -603,14 +801,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e566a515b2e2810800000000000000
-      internalID: 1742377734247964174
+      spriteID: 7cfa76c3ecbb4b9b0800000000000000
+      internalID: -5065217186433880121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_17
+      name: GameOver Sprites3 (Dress)_27
       rect:
         serializedVersion: 2
         x: 2100
@@ -624,14 +822,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d137d36ead4e42470800000000000000
-      internalID: 8369065636378014493
+      spriteID: 28ccd8d53998ec430800000000000000
+      internalID: 3805130001197419650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_18
+      name: GameOver Sprites3 (Dress)_28
       rect:
         serializedVersion: 2
         x: 2400
@@ -645,14 +843,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02acee8d94d821a20800000000000000
-      internalID: 3031640847485422112
+      spriteID: 0275bfadc5acfd340800000000000000
+      internalID: 4890850220507354912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_19
+      name: GameOver Sprites3 (Dress)_29
       rect:
         serializedVersion: 2
         x: 2700
@@ -666,119 +864,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fc4ff329acf35050800000000000000
-      internalID: 5788247749484825849
+      spriteID: c1ca3d4c321927a60800000000000000
+      internalID: 7670352698177465372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_20
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 1200
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b748d7d37a63b87d0800000000000000
-      internalID: -2915176241873189765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_21
-      rect:
-        serializedVersion: 2
-        x: 3300
-        y: 1200
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ca2ec847cbae20e0800000000000000
-      internalID: -2292706287876691263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_22
-      rect:
-        serializedVersion: 2
-        x: 3600
-        y: 1200
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9c873348cc37dc30800000000000000
-      internalID: 4384039593087306911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_23
-      rect:
-        serializedVersion: 2
-        x: 3900
-        y: 1200
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d96d0d8eb3d44a3c0800000000000000
-      internalID: -4349266420428646755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_24
-      rect:
-        serializedVersion: 2
-        x: 4200
-        y: 1200
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b508ee3d51597d290800000000000000
-      internalID: -7865654303196807077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_25
+      name: GameOver Sprites3 (Dress)_30
       rect:
         serializedVersion: 2
         x: 0
@@ -792,14 +885,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d5156ab323a4e920800000000000000
-      internalID: 3018717024091444688
+      spriteID: 39afdc6a5244737e0800000000000000
+      internalID: -1785883798726116717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_26
+      name: GameOver Sprites3 (Dress)_31
       rect:
         serializedVersion: 2
         x: 300
@@ -813,14 +906,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1b851a54c0351370800000000000000
-      internalID: 8292587908755720988
+      spriteID: c4166ecf4b324a270800000000000000
+      internalID: 8260766876748374348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_27
+      name: GameOver Sprites3 (Dress)_32
       rect:
         serializedVersion: 2
         x: 600
@@ -834,14 +927,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54426529563896fc0800000000000000
-      internalID: -3501122763033795515
+      spriteID: aa54b020cad52cfa0800000000000000
+      internalID: -5781955978240244310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_28
+      name: GameOver Sprites3 (Dress)_33
       rect:
         serializedVersion: 2
         x: 900
@@ -855,14 +948,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96a98d3c98c02c730800000000000000
-      internalID: 4017787603403709033
+      spriteID: 42ea699b2616010f0800000000000000
+      internalID: -1148310828331127260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_29
+      name: GameOver Sprites3 (Dress)_34
       rect:
         serializedVersion: 2
         x: 1200
@@ -876,14 +969,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0b3f4039a5ced10800000000000000
-      internalID: 2156197909093396671
+      spriteID: cc394bf13b507e8c0800000000000000
+      internalID: -3970198279614590004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_30
+      name: GameOver Sprites3 (Dress)_35
       rect:
         serializedVersion: 2
         x: 1500
@@ -897,14 +990,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 271aa19a4f25e0c90800000000000000
-      internalID: -7201727543356251790
+      spriteID: 6b85eec7f426cd580800000000000000
+      internalID: -8801051478250858314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_31
+      name: GameOver Sprites3 (Dress)_36
       rect:
         serializedVersion: 2
         x: 1800
@@ -918,14 +1011,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fa7a4544d00710c0800000000000000
-      internalID: -4605211182267467017
+      spriteID: 8d0559c71ff652610800000000000000
+      internalID: 1595804725940670680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_32
+      name: GameOver Sprites3 (Dress)_37
       rect:
         serializedVersion: 2
         x: 2100
@@ -939,14 +1032,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe99ed2648e385540800000000000000
-      internalID: 4996812524882926063
+      spriteID: e0af621c0cd792280800000000000000
+      internalID: -9067578107906033138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_33
+      name: GameOver Sprites3 (Dress)_38
       rect:
         serializedVersion: 2
         x: 2400
@@ -960,14 +1053,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dc252c2e35f434c0800000000000000
-      internalID: -4308549296109310767
+      spriteID: 175d9fa1dcfa28320800000000000000
+      internalID: 2558800833755600241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_34
+      name: GameOver Sprites3 (Dress)_39
       rect:
         serializedVersion: 2
         x: 2700
@@ -981,56 +1074,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 352650657f7d70b60800000000000000
-      internalID: 7712370344195351123
+      spriteID: 5c760cb1babe34ec0800000000000000
+      internalID: -3583761758319253563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_35
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 600
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cee951497570acd70800000000000000
-      internalID: 9064065272764538604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_36
-      rect:
-        serializedVersion: 2
-        x: 3300
-        y: 600
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51a096aabc0453ec0800000000000000
-      internalID: -3587890284649182699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_37
+      name: GameOver Sprites3 (Dress)_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1044,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 265298ae5333a38b0800000000000000
-      internalID: -5171764915420453534
+      spriteID: 74d82c6a834d3c060800000000000000
+      internalID: 6972649987880684871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameOverSprites(Dress)_38
+      name: GameOver Sprites3 (Dress)_41
       rect:
         serializedVersion: 2
         x: 300
@@ -1065,155 +1116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23ffd31221a771a0800000000000000
-      internalID: -6811798743640181970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_39
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e35c763adc49e29a0800000000000000
-      internalID: -6255899221440346818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_40
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eeb44728179920b10800000000000000
-      internalID: 1946286701776489454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_41
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af02385b9b7b22c70800000000000000
-      internalID: 8944913818153328890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_42
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d068dadd5a97a75e0800000000000000
-      internalID: -1911081338569652723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_43
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7034bf36fb3f97f50800000000000000
-      internalID: 6879797909126857479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_44
-      rect:
-        serializedVersion: 2
-        x: 2100
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81d73d597b47a3110800000000000000
-      internalID: 1241432979135495448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameOverSprites(Dress)_45
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 300
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2b3c0eebd061daf0800000000000000
-      internalID: -373410796387157206
+      spriteID: f73f3a33c36826000800000000000000
+      internalID: 27732140840186751
       vertices: []
       indices: 
       edges: []
@@ -1221,7 +1125,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e42fa26196713a944868c79782365dd0
+    spriteID: f161987803f055e4b93c4d32168d801c
     internalID: 0
     vertices: []
     indices: 
