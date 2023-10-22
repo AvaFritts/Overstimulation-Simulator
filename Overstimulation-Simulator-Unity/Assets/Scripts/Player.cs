@@ -9,8 +9,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //public Sprite idleSprite;
-    //public Sprite walkingSprite;
     [Tooltip("This value is the player's max speed. Their actual speed will vary.")]
     public int playerSpeed = 2;
 
@@ -34,7 +32,6 @@ public class Player : MonoBehaviour
         playerSprites = this.GetComponent<SpriteRenderer>();
         stateControll = this.GetComponent<Animator>();
         currentSpeed = playerSpeed;
-
     }
 
     public void PauseDial()
@@ -48,7 +45,6 @@ public class Player : MonoBehaviour
         dialManager.gaguePaused = false;
         currentSpeed = playerSpeed;
     }
-
 
     // Update is called once per frame
     void Update()
@@ -94,7 +90,7 @@ public class Player : MonoBehaviour
             //set the position
             this.transform.position = pos;
         }
-       
+
     }
     public void GameOverCall()
     {

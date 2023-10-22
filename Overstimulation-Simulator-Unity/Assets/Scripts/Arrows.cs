@@ -18,8 +18,6 @@ public class Arrows : MonoBehaviour
     public Vector3 cameraPositionOffset;
 
     public GameObject playerGO;
-    public bool isBossArrow;
-    public Encounter_Manager bossEnabeler; //only needed for the boss task
 
     // Update is called once per frame
     void Update()
@@ -28,10 +26,6 @@ public class Arrows : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump")) //if the player interacts with it.
             {
-                if (isBossArrow)
-                {
-                    //bossEnabeler.StartEncounter(true);
-                }
                 Debug.Log("Moving up");
                 //update task
 

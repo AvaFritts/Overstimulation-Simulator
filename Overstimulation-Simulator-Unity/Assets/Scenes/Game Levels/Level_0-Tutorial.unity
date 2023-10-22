@@ -2752,10 +2752,14 @@ PrefabInstance:
       propertyPath: maxModifier
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680879704412, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d87f61a4d4a683b49a434a7f11fcd01a, type: 2}
     - target: {fileID: 8045930874417239655, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 730fca50f22aac54a8a0eb820ec89fea, type: 3}
+      objectReference: {fileID: 8300000, guid: c700803ffd895b94ebef26cd41b633d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
 --- !u!1 &1336154493 stripped

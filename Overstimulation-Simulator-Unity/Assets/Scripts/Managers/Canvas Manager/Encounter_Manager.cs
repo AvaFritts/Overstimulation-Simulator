@@ -88,7 +88,6 @@ public class Encounter_Manager : MonoBehaviour
         correctAnswer = currentBattle.activeAnswer;
         enemySprite.GetComponent<Image>().sprite = currentBattle.activeSprite;
 
-
         //disable any sound save for the music, if any. Probably through a boolean.
 
     }

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: Feb 21st, 2023
+// Last edited: October 19th, 2023
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -116,8 +116,6 @@ public class Encounter : MonoBehaviour
 
                 battleCanvas.SetActive(false);
                 //maybe put some text in?
-                meterChecker.gaguePaused = false;
-                meterChecker.buttonPaused = false;
             }
             
         }
@@ -149,9 +147,6 @@ public class Encounter : MonoBehaviour
             questionsAnswered = 0; //reset the boss if you failed it.
         }
         //maybe put some text in?
-
-        meterChecker.gaguePaused = false;
-        meterChecker.buttonPaused = false;
     } //end incorrect response
 
     //pick the answer for the fight.
@@ -160,8 +155,6 @@ public class Encounter : MonoBehaviour
         if (!battleCanvas.activeSelf) //if the encounter isn't already active
         {
             battleCanvas.SetActive(true);
-            meterChecker.gaguePaused = true;
-            meterChecker.buttonPaused = true;
         }
         
 
