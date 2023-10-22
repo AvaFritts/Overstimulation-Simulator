@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Polo
   m_EditorClassIdentifier: 
-  encounterText: "The clinging of metal drowns your ears as you walk closer to the
-    cold booth. The butcher slams his knife as hard as he can, creating a cut so
-    clean you would never tell they were both one piece. He slowly looks up, eyes
-    cold and brow furrowed. \u201CAre you wanting something\u2026\u201D He says in
-    a manner that singles you out."
-  encounterSprite: {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText:
+  - "The clinging of metal drowns your ears as you walk closer to the cold booth.
+    The butcher slams his knife as hard as he can, creating a cut so clean you would
+    never tell they were both one piece. He slowly looks up, eyes cold and brow furrowed.
+    \u201CAre you wanting something\u2026\u201D He says in a manner that singles
+    you out."
+  encounterSprite:
+  - {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
   - Hysterical
   - Distraught
   - Furious
   - Anxious
   punishment: 00000000000000000000000000000000
+  scaryMode: 1
+  isABoss: 0

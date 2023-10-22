@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Moo
   m_EditorClassIdentifier: 
-  encounterText: Your dog walks up, panting with that usual loving expression. It
-    is a good reminder that he wants you to be happy. It is also a good reminder
-    that you only have one shot to get this right
-  encounterSprite: {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  encounterText:
+  - Your dog walks up, panting with that usual loving expression. It is a good reminder
+    that he wants you to be happy. It is also a good reminder that you only have
+    one shot to get this right.
+  encounterSprite:
+  - {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   responses:
   - Happy
   - Sad
   - Annoyed
   - Confused
   punishment: 00000000010000000300000002000000
+  scaryMode: 0
+  isABoss: 0

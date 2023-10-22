@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Marco
   m_EditorClassIdentifier: 
-  encounterText: The butcher is a thin kid, carefully weighing the ham as you approach.
-    It would appear as if it was his first day... Except it isn't. Marco has worked
-    here as long as you can remember. And he spends so long on those darn scales
-    it will be 30 minutes before he notices you unless you speak up.
-  encounterSprite: {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText:
+  - The butcher is a thin kid, carefully weighing the ham as you approach. It would
+    appear as if it was his first day... Except it isn't. Marco has worked here as
+    long as you can remember. And he spends so long on those darn scales it will
+    be 30 minutes before he notices you unless you speak up.
+  encounterSprite:
+  - {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
   - '"Hello? Excuse me?" You say, trying not to come off as rude... No response.
-    This goes on forever, '
+    This goes on forever... '
   - Sad (Cry, getting the attention of more than Marco)
   - Annoyed (Clear your throat, getting his attention)
   - Confused (I have NO idea)
   punishment: 02000000050000000200000003000000
+  scaryMode: 0
+  isABoss: 0

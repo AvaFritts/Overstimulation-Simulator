@@ -1121,9 +1121,10 @@ MonoBehaviour:
   battleCanvas: {fileID: 1121427387}
   meterChecker: {fileID: 634147514}
   isBoss: 1
+  goodTemplate:
+  - {fileID: 11400000, guid: bef04b8505845c04eba221a2d218476f, type: 2}
   winningPunishment: 0
   losingPunishment: 3
-  numberOfQuestions: 4
   associatedSprite:
   - {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   - {fileID: 7499280230440116440, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
@@ -1135,9 +1136,7 @@ MonoBehaviour:
   - Ohh.... that was so wrong of me! What if that happens again?!
   - Relax, Emma. You've got- wait... what was I doing again???
   correctAnswer: 01000000030000000200000004000000
-  scaryEncounterText: []
-  scaryCorrectAnswer: 
-  associatedScarySprite: []
+  scaryTemplate: []
   canActivate: 0
   scaryMode: 0
   questionsAnswered: 0
@@ -1684,6 +1683,14 @@ PrefabInstance:
     - target: {fileID: 4701190611761174868, guid: fd004b01688c74f45b1d0c89809f7c4b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701190613178777898, guid: fd004b01688c74f45b1d0c89809f7c4b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8190276655162729477, guid: fd004b01688c74f45b1d0c89809f7c4b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -230.65503
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd004b01688c74f45b1d0c89809f7c4b, type: 3}
@@ -2638,6 +2645,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1121427388}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: GoodTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: ScaryTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2645,6 +2664,22 @@ PrefabInstance:
       propertyPath: encounterText.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: GoodTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ccbb56db147aa042b6daf34682a3044, type: 2}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ccbb56db147aa042b6daf34682a3044, type: 2}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: ScaryTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e025c912ccd1954fa3570dfd7afdb99, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: associatedSprite.Array.size
       value: 1
@@ -2659,6 +2694,10 @@ PrefabInstance:
         a good reminder that he wants you to be happy. It is also a good reminder
         that you only have one shot to get this right
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e025c912ccd1954fa3570dfd7afdb99, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.size
       value: 1

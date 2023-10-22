@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Michael
+  m_EditorClassIdentifier: 
+  encounterText:
+  - 
+  encounterSprite:
+  - {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  responses:
+  - Happy (Start helping your friend)
+  - Sad (Bad)
+  - FRUSTRATED (pretty bad)
+  - '"Wait, you''re a dog person?" FINISH'
+  punishment: 01000000030000000400000002000000
+  scaryMode: 0
+  isABoss: 0
