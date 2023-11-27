@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cat
   m_EditorClassIdentifier: 
   encounterText:
-  - Oh no! It seems like your overstimulated state has attracted your mischevious
+  - Oh no! It seems like your overstimulated state has attracted your mischievous
     cat. Even if your panic makes it hard to act normally, you still only have one
     shot to get this right
   encounterSprite:

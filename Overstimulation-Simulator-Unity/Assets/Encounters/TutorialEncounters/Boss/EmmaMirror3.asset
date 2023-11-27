@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
-  m_Name: OverStimRestocker
+  m_Name: EmmaMirror3
   m_EditorClassIdentifier: 
   encounterText:
-  - Why aren't they responding? You've tried to get their attention for what feels
-    like hours now. To make matters worse, they are blocking the spot your candy
-    should be in!
+  - Ohh.... that was so wrong of me! What if that happens again?!
   encounterSprite:
-  - {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  - {fileID: 3673132661631725926, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 0}
   responses:
-  - Hysterical
-  - Break down crying
-  - Frustrated
-  - Panic
-  punishment: 00000000040000000000000000000000
-  scaryMode: 1
+  - 
+  - 
+  - 
+  - 
+  punishment: 00000000000000000000000000000000
+  scaryMode: 0
   isABoss: 0

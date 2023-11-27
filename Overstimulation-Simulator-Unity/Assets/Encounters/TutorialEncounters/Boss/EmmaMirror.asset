@@ -24,20 +24,21 @@ MonoBehaviour:
   - {fileID: -7113875076880919210, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   responses:
   - CORRECT RESPONSE
-  - Sad
-  - Frustrated
-  - Confused
-  - Happy
-  - Sad
+  - And then there's the funeral next week... man...
+  - Ugh... Maybe I shouldn't ruin it by going outside...
+  - Wait, did I get all of my keys?
+  - '"You are the idiot!" Okay, those thoughts are gone... What else do I need to
+    do?'
+  - Maybe it is best I don't go outside today...
   - CORRECT ANSWER
-  - Confused
-  - Happy
+  - Wait- did I feed the cat?
+  - I can just ignore those thoughts! ...right?
   - CORRECT ANSWER
-  - Frustrated
-  - Confused
-  - Hapy
-  - Sad
-  - Frustrated
+  - I just- UGH! You ALWAYS do this, Emma!
+  - Wait... if what happens again? I can't remember now...
+  - Maybe I can check my to-do list! That always helps me!
+  - Of course, I always forget this stuff... Back to square one, I suppose...
+  - Ugh- I really need to remember this stuff!
   - CORRECT ANSWER
   punishment: 00000000010000000100000001000000010000000100000000000000010000000100000000000000010000000100000001000000010000000100000000000000
   scaryMode: 0

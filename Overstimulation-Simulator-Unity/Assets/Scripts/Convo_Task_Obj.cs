@@ -10,8 +10,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Conversation", menuName = "Asset/Encounter")]
 public class Convo_Task_Obj : ScriptableObject
 {
+    //MAKE SINGLE LINES, NOT ARRAYS
     public string[] encounterText;
     public Sprite[] encounterSprite;
+    public Convo_Task_Obj nextQuestion;
 
     //After pressing a button
     public string[] responses;

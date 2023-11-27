@@ -23,10 +23,22 @@ public class Task : MonoBehaviour
     [Space(10)]
 
     public GameObject taskParent;
-    public GameObject[] taskChildren;
+    public GameObject[] taskChildren; //
 
     [Header("Set Dynamically")]
     public int itemsCollected;
+
+    public void Start()
+    {
+        foreach (GameObject child in taskChildren)
+        {
+            Collectible col = child.GetComponent<Collectible>();
+            if (col != null)
+            {
+                col.associatedTask = this;
+            }
+        }
+    }
 
     public string CurrentText()
     {
@@ -37,7 +49,7 @@ public class Task : MonoBehaviour
         return taskDescription + " [" + itemsCollected + "/" + numItems + "]";
     }
 
-    // Update is called once per frame
+    // UpdateTask is called when part of a task is Completed
     public void UpdateTask()
     {
         itemsCollected++;

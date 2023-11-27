@@ -18,7 +18,7 @@ public class StimulationSource : MonoBehaviour
 
     [Space(10)]
 
-    public Overstimulation overstimGO;
+    //public Overstimulation overstimGO;
     public GameObject playerChar;
 
     [Space(10)]

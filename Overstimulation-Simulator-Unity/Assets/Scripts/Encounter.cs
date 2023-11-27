@@ -6,12 +6,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Encounter : MonoBehaviour
 {
     //VARIABLES//
-    GameManager GM;
 
     [Header("Set in Inspector")]
     public Task associatedTask;
@@ -31,6 +31,7 @@ public class Encounter : MonoBehaviour
     [Tooltip("Even good conversations can be stimulation. The value should be less than a bad one, though.")]
     public float winningPunishment;
     public float losingPunishment;
+    //public UnityEvent Example;
 
     [Space(10)]
 
@@ -112,7 +113,7 @@ public class Encounter : MonoBehaviour
     public void CorrectResponse() //Only used for Bosses
     {
         questionsAnswered++;
-        if (questionsAnswered >= conversationStarter.currentTemplate.encounterText.Length)
+        if (questionsAnswered >= conversationStarter.currentTemplate.encounterText.Length) //change to look for null linked list
         {
             GameManager.GM.playerWon = true;
         }
@@ -191,6 +192,7 @@ public class Encounter : MonoBehaviour
             conversationStarter.currentTemplate = goodTemplate[0];
         }
         conversationStarter.StartEncounter(); //starts an encounter.
+        //Example.Invoke(); //
     }//end pick answers
 
     public void SendConversationData()

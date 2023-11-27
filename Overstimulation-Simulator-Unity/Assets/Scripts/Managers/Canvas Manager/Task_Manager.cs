@@ -12,7 +12,7 @@ public class Task_Manager : MonoBehaviour
 {
     //Variables//
 
-    GameManager GM; //I plan to move certain variables to the game Manager, which means this will soon be needed.
+    //GameManager GM; //I plan to move certain variables to the game Manager, which means this will soon be needed.
 
     [Header("Tasks: Set in Inspector")]
     public List<GameObject> tasks;
@@ -111,6 +111,7 @@ public class Task_Manager : MonoBehaviour
         if(numberTasks <= 0) //if you have finished all the tasks
         {
             InitializeBossTask();
+            //tasks finished event invoke
         }
     } //end FinishedTask
 

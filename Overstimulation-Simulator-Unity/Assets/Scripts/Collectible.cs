@@ -12,8 +12,6 @@ public class Collectible : MonoBehaviour
 
     private bool isPaused = true; //if the player isn't in range, it "pauses" the effects
 
-    GameManager GM;
-
     public Task associatedTask;
    
     // Update is called once per frame
@@ -28,7 +26,7 @@ public class Collectible : MonoBehaviour
 
                 associatedTask.UpdateTask(); //update the task value
 
-                this.gameObject.SetActive(false);
+                this.gameObject.SetActive(false); //SET TO AN EVENT.
             }
         }
     }

@@ -20,10 +20,11 @@ MonoBehaviour:
   encounterSprite:
   - {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
-  - '"Hello? Excuse me?" You say, trying not to come off as rude... No response.
-    This goes on forever... '
+  - '"Hello? Excuse me?" You say, trying not to come off as rude... and of course
+    he doesn''t hear you. This goes on forever... You can get your fish next week'
   - Sad (Cry, getting the attention of more than Marco)
-  - Annoyed (Clear your throat, getting his attention)
+  - You clear your throat, making sure you don't come off as furious. "Hey, Marco?"
+    You speak at a louder tone than normal. It worked, and getting his attention)
   - Confused (I have NO idea)
   punishment: 02000000050000000200000003000000
   scaryMode: 0

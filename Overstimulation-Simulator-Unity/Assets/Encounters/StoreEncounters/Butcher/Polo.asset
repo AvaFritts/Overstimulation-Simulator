@@ -22,9 +22,11 @@ MonoBehaviour:
   - {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
   - Hysterical
-  - Distraught
+  - Shaking, you carefully walk up to the deli counter. However, you are unable to
+    get a word out under his glare without bursting into tears.
   - Furious
-  - Anxious
-  punishment: 00000000000000000000000000000000
+  - You know what? You don't need to get ham until next week... You quickly leave
+    the deli.
+  punishment: 04000000040000000300000002000000
   scaryMode: 1
   isABoss: 0

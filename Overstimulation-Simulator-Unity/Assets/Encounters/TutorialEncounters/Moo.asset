@@ -19,7 +19,8 @@ MonoBehaviour:
   encounterSprite:
   - {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   responses:
-  - Happy
+  - You happily pat your knees, watching as your dog sits as always. A good boy needs
+    good pets, right?
   - Sad
   - Annoyed
   - Confused

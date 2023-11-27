@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Adam
   m_EditorClassIdentifier: 
-  encounterText: []
+  encounterText:
+  - Adam looks up from his phone. His brow furrows as he makes out who you are. 'DON'T
+    YOU SEE I'M ON BREAK?!' he says. His gaze pierces your soul as he waits for your
+    response.
   encounterSprite:
-  - {fileID: 0}
+  - {fileID: 458983883660841382, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
   - Hysterical
   - Break down crying
-  - (FINISH THIS) CAN'T YOU SEE I'M TRYING TO TALK TO YOU?!
+  - '''CAN''T YOU SEE I''M TRYING TO TALK TO YOU?!'' The two of you argue like this
+    forever... you leave feeling worse than you did before'
   - Panic apologize and go away.
-  punishment: 00000000000000000000000001000000
-  scaryMode: 0
+  punishment: 00000000000000000400000001000000
+  scaryMode: 1
   isABoss: 0

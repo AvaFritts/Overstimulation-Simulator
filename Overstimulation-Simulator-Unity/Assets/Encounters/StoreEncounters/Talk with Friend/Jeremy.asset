@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Jeremy
   m_EditorClassIdentifier: 
   encounterText:
-  - 
+  - Jeremy is buying flowers and a bittersweet card. He doesn't seem to notice anyone.
+    After a while of trying to get his attention, he looks up, sorrowful. He tells
+    you that his grandfather recently passed from disease, and the gifts are for
+    his mother, who hasn't been the same since.
   encounterSprite:
-  - {fileID: 0}
+  - {fileID: 7396088475455461908, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   responses:
   - Missing the Point (MAYBE?)
   - Sympathetic Reaction

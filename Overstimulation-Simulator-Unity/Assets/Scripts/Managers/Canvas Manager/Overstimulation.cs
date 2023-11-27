@@ -69,8 +69,9 @@ public class Overstimulation : MonoBehaviour
             {
                 currentStimMult = StimulationUpdater();
                 stimulationGauge.value += currentStimMult * Time.deltaTime;
-                if (stimulationGauge.value.Equals(stimulationGauge.maxValue))
+                if (stimulationGauge.value >= stimulationGauge.maxValue)
                 {
+                    //MOVE TO PRIVATE DEATH FUNCTION
                     smallButton.interactable = false;
                     mediumButton.interactable = false;
                     largeButton.interactable = false;
@@ -81,7 +82,7 @@ public class Overstimulation : MonoBehaviour
                 }
             }
 
-            //Timer logic
+            //Timer logic. CHANGE TO THREE PASSES OF ONE FUNCTION;
             if(smallButton.interactable == false)
             {
                 smallImage.fillAmount = Mathf.Clamp(smallImage.fillAmount + smallTimerDuration * Time.deltaTime, 0, 1);   
