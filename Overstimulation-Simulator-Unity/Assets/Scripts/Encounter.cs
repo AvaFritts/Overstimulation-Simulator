@@ -113,6 +113,10 @@ public class Encounter : MonoBehaviour
     public void CorrectResponse() //Only used for Bosses
     {
         questionsAnswered++;
+       /* if(conversationStarter.currentTemplate.nextQuestion = null)
+        {
+
+        }*/
         if (questionsAnswered >= conversationStarter.currentTemplate.encounterText.Length) //change to look for null linked list
         {
             GameManager.GM.playerWon = true;
@@ -138,7 +142,7 @@ public class Encounter : MonoBehaviour
 
         if (!isBoss)
         {
-            associatedTask.UpdateTask();
+            associatedTask.UpdateTask(); //wait why do I have this in a Boss Exclusive piece?
         }
         else
         {
@@ -147,16 +151,28 @@ public class Encounter : MonoBehaviour
         //maybe put some text in?
     } //end incorrect response
 
-    //pick the answer for the fight.
-    public void PickAnswers()
+    public void BattleStart()
     {
-        if (!battleCanvas.activeSelf) //if the encounter isn't already active
+        //Put in here EVERYTHING in the "Pick Answers" task that SHOULD ONLY BE DONE ONCE PER BATTLE.
+        if (!battleCanvas.activeSelf) //if the encounter isn't already active. MOVE TO BATTLE START
         {
             battleCanvas.SetActive(true);
             battleCamera.SetActive(true);
         }
 
-        if (!isBoss) //One day I'll have "Scary Bosses"
+    }
+
+    //pick the answer for the fight.
+    public void PickAnswers() //Way too cluttered.
+    {
+        //I think I should make the "first time set-up" on a different piece.
+        if (!battleCanvas.activeSelf) //if the encounter isn't already active. MOVE TO BATTLE START
+        {
+            battleCanvas.SetActive(true);
+            battleCamera.SetActive(true);
+        }
+
+        if (!isBoss) //One day I'll have "Scary Bosses" (if "questions answered = 0", do this)
         {
             //if the gague is over 75%
             if (meterChecker.stimulationGauge.value >= (meterChecker.stimulationGauge.maxValue * 3 / 4))
@@ -177,12 +193,6 @@ public class Encounter : MonoBehaviour
                 int taskPicked = Random.Range(0, goodTemplate.Length);
                 //Debug.Log(taskPicked);
                 conversationStarter.currentTemplate = goodTemplate[taskPicked];
-
-                /* int taskPicked = Random.Range(0, encounterText.Length); //picks a random task
-                 activeString = encounterText[taskPicked];
-                 activeAnswer = correctAnswer[taskPicked];
-                 activeSprite = associatedSprite[taskPicked]; */
-
             }
 
         } //end "If encounter isn't a boss"

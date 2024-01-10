@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: KarenCashier2
   m_EditorClassIdentifier: 
-  encounterText: []
-  encounterSprite: []
+  encounterText:
+  - 
+  encounterSprite:
+  - {fileID: 0}
   nextQuestion: {fileID: 0}
-  responses: []
-  punishment: 
+  responses:
+  - 
+  - 
+  - 
+  - 
+  punishment: 00000000000000000000000000000000
   scaryMode: 0
-  isABoss: 0
+  isABoss: 1

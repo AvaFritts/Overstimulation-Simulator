@@ -21,7 +21,7 @@ public class Convo_Task_Obj : ScriptableObject
 
     [Tooltip("Check this if the encounter is used when Emma is Overstimulated")]
     public bool scaryMode;
-    public bool isABoss;
+    public bool isABoss; //I have a thing written down where they "get" the next one and return if it != null.
 
     //Idea: put the nextQuestion method in the boss object. Idk if the boss will use this object.
 }

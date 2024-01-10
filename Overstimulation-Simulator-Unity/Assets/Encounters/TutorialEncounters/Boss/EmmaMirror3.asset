@@ -16,12 +16,12 @@ MonoBehaviour:
   - Ohh.... that was so wrong of me! What if that happens again?!
   encounterSprite:
   - {fileID: 3673132661631725926, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
-  nextQuestion: {fileID: 0}
+  nextQuestion: {fileID: 11400000, guid: 159930329bd0add46a91b19254fde8fa, type: 2}
   responses:
-  - 
-  - 
-  - 
-  - 
-  punishment: 00000000000000000000000000000000
+  - I can just ignore those thoughts! ...right?
+  - CORRECT ANSWER
+  - I just- UGH! You ALWAYS do this, Emma!
+  - Wait... if what happens again? I can't remember now...
+  punishment: 01000000000000000100000001000000
   scaryMode: 0
-  isABoss: 0
+  isABoss: 1
