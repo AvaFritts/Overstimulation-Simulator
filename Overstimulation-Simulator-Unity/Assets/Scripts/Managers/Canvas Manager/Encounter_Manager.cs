@@ -98,8 +98,8 @@ public class Encounter_Manager : MonoBehaviour
 
 
         //put up the current question, set the correct answer, and change the sprite accordingly.
-        battleQuestion.text = currentTemplate.encounterText[numberOfQuestions];
-        currentSprite = currentTemplate.encounterSprite[numberOfQuestions]; //this line only exists because it was giving me weird errors otherwise.
+        battleQuestion.text = currentTemplate.encounterText[0];
+        currentSprite = currentTemplate.encounterSprite[0]; //this line only exists because it was giving me weird errors otherwise.
         enemySprite.GetComponent<Image>().sprite = currentSprite;
     }
 
@@ -109,14 +109,14 @@ public class Encounter_Manager : MonoBehaviour
     //One idea: Put a communicator script *on a special button* that I use to close out the encounter.
     public void SubmittedAnswer (int choice)
     {
-        currentPunishment = currentTemplate.punishment[choice + (4 * numberOfQuestions)];
+        currentPunishment = currentTemplate.punishment[choice];
         if (currentTemplate.isABoss && currentPunishment == 0)
         {
             finishedFight = true;
         }
         else
         {
-            battleQuestion.text = currentTemplate.responses[choice + (4 * numberOfQuestions)];
+            battleQuestion.text = currentTemplate.responses[choice];
             for (int i = 0; i < 4; i++)
             {
                 //theFourButtons[i].text = theAnxiousChoices[i];

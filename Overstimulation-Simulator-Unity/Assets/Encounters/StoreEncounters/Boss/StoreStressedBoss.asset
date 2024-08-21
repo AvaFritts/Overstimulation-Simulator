@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
-  m_Name: William
+  m_Name: StoreStressedBoss
   m_EditorClassIdentifier: 
   encounterText:
-  - William looks at his PDA, shaking slightly as he searches his stock for the next
-    box of candy. Looks like one wrong move could scare him.
+  - What Do I pick for this???
   encounterSprite:
-  - {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  - {fileID: 0}
   nextQuestion: {fileID: 0}
   responses:
-  - You carefully go into his view, SOMETHING
   - 
-  - Well... you scared him.
   - 
-  punishment: 01000000010000000400000001000000
-  scaryMode: 0
-  isABoss: 0
+  - 
+  - 
+  punishment: 00000000000000000000000000000000
+  scaryMode: 1
+  isABoss: 1

@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
-  m_Name: William
+  m_Name: EmmaStressed4Distraught
   m_EditorClassIdentifier: 
   encounterText:
-  - William looks at his PDA, shaking slightly as he searches his stock for the next
-    box of candy. Looks like one wrong move could scare him.
+  - 'Sad: EMMA BREAKS DOWN IN TEARS'
   encounterSprite:
-  - {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  - {fileID: 3673132661631725926, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - You carefully go into his view, SOMETHING
-  - 
-  - Well... you scared him.
-  - 
-  punishment: 01000000010000000400000001000000
-  scaryMode: 0
-  isABoss: 0
+  - '*But this crying turns into an insane laughter... thank goodness nobody was
+    there to witness this.*'
+  - CORRECT RESPONSE
+  - Fury
+  - Fear
+  punishment: 01000000000000000100000001000000
+  scaryMode: 1
+  isABoss: 1

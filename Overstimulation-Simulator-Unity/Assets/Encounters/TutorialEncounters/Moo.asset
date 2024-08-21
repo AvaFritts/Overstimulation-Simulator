@@ -18,12 +18,16 @@ MonoBehaviour:
     one shot to get this right.
   encounterSprite:
   - {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 0}
   responses:
   - You happily pat your knees, watching as your dog sits as always. A good boy needs
     good pets, right?
-  - Sad
-  - Annoyed
-  - Confused
+  - You walk over and begin to pet... but you can only think about the pets of days
+    gone by. A tear rolls down your face.
+  - Ugh... of all the times your dog comes by... why now?! You're running late! You
+    rush by, not even giving him the time of day. . . you'll regret that later.
+  - Before you can even get your hand on the dog's head, you stop. Did you get all
+    of your keys? Does he have enough food?
   punishment: 00000000010000000300000002000000
   scaryMode: 0
   isABoss: 0

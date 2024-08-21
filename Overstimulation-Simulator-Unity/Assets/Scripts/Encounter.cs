@@ -71,7 +71,7 @@ public class Encounter : MonoBehaviour
                 if (Input.GetButtonDown("Jump")) //if the player interacts with it.
                 {
                     //Initiate human interaction.
-                    PickAnswers(); //starts an encounter.
+                    BattleStart(); //starts an encounter.
                 }
             }
             else if (GameManager.GM.gameState == GameManager.gameStates.Battle)
@@ -113,17 +113,18 @@ public class Encounter : MonoBehaviour
     public void CorrectResponse() //Only used for Bosses
     {
         questionsAnswered++;
-       /* if(conversationStarter.currentTemplate.nextQuestion = null)
-        {
-
-        }*/
-        if (questionsAnswered >= conversationStarter.currentTemplate.encounterText.Length) //change to look for null linked list
+       if(conversationStarter.currentTemplate.nextQuestion == null)
         {
             GameManager.GM.playerWon = true;
         }
+        /**if (questionsAnswered >= conversationStarter.currentTemplate.encounterText.Length) //change to look for null linked list
+        {
+            GameManager.GM.playerWon = true;
+        }**/
         else //only happens in bosses
         {
-            PickAnswers();
+            Debug.Log("Moving to next set! We are using " + conversationStarter.currentTemplate);
+            NextSet();
         }
 
     } //end correct response
@@ -158,22 +159,17 @@ public class Encounter : MonoBehaviour
         {
             battleCanvas.SetActive(true);
             battleCamera.SetActive(true);
+            PickAnswers();
         }
 
     }
 
-    //pick the answer for the fight.
+    //pick the FIRST SET OF ANSWERS for the fight.
     public void PickAnswers() //Way too cluttered.
     {
-        //I think I should make the "first time set-up" on a different piece.
-        if (!battleCanvas.activeSelf) //if the encounter isn't already active. MOVE TO BATTLE START
-        {
-            battleCanvas.SetActive(true);
-            battleCamera.SetActive(true);
-        }
 
-        if (!isBoss) //One day I'll have "Scary Bosses" (if "questions answered = 0", do this)
-        {
+        //if (!isBoss) //One day I'll have "Scary Bosses" (if "questions answered = 0", do this)
+        //{
             //if the gague is over 75%
             if (meterChecker.stimulationGauge.value >= (meterChecker.stimulationGauge.maxValue * 3 / 4))
             {
@@ -181,10 +177,6 @@ public class Encounter : MonoBehaviour
 
                 int taskPicked = Random.Range(0, scaryTemplate.Length);
                 conversationStarter.currentTemplate = scaryTemplate[taskPicked];
-                /*int taskPicked = Random.Range(0, scaryEncounterText.Length); //picks a random task //Change to the template.
-                activeString = scaryEncounterText[taskPicked];
-                activeAnswer = scaryCorrectAnswer[taskPicked];
-                activeSprite = associatedScarySprite[taskPicked];*/
             }
             else
             {
@@ -195,15 +187,23 @@ public class Encounter : MonoBehaviour
                 conversationStarter.currentTemplate = goodTemplate[taskPicked];
             }
 
-        } //end "If encounter isn't a boss"
-        else //if it is a boss encounter
+        //} //end "If encounter isn't a boss"
+        /**else //if it is a boss encounter
         {
             conversationStarter.numberOfQuestions = questionsAnswered;
             conversationStarter.currentTemplate = goodTemplate[0];
-        }
+        }**/
         conversationStarter.StartEncounter(); //starts an encounter.
-        //Example.Invoke(); //
+        //Example.Invoke();
     }//end pick answers
+
+    //Move to the next question.
+    public void NextSet()
+    {
+        conversationStarter.currentTemplate = conversationStarter.currentTemplate.nextQuestion;
+        conversationStarter.StartEncounter();
+    }
+
 
     public void SendConversationData()
     {

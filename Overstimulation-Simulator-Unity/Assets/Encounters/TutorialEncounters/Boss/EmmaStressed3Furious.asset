@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
-  m_Name: KarenCashier2
+  m_Name: EmmaStressed3Furious
   m_EditorClassIdentifier: 
   encounterText:
-  - 
+  - Oh come ON Emma! You ALWAYS DO THIS! WHY CAN'T YOU STOP THINKING ABOUT THIS?!
   encounterSprite:
-  - {fileID: 0}
-  nextQuestion: {fileID: 0}
+  - {fileID: 7499280230440116440, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 11400000, guid: f6afc3eae8540ac41bc759a40657dd40, type: 2}
   responses:
-  - 
-  - 
-  - 
-  - 
-  punishment: 00000000000000000000000000000000
-  scaryMode: 0
+  - Hysterical
+  - You're... such an idiot, Emma...
+  - CORRECT RESPONSE
+  - Fear
+  punishment: 01000000010000000000000001000000
+  scaryMode: 1
   isABoss: 1

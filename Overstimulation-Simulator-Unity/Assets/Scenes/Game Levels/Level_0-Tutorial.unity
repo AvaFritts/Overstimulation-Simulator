@@ -1136,7 +1136,8 @@ MonoBehaviour:
   - Ohh.... that was so wrong of me! What if that happens again?!
   - Relax, Emma. You've got- wait... what was I doing again???
   correctAnswer: 01000000030000000200000004000000
-  scaryTemplate: []
+  scaryTemplate:
+  - {fileID: 11400000, guid: 4df847e032eab2b479ea727cceec36a3, type: 2}
   canActivate: 0
   scaryMode: 0
   questionsAnswered: 0
