@@ -23,11 +23,17 @@ MonoBehaviour:
   responses:
   - '"Hello? Excuse me?" You say, trying not to come off as rude... and of course
     he doesn''t hear you. This goes on forever... You can get your fish next week'
-  - Sad (Cry, getting the attention of more than Marco)
+  - You try your best, but you feel like you're always being ignored. "H-hello?"
+    you ask, tears coming down your face. The longer you wait, the more you start
+    to cry... god, you hate that sound. You're unable to keep it together as more
+    and more start to stare...
   - You clear your throat, making sure you don't come off as furious. "Hey, Marco?"
     You speak at a louder tone than normal. It worked, and after some brief apologies,
     you get exactly the cut you need.
-  - Confused (I have NO idea)
+  - You wish you knew what to do, but you don't. You never have and never will...
+    so you just look around the display, knowing very well you stick out like a sore
+    thumb. He eventually notices you, but by now you are wishing you didn't wait
+    at all.
   punishment: 02000000050000000200000003000000
   scaryMode: 0
   isABoss: 0

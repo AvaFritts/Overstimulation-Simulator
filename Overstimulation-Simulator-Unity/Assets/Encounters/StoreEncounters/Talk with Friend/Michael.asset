@@ -19,11 +19,16 @@ MonoBehaviour:
     advice on getting supplies.
   encounterSprite:
   - {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
   responses:
-  - Happy (Start helping your friend)
+  - You smile, constantly congratulating Michael on his new pup. You almost forget
+    you have your own groceries to attend to as the two of you spend a lot of time
+    picking out supplies for the pooch.
   - Sad (Bad)
   - FRUSTRATED (pretty bad)
-  - '"Wait, you''re a dog person?" FINISH'
+  - '"Wait, you''re a dog person?" you ask. He smiles, reminding you of the times
+    you two talked forever about breeds you wanted to own. The whole thing goes smoothly,
+    but you feel like a bit stupid for asking.'
   punishment: 01000000030000000400000002000000
   scaryMode: 0
   isABoss: 0

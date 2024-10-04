@@ -20,11 +20,15 @@ MonoBehaviour:
     you out."
   encounterSprite:
   - {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
   responses:
-  - Hysterical
+  - You put on your best face and try to talk aw well as you can, but you know your
+    smile is forced... you will regret your incoherent questions for years. Maybe
+    it was best you just stayed away.
   - Shaking, you carefully walk up to the deli counter. However, you are unable to
     get a word out under his glare without bursting into tears.
-  - Furious
+  - Your mind is set. Nothing can stop you. You get to the counter and start screaming
+    about how unapproachable he is being.
   - You know what? You don't need to get ham until next week... You quickly leave
     the deli.
   punishment: 04000000040000000300000002000000

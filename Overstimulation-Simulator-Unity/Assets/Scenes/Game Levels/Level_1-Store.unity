@@ -1302,9 +1302,9 @@ MonoBehaviour:
   battleCanvas: {fileID: 1083520939}
   meterChecker: {fileID: 708760818}
   isBoss: 1
+  goodTemplate: []
   winningPunishment: 0
   losingPunishment: 5
-  numberOfQuestions: 3
   associatedSprite:
   - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   - {fileID: 21300000, guid: 8f7dc1e8297828146b4e4d3a6979a981, type: 3}
@@ -1325,9 +1325,7 @@ MonoBehaviour:
     insert and remove your card. As you start to head out, they say one last thing:
     ''Thank you for shopping at Stimmart! Hope to see you again!'''
   correctAnswer: 030000000400000001000000
-  scaryEncounterText: []
-  scaryCorrectAnswer: 
-  associatedScarySprite: []
+  scaryTemplate: []
   canActivate: 0
   scaryMode: 0
   questionsAnswered: 0
@@ -1586,6 +1584,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1083520940}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1593,6 +1595,14 @@ PrefabInstance:
       propertyPath: encounterText.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 589c38ec1ac47a7428eace07e37f91f7, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: associatedSprite.Array.size
       value: 1
@@ -1618,6 +1628,10 @@ PrefabInstance:
         become less tense. He explains that he had gotten his first dog and would
         like your advice on getting supplies
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f1342df14b6338c4085cf605237adb2f, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.size
       value: 1
@@ -5949,6 +5963,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1083520940}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5956,6 +5974,14 @@ PrefabInstance:
       propertyPath: encounterText.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 62e80ad7f0656874f8a9fa537b8f531d, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: associatedSprite.Array.size
       value: 1
@@ -5982,6 +6008,10 @@ PrefabInstance:
         become less tense. He explains that he had gotten his first dog and would
         like your advice on getting supplies
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5004a89f8f5a8404caa18c6996bbc99c, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.size
       value: 1
@@ -6699,6 +6729,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1083520940}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: correctAnswer.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -6706,6 +6740,18 @@ PrefabInstance:
       propertyPath: encounterText.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 12b33a4e52cccc24491e50c4ec900859, type: 2}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: goodTemplate.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: efe5f6eaf144f584592d06e1292a271e, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: associatedSprite.Array.size
       value: 2
@@ -6732,6 +6778,10 @@ PrefabInstance:
         become less tense. He explains that he had gotten his first dog and would
         like your advice on getting supplies
       objectReference: {fileID: 0}
+    - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: scaryTemplate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: c88425449f09c2f46bf451e1a15591f5, type: 2}
     - target: {fileID: 825243680355444102, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: scaryCorrectAnswer.Array.size
       value: 1
@@ -7094,7 +7144,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3787471121528573389, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -402.75467
+      value: -402.75464
       objectReference: {fileID: 0}
     - target: {fileID: 3787471121528573390, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_IsActive

@@ -19,9 +19,10 @@ MonoBehaviour:
   nextQuestion: {fileID: 11400000, guid: 7073b518738c30640a4a726d03bfd0e9, type: 2}
   responses:
   - CORRECT RESPONSE
-  - SOMETHING DISTRAUGHT
+  - No, no! I- I can't do it! I'm a fraud!
   - As if that wasn't what you needed to do EVERY SINGLE DAY!
-  - It isn't like they're going to see I'm faking it, right?
-  punishment: 00000000010000000100000001000000
+  - It isn't like they're going to see I'm faking it, right? Oh god what would they
+    do?!
+  punishment: 00000000020000000200000001000000
   scaryMode: 1
   isABoss: 1
