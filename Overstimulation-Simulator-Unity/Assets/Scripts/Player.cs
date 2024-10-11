@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: Feb 12th 2023
+// Last edited: Oct 4th 2024
 //Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer playerSprites;
     public GameObject overstimManagerObj;
     public Overstimulation dialManager;
+    Vector3 pos;
 
     GameManager GM;
     private void Awake()
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
         playerSprites = this.GetComponent<SpriteRenderer>();
         stateControll = this.GetComponent<Animator>();
         currentSpeed = playerSpeed;
+        pos = transform.position;
     }
 
     public void PauseDial()
@@ -49,7 +51,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;
 
         //I don't want anyone walking during a fight.
         if (GameManager.GM.gameState != GameManager.gameStates.Battle)
