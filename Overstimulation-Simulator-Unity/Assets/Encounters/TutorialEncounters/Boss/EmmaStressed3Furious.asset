@@ -18,10 +18,11 @@ MonoBehaviour:
   - {fileID: 7499280230440116440, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 11400000, guid: f6afc3eae8540ac41bc759a40657dd40, type: 2}
   responses:
-  - Hysterical
+  - She slowly starts laughing, unable to face the failure of her own mental state...
   - You're... such an idiot, Emma...
   - CORRECT RESPONSE
-  - Fear
-  punishment: 01000000010000000000000001000000
+  - Chills run down Emma's spine, again and again as she struggles to calm herself
+    down. She runs off, afraid she will hurt something.
+  punishment: 02000000010000000000000003000000
   scaryMode: 1
   isABoss: 1

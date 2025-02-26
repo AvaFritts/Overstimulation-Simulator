@@ -25,7 +25,8 @@ MonoBehaviour:
   - 'Without missing a beat, you say: ''Nope! And I don''t care to be!'' ...the silence
     is deafening. Neither of you speak another word for the rest of the encounter.
     You really wish you could start again.'
-  - sad
+  - '"N-no? Was... was I supposed to?!" you ask, trying to figure out if being unaware
+    is a bad thing... you don''t even realize people are cutting in front of you.'
   - frusrated (Some response Emma Comes to Regret)
   - CORRECT RESPONSE
   punishment: 01000000020000000400000000000000

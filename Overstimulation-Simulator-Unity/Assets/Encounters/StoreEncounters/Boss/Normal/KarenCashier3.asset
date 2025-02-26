@@ -23,7 +23,8 @@ MonoBehaviour:
   responses:
   - CORRECT RESPONSE
   - Sad
-  - Furstrated (One of the bags rips open, so you have to try again)
+  - You swipe the bags out of the cashier's hands, Furstrated (One of the bags rips
+    open, so you have to try again)
   - As you start to walk out, the dread hits you... "Did you buy everything on your
     list?" You rush back inside, afraid to know the answer.
   punishment: 00000000010000000400000002000000
