@@ -19,10 +19,16 @@ MonoBehaviour:
   - {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - You carefully go into his view, SOMETHING
-  - 
-  - Well... you scared him.
-  - 
-  punishment: 01000000010000000400000001000000
+  - You carefully go into his view, smiling as you do what you trained yourself to
+    do. You get the instructions, unable to forget how he smiled when you left. You
+    feel good.
+  - You try to get the courage up to speak, but seeing him tremble makes <i>you</i>
+    to tremble. You decide to look for it yourself, enduring the store as it is.
+  - Well... you scared him. You thought that tap and yell wasn't loud... but it was
+    <i>very</i> loud. You go the rest of your day, wondering if you could have done
+    better.
+  - '"Um, excuse me?" You see him jump, but your quick apologies calm him down. You
+    are able to get the directions as quickly as you could dream of.'
+  punishment: 01000000020000000300000001000000
   scaryMode: 0
   isABoss: 0

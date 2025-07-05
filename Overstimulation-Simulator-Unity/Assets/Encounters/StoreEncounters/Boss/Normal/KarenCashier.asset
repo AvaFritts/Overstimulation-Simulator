@@ -15,9 +15,9 @@ MonoBehaviour:
   encounterText:
   - 'The Cashier waves as you approach their aisle, a small section of droning beeps
     and conversations. They smile while you put your items on the captivating conveyer
-    belt. ''Hello! Did you find everything you were looking for??'' As you look at
+    belt. "Hello! Did you find everything you were looking for??" As you look at
     the list you folded in your bag, you realize: Yeah... you did find everything!
-    Except for that darn block of cheese.'
+    Except for that <i>darn block of cheese.</i>'
   - '''Really? Well, I''m sorry. I hope you find it next time.'' Their attention
     slowly returns to the scanner as they bag the slow-moving supply of items. The
     rest of the time is uneventful, causing your eyes to wander... at least until
@@ -31,10 +31,13 @@ MonoBehaviour:
   - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 11400000, guid: ea266d4fdd3b2c3458d19de3f56c8d6a, type: 2}
   responses:
-  - Happy (Cashier gives weird stare)
-  - Sad (Trauma dump about loss)
   - CORRECT RESPONSE
-  - Confused (Actually, I don't know- leave line to check)
-  punishment: 01000000030000000000000002000000
+  - You explain how you weren't able to find the cheese... then how your family loves
+    this cheese... then it devolves into you wishing your childhood pet was still
+    alive. You exit the line before you cry too hard.
+  - CORRECT RESPONSE
+  - You realize... you didn't check your list fully. You leave the line to cross-reference
+    your cart with your list. Back into the mess of life once again...
+  punishment: 00000000030000000000000002000000
   scaryMode: 0
   isABoss: 1

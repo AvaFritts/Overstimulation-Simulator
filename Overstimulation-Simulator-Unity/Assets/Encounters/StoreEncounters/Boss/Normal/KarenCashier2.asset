@@ -13,21 +13,23 @@ MonoBehaviour:
   m_Name: KarenCashier2
   m_EditorClassIdentifier: 
   encounterText:
-  - '''Really? Well, I''m sorry. I hope you find it next time.'' Their attention
-    slowly returns to the scanner as they bag the slow-moving supply of items. The
-    rest of the time is uneventful, causing your eyes to wander... at least until
-    they ask ''Are you a Stimmart Rewards Member?'' ...Since when did they have a
-    rewards program?'
+  - '"Really? Well, I''m sorry. I hope you find it next time." Their attention slowly
+    returns to the scanner as they bag the slow-moving supply of items. The rest
+    of the time is uneventful, causing your eyes to wander... at least until they
+    ask ''Are you a Stimmart Rewards Member?'' ...Since when did they have a rewards
+    program?'
   encounterSprite:
   - {fileID: 21300000, guid: 8f7dc1e8297828146b4e4d3a6979a981, type: 3}
   nextQuestion: {fileID: 11400000, guid: 84ec76225b4f7f949a31f1c9446b4aef, type: 2}
   responses:
-  - 'Without missing a beat, you say: ''Nope! And I don''t care to be!'' ...the silence
+  - 'Without missing a beat, you say: "Nope! And I don''t care to be!" ...the silence
     is deafening. Neither of you speak another word for the rest of the encounter.
     You really wish you could start again.'
   - '"N-no? Was... was I supposed to?!" you ask, trying to figure out if being unaware
     is a bad thing... you don''t even realize people are cutting in front of you.'
-  - frusrated (Some response Emma Comes to Regret)
+  - You look repulsed, muttering about how yet another store has some program you've
+    never heard of. You walk out of the line, trying not to get pissed at something
+    that means nothing in the long run... It doesn't work that well.
   - CORRECT RESPONSE
   punishment: 01000000020000000400000000000000
   scaryMode: 0

@@ -955,7 +955,7 @@ MonoBehaviour:
   - {fileID: 3546587387558607742}
   background: {fileID: 0}
   battleButton: {fileID: 2774223606371635010}
-  battleButtonText: {fileID: 0}
+  battleButtonText: {fileID: 9019736167470784231}
   rotationSpeed: -60
   theCalmFaces:
   - {fileID: -5241341793566456680, guid: 3395befc29ac64b45af01ce5e80d4e7c, type: 3}

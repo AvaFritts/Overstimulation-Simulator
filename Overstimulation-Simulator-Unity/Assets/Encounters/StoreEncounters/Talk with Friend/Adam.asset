@@ -20,7 +20,9 @@ MonoBehaviour:
   - {fileID: 458983883660841382, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - Hysterical
+  - '"Oh! Sorry!" You say, before dumping your life story on him. As his glare gets
+    worse, you speed up, making excuses and cracking jokes nobody finds funny but
+    you. Eventually, he does chat with you, but sighs as his alarm goes off for work.'
   - You start to tear up, explaining you just wanted to say hi. 'I just wanted to
     be a good friend!' You don't see his expression soften as you look down and walk
     off... the damage was already done.
@@ -28,6 +30,6 @@ MonoBehaviour:
     forever... you leave feeling worse than you did before.'
   - As if on instinct, you apologize... apologize faster than you can think... no
     amount of "sorry" can make up for your mistake. You run off.
-  punishment: 00000000020000000400000001000000
+  punishment: 03000000020000000400000001000000
   scaryMode: 1
   isABoss: 0

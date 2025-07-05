@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: EmmaStressed1Hysterical
   m_EditorClassIdentifier: 
   encounterText:
-  - Okay Emma... Just gotta keep a smile. Right? ...RIGHT?!
+  - '"Okay Emma... Just gotta keep a smile. Right? ...<b>RIGHT?!</b>"'
   encounterSprite:
   - {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 11400000, guid: 7073b518738c30640a4a726d03bfd0e9, type: 2}
   responses:
   - CORRECT RESPONSE
-  - No, no! I- I can't do it! I'm a fraud!
-  - As if that wasn't what you needed to do EVERY SINGLE DAY!
-  - It isn't like they're going to see I'm faking it, right? Oh god what would they
-    do?!
+  - '"No, no! I- I can''t do it! I''m a fraud!"'
+  - '"As if that wasn''t what you needed to do EVERY SINGLE DAY!"'
+  - '"It isn''t like they''re going to see I''m faking it, right? Oh god what would
+    they do?!"'
   punishment: 00000000020000000200000001000000
   scaryMode: 1
   isABoss: 1

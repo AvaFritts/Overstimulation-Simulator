@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: Oct 19th, 2023
+// Last edited: July 4th, 2025
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -119,18 +119,18 @@ public class Overstimulation : MonoBehaviour
         } //end "If not Paused"
     }
 
-    /*public void PauseGame()
+    public void PauseGame()
     {
         gaguePaused = true;
-        buttonPaused = true;
-        StimulationVolumeCtrl();
+        //buttonPaused = true;
+        //StimulationVolumeCtrl();
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         gaguePaused = false;
-        buttonPaused = false;
-    }*/
+        //buttonPaused = false;
+    }
 
     public void ButtonAnimation(string triggerName)
     {

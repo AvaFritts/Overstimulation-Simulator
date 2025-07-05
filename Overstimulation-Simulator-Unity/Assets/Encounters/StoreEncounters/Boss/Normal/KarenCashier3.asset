@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: KarenCashier3
   m_EditorClassIdentifier: 
   encounterText:
-  - '''Well, all the information is on our website. Do you want to become a member?''
+  - '"Well, all the information is on our website. Do you want to become a member?"
     You decline and follow the instructions on the machine as it yells at you to
     insert and remove your card. As you start to head out, they say one last thing:
-    ''Thank you for shopping at Stimmart! Hope to see you again!'''
+    "Thank you for shopping at Stimmart! Hope to see you again!"'
   encounterSprite:
   - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - CORRECT RESPONSE
-  - Sad
-  - You swipe the bags out of the cashier's hands, Furstrated (One of the bags rips
-    open, so you have to try again)
+  - You freeze up, knowing the rest of your day wasn't going to be as good. You wait
+    for so long that the cashier's session expires. Looks like you'll need to check
+    out again.
+  - You swipe the bags out of the cashier's hands, Furstrated. While swift, you tear
+    one of the bags open. The glass shattering and metal cans colliding with the
+    floor attack your ears... not to mention everyone staring at you. It seems you'll
+    need to get some new stuff and try again.
   - As you start to walk out, the dread hits you... "Did you buy everything on your
     list?" You rush back inside, afraid to know the answer.
   punishment: 00000000010000000400000002000000

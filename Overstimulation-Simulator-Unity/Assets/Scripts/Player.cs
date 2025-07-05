@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: Oct 4th 2024
+// Last edited: July 1st 2025
 //Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer playerSprites;
     public GameObject overstimManagerObj;
     public Overstimulation dialManager;
-    Vector3 pos;
+    public Vector3 pos;
 
     GameManager GM;
     private void Awake()
@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
 
             //get the position
             pos.x = this.transform.position.x;
+            pos.y = this.transform.position.y; //Without this, the character is stuck on one level.
             //if not in Meltdown, let them move
             pos.x += Input.GetAxis("Horizontal") * currentSpeed * Time.deltaTime;
             //if(walking) in opposite direction, flip the sprite

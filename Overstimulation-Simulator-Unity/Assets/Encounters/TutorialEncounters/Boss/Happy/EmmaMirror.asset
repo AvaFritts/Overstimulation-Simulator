@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EmmaMirror
   m_EditorClassIdentifier: 
   encounterText:
-  - You walk up to the mirror with a smile on your face. 'Okay! Time to go to outside!
-    New dogs, payday... Oh, I just feel so-'
+  - You walk up to the mirror with a smile on your face. "Okay! Time to go to outside!
+    New dogs, payday... Oh, I just feel so-"
   encounterSprite:
   - {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 11400000, guid: 52a47a9c4e3d6e34eab9987d015f1c98, type: 2}

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: October 22nd 2023
+// Last edited: July 5th, 2025
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -101,6 +101,8 @@ public class Encounter_Manager : MonoBehaviour
         battleQuestion.text = currentTemplate.encounterText[0];
         currentSprite = currentTemplate.encounterSprite[0]; //this line only exists because it was giving me weird errors otherwise.
         enemySprite.GetComponent<Image>().sprite = currentSprite;
+        battleButtonText.text = "How do you feel?";
+        battleButtonText.fontStyle = FontStyle.Italic;
     }
 
     //Wait how am I going to do this?! I need to send the information *back* to the Encounter task
@@ -123,6 +125,8 @@ public class Encounter_Manager : MonoBehaviour
                 theFourButtons[i].SetActive(false);
             }
             battleButton.SetActive(true);
+            battleButtonText.text = "+" + currentPunishment.ToString() + " Stimulation"; //Show the effect of their actions
+            battleButtonText.fontStyle = FontStyle.BoldAndItalic;
         }
        
         //and then something for the point awarding.... you know.
