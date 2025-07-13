@@ -16,7 +16,7 @@ MonoBehaviour:
   - '"Really? Well, I''m sorry. I hope you find it next time." Their attention slowly
     returns to the scanner as they bag the slow-moving supply of items. The rest
     of the time is uneventful, causing your eyes to wander... at least until they
-    ask ''Are you a Stimmart Rewards Member?'' ...Since when did they have a rewards
+    ask "Are you a Stimmart Rewards Member?" ...Since when did they have a rewards
     program?'
   encounterSprite:
   - {fileID: 21300000, guid: 8f7dc1e8297828146b4e4d3a6979a981, type: 3}

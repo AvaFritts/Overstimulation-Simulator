@@ -16,7 +16,7 @@ MonoBehaviour:
   - '"Why... why am I like this?!" Emma repeats in her mind, over and over as tears
     bawl down her face...'
   encounterSprite:
-  - {fileID: 3673132661631725926, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  - {fileID: 218720673786834406, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - <i>But this crying turns into an insane laughter... thank goodness nobody was

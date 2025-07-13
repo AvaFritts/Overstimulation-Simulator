@@ -16,7 +16,7 @@ MonoBehaviour:
   - '"It isn''t like we''re going to die someday... time leading us all towards an
     inevitable end..."'
   encounterSprite:
-  - {fileID: -7113875076880919210, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  - {fileID: 7137049646351552523, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 11400000, guid: e6cdef6024664c04783ebd27f1c7d84c, type: 2}
   responses:
   - <i>You chuckle, overwhelmed by the constant attempts to shove the intrusive thoughts

@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: July 18th 2022
+// Last edited: July 12th 2025
 // Description: The UI manager for the Level Select.
 using System.Collections;
 using System.Collections.Generic;
@@ -94,6 +94,11 @@ public class Level_Select_Manager : MonoBehaviour
             case 3: //The Party
                 levelDescription.text = "Humans go to parties to be seen as 'social'.";
                 destinationPosition = new Vector3(-2.5f, -1f, 0f);
+                break;
+            case 4: //Endless.
+                levelDescription.text = "You found the park, huh? Seems it's under construction.";
+                //levelDescription.text = "You always loved theme parks. Felt like you could spend forever there...";
+                destinationPosition = new Vector3(7.75f, -3.09f, 0f);
                 break;
             default:
                 levelDescription.text = "An Error has occured. Please try again.";

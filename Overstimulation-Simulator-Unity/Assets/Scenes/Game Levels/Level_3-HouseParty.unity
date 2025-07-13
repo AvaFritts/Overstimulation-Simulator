@@ -3774,10 +3774,6 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 7826268463433142065, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7826268463433142076, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: m_Name
       value: StimulationSource 4
@@ -7331,7 +7327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479000, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73
+      value: -73.000015
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479001, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_Layer
@@ -7404,10 +7400,6 @@ PrefabInstance:
     - target: {fileID: 3787471123423307686, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787471123423307705, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
-      propertyPath: overStimMult
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3787471123423307705, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: stateControll
@@ -7945,10 +7937,6 @@ PrefabInstance:
       propertyPath: playerChar
       value: 
       objectReference: {fileID: 384343498}
-    - target: {fileID: 7826268463433142079, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
-      propertyPath: maxModifier
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8587484824043203193, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: MaxDistance
       value: 5
