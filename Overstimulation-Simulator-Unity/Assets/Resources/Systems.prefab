@@ -47,6 +47,7 @@ MonoBehaviour:
   levelSongs:
   - {fileID: 8300000, guid: cd4546a4ecfd8c9488111d859d3ef96d, type: 3}
   - {fileID: 8300000, guid: d85a1e1aabb506141bc61f281e39750a, type: 3}
+  - {fileID: 8300000, guid: 581a80b5f2ae4894692424d23b36c5b2, type: 3}
   menuSong: {fileID: 8300000, guid: 956779ab259d6984b91a555731ff4ef3, type: 3}
   sadSong: {fileID: 8300000, guid: d7780c5fc80df6744bcf59967129abf6, type: 3}
   victorySong: {fileID: 8300000, guid: a34e29c4923b9a344bce5bb83e97f3da, type: 3}
@@ -207,6 +208,7 @@ MonoBehaviour:
   gameLevels:
   - Level_0-Tutorial
   - Level_1-Store
+  - Level_3-HouseParty
   gameLevelsCount: 0
   nextLevel: 0
   isTesting: 0

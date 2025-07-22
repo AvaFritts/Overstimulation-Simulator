@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: November 3rd 2022
+// Last edited: July 17th, 2025 //November 3rd 2022
 // Description: The base script for all the NPCs in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -17,11 +17,11 @@ public class NPC_Behavior : MonoBehaviour
     [Header("NORMAL SPRITES")]
 
     public Sprite backSprite;
-    public Sprite neutralAngled;
+    //public Sprite neutralAngled;
 
     [Space(10)]
 
-    public Sprite susAngled;
+    public Sprite halfAngled;
 
     [Space(10)]
 
@@ -39,49 +39,41 @@ public class NPC_Behavior : MonoBehaviour
     void Start()
     {
         npcSprite = this.GetComponent<SpriteRenderer>();
+        npcSprite.sprite = backSprite;
     }
 
-    //The 
+    //I put so much calculation into them looking at her, but I think most of that isn't being used right now.
+    //So I reworked it to only make the calculation during a game-over.
      private void FixedUpdate()
      {
-         playerXDistance = this.transform.position.x - playerOBJ.transform.position.x;
-
-
-         if((playerXDistance < spriteThreshold) && (playerXDistance > -spriteThreshold)) 
-         {
-            npcSprite.flipX = false;
-            if (GameManager.GM.gameState == GameManager.gameStates.Death)
+        if (GameManager.GM.gameState == GameManager.gameStates.Death)
+        {
+            playerXDistance = this.transform.position.x - playerOBJ.transform.position.x;
+            if(playerXDistance <= 0) //if negative
             {
+                npcSprite.flipX = true;
+            //} 
+            //else
+            //{
+                playerXDistance *= -1; //turn positive for the calculations.
+            }
+
+            if (playerXDistance < spriteThreshold) //&& (playerXDistance > -spriteThreshold/2))
+            {
+                //if (GameManager.GM.gameState == GameManager.gameStates.Death)
                 npcSprite.sprite = frontSprite;
+                /*else npcSprite.sprite = backSprite;*/
+            }
+            else if (playerXDistance < spriteThreshold * 2)
+            {
+                //npcSprite.flipX = false;
+                npcSprite.sprite = halfAngled;
             }
             else
             {
-                npcSprite.sprite = backSprite;
-            }
-         } else if (playerXDistance < -spriteThreshold)
-        {
-            npcSprite.flipX = true;
-            if (GameManager.GM.gameState == GameManager.gameStates.Death)
-            {
+                //npcSprite.flipX = true;
                 npcSprite.sprite = meanAngled;
             }
-            else
-            {
-                npcSprite.sprite = neutralAngled;
-            }
-        }
-        else
-        {
-            npcSprite.flipX = false;
-            if (GameManager.GM.gameState == GameManager.gameStates.Death)
-            {
-                npcSprite.sprite = meanAngled;
-            }
-            else
-            {
-                npcSprite.sprite = neutralAngled;
-            }
-           
         }
      }//end Update
 

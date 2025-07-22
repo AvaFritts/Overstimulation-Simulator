@@ -12,13 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: StoreStressedBoss3
   m_EditorClassIdentifier: 
-  encounterText:
-  - The first lady storms off, allowing the second to close the gap. She has a monster
-    of a child, tearing down the candy next to them and screaming about how they
-    wanted some doll in the toy aisle. Eventually, she erupts, screaming at the child.
-    All you can focus on are the tears in your eyes and the pounding in your chest.
-  encounterSprite:
-  - {fileID: 6949851453072517725, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
+  encounterText: 
+  encounterSprite: {fileID: 6949851453072517725, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - The argument between the two... you start to chuckle. The mom looks at you, confused...

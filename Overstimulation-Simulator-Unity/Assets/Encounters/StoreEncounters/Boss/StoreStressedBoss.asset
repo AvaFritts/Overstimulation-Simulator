@@ -12,13 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: StoreStressedBoss
   m_EditorClassIdentifier: 
-  encounterText:
-  - The swarms of beeps and conversations pry at what little sanity you have left,
-    but you stand strong. Everything was going fine! ...Until the card reader broke.
-    Voices were gathering, muttering about how you failed to do something so simple.
-    Nobody "normal" would make this mistake, would they?
-  encounterSprite:
-  - {fileID: 1721269359444862362, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
+  encounterText: 
+  encounterSprite: {fileID: 1721269359444862362, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
   nextQuestion: {fileID: 11400000, guid: d0bd8cf448d26a5459760926b18756ee, type: 2}
   responses:
   - You start to chuckle. It's okay! You aren't normal, and that's fine! Their words

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Leaf (House)
+  m_EditorClassIdentifier: 
+  encounterText: While they seem cold/uncaring, Emma can tell they are happy.
+  encounterSprite: {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - Your interraction is short and sweet, making sure you both know how you respect
+    the other.
+  - It's hard to register the happiness. You know they are, but it doesn't feel like
+    it. You hand the phone and walk off, feeling like your efforts were unrecognized.
+  - You are cold and uncaring back, ignoring the happiness because of how subtle
+    it is.
+  - You start asking questions, confusing Leaf farther.... but you two have a good
+    conversation after that.
+  punishment: 01000000030000000200000002000000
+  scaryMode: 0
+  isABoss: 0

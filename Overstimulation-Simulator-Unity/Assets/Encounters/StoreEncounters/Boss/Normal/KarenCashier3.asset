@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: KarenCashier3
   m_EditorClassIdentifier: 
-  encounterText:
-  - '"Well, all the information is on our website. Do you want to become a member?"
-    You decline and follow the instructions on the machine as it yells at you to
-    insert and remove your card. As you start to head out, they say one last thing:
-    "Thank you for shopping at Stimmart! Hope to see you again!"'
-  encounterSprite:
-  - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: '"Well, all the information is on our website. Do you want to become
+    a member?" You decline and follow the instructions on the machine as it yells
+    at you to insert and remove your card. As you start to head out, they say one
+    last thing: "Thank you for shopping at Stimmart! Hope to see you again!"'
+  encounterSprite: {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - CORRECT RESPONSE

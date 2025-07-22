@@ -12,23 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: KarenCashier
   m_EditorClassIdentifier: 
-  encounterText:
-  - 'The Cashier waves as you approach their aisle, a small section of droning beeps
-    and conversations. They smile while you put your items on the captivating conveyer
-    belt. "Hello! Did you find everything you were looking for??" As you look at
-    the list you folded in your bag, you realize: Yeah... you did find everything!
-    Except for that <i>darn block of cheese.</i>'
-  - '''Really? Well, I''m sorry. I hope you find it next time.'' Their attention
-    slowly returns to the scanner as they bag the slow-moving supply of items. The
-    rest of the time is uneventful, causing your eyes to wander... at least until
-    they ask ''Are you a Stimmart Rewards Member?'' ...Since when did they have a
-    rewards program?'
-  - '''Well, all the information is on our website. Do you want to become a member?''
-    You decline and follow the instructions on the machine as it yells at you to
-    insert and remove your card. As you start to head out, they say one last thing:
-    ''Thank you for shopping at Stimmart! Hope to see you again!'''
-  encounterSprite:
-  - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: 'The Cashier waves as you approach their aisle, a small section
+    of droning beeps and conversations. They smile while you put your items on the
+    captivating conveyer belt. "Hello! Did you find everything you were looking for??"
+    As you look at the list you folded in your bag, you realize: Yeah... you did
+    find everything! Except for that <i>darn block of cheese.</i>'
+  encounterSprite: {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 11400000, guid: ea266d4fdd3b2c3458d19de3f56c8d6a, type: 2}
   responses:
   - CORRECT RESPONSE

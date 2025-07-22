@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Jeremy
   m_EditorClassIdentifier: 
-  encounterText:
-  - Jeremy is buying flowers and a bittersweet card. He doesn't seem to notice anyone.
-    After a while of trying to get his attention, he looks up, sorrowful. He tells
-    you that his grandfather recently passed from disease, and the gifts are for
-    his mother, who hasn't been the same since.
-  encounterSprite:
-  - {fileID: 7396088475455461908, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: Jeremy is buying flowers and a bittersweet card. He doesn't seem
+    to notice anyone. After a while of trying to get his attention, he looks up,
+    sorrowful. He tells you that his grandfather recently passed from disease, and
+    the gifts are for his mother, who hasn't been the same since.
+  encounterSprite: {fileID: 7396088475455461908, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - You tell him that he's doing such a sweet thing. The card is adorable and the

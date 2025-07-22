@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: Feb 16th 2023
+// Last edited: July 21st 2025
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -15,6 +15,7 @@ public class StimulationSource : MonoBehaviour
     [Header("Set in Inspector")]
     public float multModifier; //the modifier for the stimulation.
     public float maxModifier;
+    public bool staticValue;
 
     [Space(10)]
 
@@ -42,6 +43,12 @@ public class StimulationSource : MonoBehaviour
 
         _stimulationSystem = GetComponent<ParticleSystem>(); //get the particle system
 
+        //As the static value only needs to me calculated once...
+        if (staticValue)
+        {
+            multModifier = maxModifier;
+        }
+
         if (GameManager.GM.stilumationReducer) //if the stimulation reducer is on, reduce particles
         {
             var main = _stimulationSystem.main;
@@ -57,16 +64,19 @@ public class StimulationSource : MonoBehaviour
     {
         if (!paused) //DO NOT UPDATE IF YOU ARE NOT IN RANGE
         {
-            float distanceToTarget = Vector3.Distance(playerChar.transform.position, objectCollider.transform.position);
+            if (!staticValue) //this update is for dynamic sources.
+            {
+                float distanceToTarget = Vector3.Distance(playerChar.transform.position, objectCollider.transform.position);
 
-            //Debug.Log("Current Position: " + playerChar.transform.position);
-            //Debug.Log("Current Distance: " + distanceToTarget);
-            if (distanceToTarget < 1) { distanceToTarget = 1; }
-            //if (distanceToTarget < objectCollider.radius)
-            //{
-            multModifier = maxModifier / distanceToTarget;
-            //}
-
+                //Debug.Log("Current Position: " + playerChar.transform.position);
+                //Debug.Log("Current Distance: " + distanceToTarget);
+                if (distanceToTarget < 1) { distanceToTarget = 1; }
+                //if (distanceToTarget < objectCollider.radius)
+                //{
+                multModifier = maxModifier / distanceToTarget;
+                //}
+            }
+ 
         }
 
         //if(GameManager.GM.gameState != 

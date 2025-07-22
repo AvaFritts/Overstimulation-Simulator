@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 8th 2023
 
-// Last edited: October 22nd 2023
+// Last edited: July 19th 2025 //October 22nd 2023
 //Description: The Template for Conversation Tasks.
 using System.Collections;
 using System.Collections.Generic;
@@ -11,9 +11,11 @@ using UnityEngine;
 public class Convo_Task_Obj : ScriptableObject
 {
     //MAKE SINGLE LINES, NOT ARRAYS
-    public string[] encounterText;
-    public Sprite[] encounterSprite;
+    public string encounterText;
+    public Sprite encounterSprite;
     public Convo_Task_Obj nextQuestion;
+
+    [Space(15)]
 
     //After pressing a button
     public string[] responses;

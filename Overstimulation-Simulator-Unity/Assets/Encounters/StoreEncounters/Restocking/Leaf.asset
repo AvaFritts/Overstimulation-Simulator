@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Leaf
   m_EditorClassIdentifier: 
-  encounterText:
-  - Why aren't they responding? You've tried to get their attention for what feels
-    like hours now. To make matters worse, they are blocking the spot your candy
-    should be in!
-  encounterSprite:
-  - {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: Why aren't they responding? You've tried to get their attention
+    for what feels like hours now. To make matters worse, they are blocking the spot
+    your candy should be in!
+  encounterSprite: {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - '"It''s okay!" you keep telling yourself. Over and over. It''s okay. It''s okay.

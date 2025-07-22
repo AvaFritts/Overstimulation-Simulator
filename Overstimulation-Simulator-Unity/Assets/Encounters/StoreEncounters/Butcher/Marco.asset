@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Marco
   m_EditorClassIdentifier: 
-  encounterText:
-  - The butcher is a thin kid, carefully weighing the ham as you approach. It would
-    appear as if it was his first day... Except it isn't. Marco has worked here as
-    long as you can remember. And he spends so long on those darn scales it will
-    be 30 minutes before he notices you unless you speak up.
-  encounterSprite:
-  - {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: The butcher is a thin kid, carefully weighing the ham as you approach.
+    It would appear as if it was his first day... Except it isn't. Marco has worked
+    here as long as you can remember. And he spends so long on those darn scales
+    it will be 30 minutes before he notices you unless you speak up.
+  encounterSprite: {fileID: -224674675589111988, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - '"Hello? Excuse me?" You say, trying not to come off as rude... and of course

@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Cat
   m_EditorClassIdentifier: 
-  encounterText:
-  - Oh no! It seems like your overstimulated state has attracted your mischievous
-    cat. Even if your panic makes it hard to act normally, you still only have one
-    shot to get this right
-  encounterSprite:
-  - {fileID: -6149094305328661031, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  encounterText: Oh no! It seems like your overstimulated state has attracted your
+    mischievous cat. Even if your panic makes it hard to act normally, you still
+    only have one shot to get this right.
+  encounterSprite: {fileID: -6149094305328661031, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - Despite your panic, you try to act happy. ...It doesn't work. Trying to hide

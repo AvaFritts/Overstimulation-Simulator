@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: July 5th, 2025
+// Last edited: July 19th 2025
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -98,8 +98,8 @@ public class Encounter_Manager : MonoBehaviour
 
 
         //put up the current question, set the correct answer, and change the sprite accordingly.
-        battleQuestion.text = currentTemplate.encounterText[0];
-        currentSprite = currentTemplate.encounterSprite[0]; //this line only exists because it was giving me weird errors otherwise.
+        battleQuestion.text = currentTemplate.encounterText;
+        currentSprite = currentTemplate.encounterSprite; //this line only exists because it was giving me weird errors otherwise.
         enemySprite.GetComponent<Image>().sprite = currentSprite;
         battleButtonText.text = "How do you feel?";
         battleButtonText.fontStyle = FontStyle.Italic;

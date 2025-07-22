@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Michael
   m_EditorClassIdentifier: 
-  encounterText:
-  - Michael is wandering around the dog food aisle. His brow is furrowed and his
-    expression is a frown. Seeing you, he begins to smile and his shoulders become
-    less tense. He explains that he had gotten his first dog and would like your
-    advice on getting supplies.
-  encounterSprite:
-  - {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: Michael is wandering around the dog food aisle. His brow is furrowed
+    and his expression is a frown. Seeing you, he begins to smile and his shoulders
+    become less tense. He explains that he had gotten his first dog and would like
+    your advice on getting supplies.
+  encounterSprite: {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - You smile, constantly congratulating Michael on his new pup. You almost forget

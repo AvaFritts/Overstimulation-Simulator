@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: William
   m_EditorClassIdentifier: 
-  encounterText:
-  - William looks at his PDA, shaking slightly as he searches his stock for the next
-    box of candy. Looks like one wrong move could scare him.
-  encounterSprite:
-  - {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  encounterText: William looks at his PDA, shaking slightly as he searches his stock
+    for the next box of candy. Looks like one wrong move could scare him.
+  encounterSprite: {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - You carefully go into his view, smiling as you do what you trained yourself to

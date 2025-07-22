@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: EmmaStressed3Furious
   m_EditorClassIdentifier: 
-  encounterText:
-  - '"Oh come ON Emma! You ALWAYS DO THIS! WHY CAN''T YOU STOP THINKING ABOUT THIS?!"'
-  encounterSprite:
-  - {fileID: 3259867830507489722, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
+  encounterText: '"Oh come ON Emma! You ALWAYS DO THIS! WHY CAN''T YOU STOP THINKING
+    ABOUT THIS?!"'
+  encounterSprite: {fileID: 3259867830507489722, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 11400000, guid: f6afc3eae8540ac41bc759a40657dd40, type: 2}
   responses:
   - She slowly starts laughing, unable to face the failure of her own mental state...

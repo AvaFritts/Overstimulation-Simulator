@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: EmmaMirror2
   m_EditorClassIdentifier: 
-  encounterText:
-  - Oh god... what about that time in... UGH!
-  encounterSprite:
-  - {fileID: 7499280230440116440, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  encounterText: '"Oh god... what about that time in... UGH!"'
+  encounterSprite: {fileID: 7499280230440116440, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 11400000, guid: 5e7bd4f44743a9444846836c246a0fe7, type: 2}
   responses:
   - '"You are the idiot!" Okay, those thoughts are gone... What else do I need to

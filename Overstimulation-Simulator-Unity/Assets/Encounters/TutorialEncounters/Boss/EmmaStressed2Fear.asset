@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: EmmaStressed2Fear
   m_EditorClassIdentifier: 
-  encounterText:
-  - '"It isn''t like we''re going to die someday... time leading us all towards an
-    inevitable end..."'
-  encounterSprite:
-  - {fileID: 7137049646351552523, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
+  encounterText: '"It isn''t like we''re going to die someday... time leading us
+    all towards an inevitable end..."'
+  encounterSprite: {fileID: 7137049646351552523, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 11400000, guid: e6cdef6024664c04783ebd27f1c7d84c, type: 2}
   responses:
   - <i>You chuckle, overwhelmed by the constant attempts to shove the intrusive thoughts

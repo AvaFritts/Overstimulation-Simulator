@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: HBoss1
+  m_EditorClassIdentifier: 
+  encounterText: As you start to leave, you hear a familiar voice call your name.
+    <b>We name the two friends and talk about their smile</b>. "We wanted to see
+    you before you head out!"
+  encounterSprite: {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 11400000, guid: 25dab069337fbcb409d69249c2f59cfc, type: 2}
+  responses:
+  - CORRECT ANSWER
+  - IDK
+  - You cringe, thinking about having to spend more time in the house. You excuse
+    yourself to the restroom.
+  - IDK
+  punishment: 00000000030000000100000002000000
+  scaryMode: 0
+  isABoss: 1
