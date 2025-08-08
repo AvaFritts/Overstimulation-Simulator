@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: HappyDrunk
   m_EditorClassIdentifier: 
-  encounterText: Super giddy. We learn she played a round earlier... she's both really
-    drunk and really excited to talk to Emma.
+  encounterText: '"Oh hey girlie!" A stranger''s voice catches your attention as
+    a hand slopily grabs your shoulder. "You playing next?? You''d look sooooo good
+    in there!" The girl lazily holds her drink, occasionally swaying in her skirt.
+    "It''s a lot of fun. Trust me!" She doesn''t even seem to realize you two are
+    strangers.'
   encounterSprite: {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - BEST ANSWER #2
-  - OKAY ANSWER
-  - NOT A GOOD ANSWER
+  - You're shocked how quickly she treats you like a friend. You accept the match,
+    and it turns out your newest friend is a perfect hype girl.
+  - You decline the match, listing personal reasons you cannot play. It doesn't feel
+    great letting her down, but she quickly gets over it.
+  - You try to ask her to stop touching her shoulder. She doesn't. Eventually, you
+    snap. Not a big snap, but still enough frustration to get her to leave you alone.
   - You start asking a bunch of questions... even after she throws up on your dress,
     you decide to make sure she gets the help you need. Luckily, it gets you both
     out of the loud mess.

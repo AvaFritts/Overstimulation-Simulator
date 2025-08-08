@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: StoreStressedBoss2
   m_EditorClassIdentifier: 
-  encounterText: 
+  encounterText: 'You turn around. A line now looms behind you, dominated by two
+    ladies. Their gaze cut like knives. The first one speaks up, her voice filled
+    with disdain: "Are you really this slow?? You just have to scan the card." She
+    starts miming how to do it. That horrid beeping noise she makes... it nags at
+    your conscious. you would do <b>anything</b> to stop that beeping.'
   encounterSprite: {fileID: -9207700943813172634, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
   nextQuestion: {fileID: 11400000, guid: aa6731b9e558aa041bd48f46bf6b848a, type: 2}
   responses:

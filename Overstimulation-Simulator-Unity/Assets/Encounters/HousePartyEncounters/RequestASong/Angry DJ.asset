@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   encounterText: The music is blasting in your ears despite how much you try to cover
     them. The man causing all of this is Fr0zt, the DJ hired to manage this chaos.
-    <b>THIS DEPENDS ON THE SPRITE, but the mask the DJ wears scares Emma.</b>
+    The icy claws on his gloves look like they could cut you open as he aims for
+    the vinyls. The hungry expression on his animalistic mask shows he owns this
+    party. Despite the chills down your spine, you NEED to get your request heard.
   encounterSprite: {fileID: 7137049646351552523, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 0}
   responses:
