@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: EmmaStressed2Fear
+  m_EditorClassIdentifier: 
+  encounterText: '"It isn''t like we''re going to die someday... time leading us
+    all towards an inevitable end..."'
+  encounterSprite: {fileID: 7137049646351552523, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
+  nextQuestion: {fileID: 11400000, guid: e6cdef6024664c04783ebd27f1c7d84c, type: 2}
+  responses:
+  - <i>You chuckle, overwhelmed by the constant attempts to shove the intrusive thoughts
+    out of your head. You fake a smile and say it will be okay, but you know it is
+    all a lie. Last thing you want is for your friends to see you like this.</i>
+  - <i>Emma slowly starts to hyperventilate. She doesn't want to think of death,
+    but no matter what she does she can't force it out of her head. She takes a few
+    steps away from the mirror, sits down, and cries.</i>
+  - '"WHY DO YOU KEEP THINKING OF THIS, EMMA?! KEEP IT TOGETHER!"'
+  - CORRECT RESPONSE
+  punishment: 01000000010000000100000000000000
+  scaryMode: 1
+  isABoss: 1

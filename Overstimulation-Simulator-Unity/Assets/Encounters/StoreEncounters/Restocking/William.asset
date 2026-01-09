@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: William
+  m_EditorClassIdentifier: 
+  encounterText: William looks at his PDA, shaking slightly as he searches his stock
+    for the next box of candy. Looks like one wrong move could scare him.
+  encounterSprite: {fileID: 6577014108703367737, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - You carefully go into his view, smiling as you do what you trained yourself to
+    do. You get the instructions, unable to forget how he smiled when you left. You
+    feel good.
+  - You try to get the courage up to speak, but seeing him tremble makes <i>you</i>
+    to tremble. You decide to look for it yourself, enduring the store as it is.
+  - Well... you scared him. You thought that tap and yell wasn't loud... but it was
+    <i>very</i> loud. You go the rest of your day, wondering if you could have done
+    better.
+  - '"Um, excuse me?" You see him jump, but your quick apologies calm him down. You
+    are able to get the directions as quickly as you could dream of.'
+  punishment: 01000000020000000300000001000000
+  scaryMode: 0
+  isABoss: 0

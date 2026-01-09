@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: EmmaStressed1Hysterical
+  m_EditorClassIdentifier: 
+  encounterText: '"Okay Emma... Just gotta keep a smile. Right? ...<b>RIGHT?!</b>"'
+  encounterSprite: {fileID: 1270937456072061900, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
+  nextQuestion: {fileID: 11400000, guid: 7073b518738c30640a4a726d03bfd0e9, type: 2}
+  responses:
+  - CORRECT RESPONSE
+  - '"No, no! I- I can''t do it! I''m a fraud!"'
+  - '"As if that wasn''t what you needed to do EVERY SINGLE DAY!"'
+  - '"It isn''t like they''re going to see I''m faking it, right? Oh god what would
+    they do?!"'
+  punishment: 00000000020000000200000001000000
+  scaryMode: 1
+  isABoss: 1

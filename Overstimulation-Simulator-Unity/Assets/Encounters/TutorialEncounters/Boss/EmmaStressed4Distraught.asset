@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: EmmaStressed4Distraught
+  m_EditorClassIdentifier: 
+  encounterText: '"Why... why am I like this?!" You repeat in your mind, over and
+    over as tears bawl down your face...'
+  encounterSprite: {fileID: 218720673786834406, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - <i>But this crying turns into an insane laughter... thank goodness nobody was
+    there to witness this.</i>
+  - CORRECT RESPONSE
+  - <i>She's unable to think... She always hated the sound of her tears and could
+    not handle that she couldn't quiet down. She punches the wall and walks off.</i>
+  - '"What if someone saw me?? I... no... not today... I can''t go out like this-"'
+  punishment: 03000000000000000200000001000000
+  scaryMode: 1
+  isABoss: 1

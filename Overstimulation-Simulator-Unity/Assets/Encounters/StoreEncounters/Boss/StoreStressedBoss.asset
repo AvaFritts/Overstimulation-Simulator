@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: StoreStressedBoss
+  m_EditorClassIdentifier: 
+  encounterText: The swarms of beeps and conversations pry at what little sanity
+    you have left, but you stand strong. Everything was going fine! ...Until the
+    card reader broke. Voices were gathering, muttering about how you failed to do
+    something so simple. Nobody "normal" would make this mistake, would they?
+  encounterSprite: {fileID: 1721269359444862362, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
+  nextQuestion: {fileID: 11400000, guid: d0bd8cf448d26a5459760926b18756ee, type: 2}
+  responses:
+  - You start to chuckle. It's okay! You aren't normal, and that's fine! Their words
+    can't hurt you at all! ...but those words <i>do</i> hurt. You smile through the
+    pain before giving up and looking for a new aisle.
+  - CORRECT RESPONSE
+  - The noises are choking you. No amount of covering your ears saves your sanity.
+    You yell for the noises to stop, slam your fist into a box of candy, and stomp
+    off.
+  - You excuse yourself and run off to a new aisle. You almost forget your items
+    in the process. Your heart is pounding, and there is no way you'll be able to
+    handle this. You'll just find an empty aisle... right??
+  punishment: 02000000000000000300000002000000
+  scaryMode: 1
+  isABoss: 1

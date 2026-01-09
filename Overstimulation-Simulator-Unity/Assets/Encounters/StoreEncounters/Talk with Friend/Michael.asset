@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Michael
+  m_EditorClassIdentifier: 
+  encounterText: Michael is wandering around the dog food aisle. His brow is furrowed
+    and his expression is a frown. Seeing you, he begins to smile and his shoulders
+    become less tense. He explains that he had gotten his first dog and would like
+    your advice on getting supplies.
+  encounterSprite: {fileID: 6956455426052315809, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - You smile, constantly congratulating Michael on his new pup. You almost forget
+    you have your own groceries to attend to as the two of you spend a lot of time
+    picking out supplies for the pooch.
+  - You try your best. It doesn't work as planned. You apologize, saying you can't
+    help him. At one point, you misspeak, saying you feel bad for him owning a dog.
+    You correct the mistake, but the comment still bothers you.
+  - You snarkily ask why he isn't looking it up himself. You refuse to offer help
+    no matter how many excuses he gives. He returns to his frown and walks off. You
+    don't talk for a week after this.
+  - '"Wait, you''re a dog person?" you ask. He smiles, reminding you of the times
+    you two talked forever about breeds you wanted to own. The whole thing goes smoothly,
+    but you feel a bit stupid for asking.'
+  punishment: 02000000030000000400000002000000
+  scaryMode: 0
+  isABoss: 0

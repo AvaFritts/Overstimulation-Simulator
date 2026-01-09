@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: November 28th, 2023
+// Last edited: July 4th, 2025
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -49,21 +49,29 @@ public class Overstimulation : MonoBehaviour
 
     [Header("Change Dynamically")]
     public float currentStimMult;
-    public bool buttonPaused;
+    //public bool buttonPaused;
     public bool gaguePaused;
-   
+    // Start is called before the first frame update
+    /*void Start()
+    {
+        stimulationGauge.value = GameManager.GM.difficulty;
+        smallTimer = smallTimerDuration;
+        mediumTimer = mediumTimerDuration;
+        largeTimer = largeTimerDuration;
+    }*/
+
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.GM.gameState != GameManager.gameStates.Death) 
+        if (GameManager.GM.gameState != GameManager.gameStates.Death && GameManager.GM.gameState != GameManager.gameStates.Battle) 
         {
-            if (!gaguePaused)
+            if (!gaguePaused) //Do I need to keep this? //Maybe, as the destim buttons use it last I remember
             {
                 currentStimMult = StimulationUpdater();
-                //overStimMult = Mathf.Clamp(StimulationUpdater(), 2f, 100f);
                 stimulationGauge.value += currentStimMult * Time.deltaTime;
-                if (stimulationGauge.value.Equals(stimulationGauge.maxValue) && GameManager.GM.gameState != GameManager.gameStates.Death)
+                if (stimulationGauge.value >= stimulationGauge.maxValue)
                 {
+                    //MOVE TO PRIVATE DEATH FUNCTION
                     smallButton.interactable = false;
                     mediumButton.interactable = false;
                     largeButton.interactable = false;
@@ -81,18 +89,18 @@ public class Overstimulation : MonoBehaviour
         } //end "If not Paused"
     }
 
-    /*public void PauseGame()
+    public void PauseGame()
     {
         gaguePaused = true;
-        buttonPaused = true;
-        StimulationVolumeCtrl();
+        //buttonPaused = true;
+        //StimulationVolumeCtrl();
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         gaguePaused = false;
-        buttonPaused = false;
-    }*/
+        //buttonPaused = false;
+    }
 
     public void ButtonAnimation(string triggerName)
     {
@@ -116,17 +124,11 @@ public class Overstimulation : MonoBehaviour
     {
         if(stimulationGauge.value >= activateLarge)    
         {       
-            //smallButton.interactable = true; 
-            //mediumButton.interactable = true;  
-            //largeButton.interactable = true;
             stateControll.SetBool("stressed", true);
 
         }
         else
         {
-            //smallButton.interactable = false;
-            //mediumButton.interactable = false;
-            //largeButton.interactable = false;
             stateControll.SetBool("stressed", false);
         }
     }
@@ -172,10 +174,6 @@ public class Overstimulation : MonoBehaviour
             }
             
         }
-        /*if (baseCount == 0) //if there are no stimulants in the area
-        {
-            return 2;
-        }*/
         return baseCount; //it will always have a base number. Currently it is 2.
     }
 

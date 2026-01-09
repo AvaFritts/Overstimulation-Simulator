@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: ScaryStranger
+  m_EditorClassIdentifier: 
+  encounterText: <b>They accuse Emma of stealing their phone.</b>
+  encounterSprite: {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - You smile and try to play it cool, but you are barely keeping it together.
+  - You try to defend yourself, but the stranger swipes the phone out of your hands
+    and walks off. You don't even realize you are crying until their words get out
+    of your head.
+  - You start yelling back, appalled that someone would even accuse you of such a
+    heinous action. A crowd starts to form around you as the two of you begin a shouting
+    match.
+  - You can't even try to hide your emotions. You run to the fence, praying nobody
+    heard the false accusations.
+  punishment: 02000000010000000200000001000000
+  scaryMode: 1
+  isABoss: 0

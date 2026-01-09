@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: EmmaMirror3
+  m_EditorClassIdentifier: 
+  encounterText: '"Ohh.... that was so wrong of me! What if that happens again?!"'
+  encounterSprite: {fileID: 3673132661631725926, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 11400000, guid: 159930329bd0add46a91b19254fde8fa, type: 2}
+  responses:
+  - I can just ignore those thoughts! ...right?
+  - CORRECT ANSWER
+  - I just- UGH! You ALWAYS do this, Emma!
+  - Wait... if what happens again? I can't remember now...
+  punishment: 01000000000000000300000002000000
+  scaryMode: 0
+  isABoss: 1

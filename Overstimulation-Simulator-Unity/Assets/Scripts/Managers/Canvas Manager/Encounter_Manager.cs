@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: March 19th 2023
+// Last edited: July 19th 2025
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -12,10 +12,15 @@ public class Encounter_Manager : MonoBehaviour
 {
     //Variables//
     [Header("Set in Inspector")]
-    public Text[] theFourButtons; //the four buttons used in the encounters
+    public GameObject[] theFourButtons; //the four buttons used in the encounters
     public Image[] theFourFaces;
     public GameObject background;
+    public GameObject battleButton; //the button that appears to end the encounter
+    public Text battleButtonText;
     public float rotationSpeed;
+
+    [Space(5)]
+
     [Tooltip("The strings here should have the button labels for the 'good' responses")]
     public Sprite[] theCalmFaces;
     // public string[] theCalmChoices;
@@ -28,18 +33,21 @@ public class Encounter_Manager : MonoBehaviour
     public Text battleQuestion;
 
     [Header("Set Dynamically")]
-    public int numberOfQuestions = 1; //Bosses usually have multiple: everyone else has one.
+    public int numberOfQuestions = 0; //Bosses usually have multiple: everyone else has one.
     public float rotatZ;
 
     [Space(10)]
 
-    public Encounter currentBattle;
+    //public Encounter currentBattle; //Change this so that it is the game object
+    public Convo_Task_Obj currentTemplate;
+    public Sprite currentSprite;
 
-    public int correctAnswer;
+    public int currentPunishment;
     public GameObject enemySprite;
+    public bool finishedFight = false; //Used to tell the Encounter when to disable the fight.
 
 
-    public void Update()
+    public void Update() //All this does is rotate the Spiral background
     {
         if (!GameManager.GM.stilumationReducer) //if IRL stimultaion Reduction is turned off
         {
@@ -54,17 +62,23 @@ public class Encounter_Manager : MonoBehaviour
     }
 
     //for whenever an encounter is started
-    public void StartEncounter(GameObject encounterBase)
+    public void StartEncounter() //I am already passing the encounter... Wow.
     {
-        //enable Battle Mode if it isn't in it already.
-        if(GameManager.GM.gameState != GameManager.gameStates.Battle)
+        battleButton.SetActive(false);
+        for (int i = 0; i < 4; i++)
+        {
+            //theFourButtons[i].text = theAnxiousChoices[i];
+            theFourButtons[i].SetActive(true);
+        }
+        //enable Battle Mode if it isn't in it already. (Update on Oct. 22: Why do I have it like this?)
+        if (GameManager.GM.gameState != GameManager.gameStates.Battle)
         {
             GameManager.GM.gameState = GameManager.gameStates.Battle;
-            currentBattle = encounterBase.GetComponent<Encounter>();
+            //currentBattle = encounterBase.GetComponent<Encounter>(); //Change this so that the Scriptable Objects are used instead.
 
-            currentBattle.battleCamera.SetActive(true);
+            //currentBattle.battleCamera.SetActive(true); //The Encounter Manager shouldn't deal with this if the encounter is what has the reference to it.
 
-            if (currentBattle.scaryMode) //if scary mode is active
+            if (currentTemplate.scaryMode) //if scary mode is active
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -84,32 +98,47 @@ public class Encounter_Manager : MonoBehaviour
 
 
         //put up the current question, set the correct answer, and change the sprite accordingly.
-        battleQuestion.text = currentBattle.activeString;
-        correctAnswer = currentBattle.activeAnswer;
-        enemySprite.GetComponent<Image>().sprite = currentBattle.activeSprite;
-
-
-        //disable any sound save for the music, if any. Probably through a boolean.
-
+        battleQuestion.text = currentTemplate.encounterText;
+        currentSprite = currentTemplate.encounterSprite; //this line only exists because it was giving me weird errors otherwise.
+        enemySprite.GetComponent<Image>().sprite = currentSprite;
+        battleButtonText.text = "How do you feel?";
+        battleButtonText.fontStyle = FontStyle.Italic;
     }
 
+    //Wait how am I going to do this?! I need to send the information *back* to the Encounter task
+    //so that it can send the task information back to the To-Do list AND the Overstimulation meter!
+    //...Man my code is really entangled.
+    //One idea: Put a communicator script *on a special button* that I use to close out the encounter.
     public void SubmittedAnswer (int choice)
     {
-        if (choice == correctAnswer)
+        currentPunishment = currentTemplate.punishment[choice];
+        if (currentTemplate.isABoss && currentPunishment == 0)
         {
-            currentBattle.CorrectResponse();
+            finishedFight = true;
         }
         else
         {
-            currentBattle.IncorrectResponse();
+            battleQuestion.text = currentTemplate.responses[choice];
+            for (int i = 0; i < 4; i++)
+            {
+                //theFourButtons[i].text = theAnxiousChoices[i];
+                theFourButtons[i].SetActive(false);
+            }
+            battleButton.SetActive(true);
+            battleButtonText.text = "+" + currentPunishment.ToString() + " Stimulation"; //Show the effect of their actions
+            battleButtonText.fontStyle = FontStyle.BoldAndItalic;
         }
+       
+        //and then something for the point awarding.... you know.
+        
+        //WAIT: THE ENCOUNTER HAS AN UPDATE FUNCTION THAT CHECKS THINGS FOR BATTLE. I'll have it do the checking!
+        //Strange that a canvas isn't the one doing it, but oh well.
     }
 
     public void StopEncounter()
     {
         //disable Battle Mode
-        GameManager.GM.gameState = GameManager.gameStates.Playing;
-
+        finishedFight = true;
     }
 
 }

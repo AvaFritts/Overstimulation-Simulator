@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Cat
+  m_EditorClassIdentifier: 
+  encounterText: Oh no! It seems like your overstimulated state has attracted your
+    mischievous cat. Even if your panic makes it hard to act normally, you still
+    only have one shot to get this right.
+  encounterSprite: {fileID: -6149094305328661031, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - Despite your panic, you try to act happy. ...It doesn't work. Trying to hide
+    your fear only made it worse. But you kept smiling, knowing the cat enjoys your
+    playtime. Even if you do get scratched a bit.
+  - You shake as you hold your hand out. As the cat gets closer, you feel tears pouring
+    out of your face. It isn't right. Your cat isn't a monster, but memories of being
+    hurt... of blood seeping out of your arm... You hate the pain. But this cat is
+    a good cat, and it deserves someone that isn't scared or struggling to smile.
+    At least the cat can stay around until you calm down.
+  - You start yelling at the cat to get away. As it gets closer, you start to push
+    it away. When that doesn't work, you scream in fustration. Finally, that cat
+    gets the hint and scampers off.... Only hours later would you shudder as you
+    realize what a horrible cat owner you are.
+  - You hold your trembling hand out.... but you soon retract it. You decide it is
+    best to just put the cat food in the bowl and walk away. It was probably hungry,
+    after all, even if memories of being harmed swarmed your vision. Those were accidents...
+    right?
+  punishment: 01000000020000000300000000000000
+  scaryMode: 1
+  isABoss: 0

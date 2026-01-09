@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Moo
+  m_EditorClassIdentifier: 
+  encounterText: Your dog walks up, panting with that usual loving expression. It
+    is a good reminder that he wants you to be happy. It is also a good reminder
+    that you only have one shot to get this right.
+  encounterSprite: {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - You happily pat your knees, watching as your dog sits as always. A good boy needs
+    good pets, right?
+  - You walk over and begin to pet... but you can only think about the pets of days
+    gone by. A tear rolls down your face.
+  - Ugh... of all the times your dog comes by... why now?! You're running late! You
+    rush by, not even giving him the time of day. . . you'll regret that later.
+  - Before you can even get your hand on the dog's head, you stop. Did you get all
+    of your keys? Does he have enough food?
+  punishment: 00000000010000000300000002000000
+  scaryMode: 0
+  isABoss: 0

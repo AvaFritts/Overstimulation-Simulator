@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5423434559991208378}
   m_Layer: 0
   m_Name: StimulationSource 1
-  m_TagString: Untagged
+  m_TagString: Stimulation
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multModifier: 0
   maxModifier: 3
-  overstimGO: {fileID: 0}
   playerChar: {fileID: 0}
   objectCollider: {fileID: 7826268463433142065}
   minParticles: 2

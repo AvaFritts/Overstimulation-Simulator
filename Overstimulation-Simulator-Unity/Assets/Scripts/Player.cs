@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: Feb 12th 2023
+// Last edited: July 1st 2025
 //Description: The Player script.
 using System.Collections;
 using System.Collections.Generic;
@@ -9,8 +9,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //public Sprite idleSprite;
-    //public Sprite walkingSprite;
     [Tooltip("This value is the player's max speed. Their actual speed will vary.")]
     public int playerSpeed = 2;
 
@@ -22,6 +20,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer playerSprites;
     public GameObject overstimManagerObj;
     public Overstimulation dialManager;
+    public Vector3 pos;
 
     GameManager GM;
     private void Awake()
@@ -34,7 +33,7 @@ public class Player : MonoBehaviour
         playerSprites = this.GetComponent<SpriteRenderer>();
         stateControll = this.GetComponent<Animator>();
         currentSpeed = playerSpeed;
-
+        pos = transform.position;
     }
 
     public void PauseDial()
@@ -49,11 +48,9 @@ public class Player : MonoBehaviour
         currentSpeed = playerSpeed;
     }
 
-
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;
 
         //I don't want anyone walking during a fight.
         if (GameManager.GM.gameState != GameManager.gameStates.Battle)
@@ -70,6 +67,7 @@ public class Player : MonoBehaviour
 
             //get the position
             pos.x = this.transform.position.x;
+            pos.y = this.transform.position.y; //Without this, the character is stuck on one level.
             //if not in Meltdown, let them move
             pos.x += Input.GetAxis("Horizontal") * currentSpeed * Time.deltaTime;
             //if(walking) in opposite direction, flip the sprite
@@ -94,7 +92,7 @@ public class Player : MonoBehaviour
             //set the position
             this.transform.position = pos;
         }
-       
+
     }
     public void GameOverCall()
     {

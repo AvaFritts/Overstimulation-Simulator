@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Adam
+  m_EditorClassIdentifier: 
+  encounterText: Adam looks up from his phone. His brow furrows as he makes out who
+    you are. 'DON'T YOU SEE I'M ON BREAK?!' he says. His gaze pierces your soul as
+    he waits for your response.
+  encounterSprite: {fileID: 458983883660841382, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - '"Oh! Sorry!" You say, before dumping your life story on him. As his glare gets
+    worse, you speed up, making excuses and cracking jokes nobody finds funny but
+    you. Eventually, he does chat with you, but sighs as his alarm goes off for work.'
+  - You start to tear up, explaining you just wanted to say hi. 'I just wanted to
+    be a good friend!' You don't see his expression soften as you look down and walk
+    off... the damage was already done.
+  - '"CAN''T YOU SEE I''M TRYING TO TALK TO YOU?!" The two of you argue like this
+    forever... you leave feeling worse than you did before.'
+  - As if on instinct, you apologize... apologize faster than you can think... no
+    amount of "sorry" can make up for your mistake. You run off.
+  punishment: 03000000020000000400000001000000
+  scaryMode: 1
+  isABoss: 0

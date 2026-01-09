@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: StoreStressedBoss3
+  m_EditorClassIdentifier: 
+  encounterText: The first lady storms off, allowing the second to close the gap.
+    She has a monster of a child, tearing down the candy next to them and screaming
+    about how they wanted some doll in the toy aisle. Eventually, she erupts, screaming
+    at the child. All you can focus on are the tears in your eyes and the pounding
+    in your chest.
+  encounterSprite: {fileID: 6949851453072517725, guid: 9c25ece9496312e4b9b82027a0693e90, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - The argument between the two... you start to chuckle. The mom looks at you, confused...
+    then pissed. She stops yelling at her kid and starts yelling at you. But you
+    don't cry. You don't yell... all you do is smile. So much that you don't realize
+    the line has moved on without you.
+  - DISTRAUGHT
+  - You start yelling at the mom. How horrible she's treating her child- how horrible
+    her child is. Every issue you had today is unloaded onto the woman, causing both
+    her and her child to shut up. Then... an argument erupts. The yelling between
+    you and the woman gets worse... and worse... and then the security arrives. It
+    doesn't matter who started it anymore. The two of you are both thrown out of
+    the line.
+  - PANIC
+  punishment: 03000000000000000200000000000000
+  scaryMode: 1
+  isABoss: 1
