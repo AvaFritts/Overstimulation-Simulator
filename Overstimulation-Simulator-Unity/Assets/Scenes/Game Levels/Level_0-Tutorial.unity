@@ -238,8 +238,6 @@ MonoBehaviour:
   - {fileID: 1633195193}
   - {fileID: 212849665}
   - {fileID: 288835999}
-  - {fileID: 916432053}
-  - {fileID: 916432053}
 --- !u!114 &23307270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,7 +1094,7 @@ MonoBehaviour:
   nextObjectCheck: -1
   otherObject: {fileID: 0}
   tutPanel: {fileID: 251794460}
-  tutTransform: {x: -240, y: 196, z: 0}
+  tutTransform: {x: 2.5, y: 196, z: 0}
   tutText: {fileID: 971110926}
   nextText: Emma felt differently. Try again.
 --- !u!65 &397933760
@@ -1882,11 +1880,6 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 331259941051996519, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
   m_PrefabInstance: {fileID: 1876490488}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &916432053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6956541128987635380, guid: 9f884d80b5132dc4bb7252f9b60d49ff, type: 3}
-  m_PrefabInstance: {fileID: 204272795}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &971110924
 GameObject:

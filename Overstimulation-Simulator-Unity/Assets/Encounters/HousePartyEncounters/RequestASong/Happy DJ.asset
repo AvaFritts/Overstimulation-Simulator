@@ -20,10 +20,17 @@ MonoBehaviour:
   encounterSprite: {fileID: -7113875076880919210, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - BEST ANSWER 1
-  - WORST ANSWER
-  - Okay-ish answer
-  - BEST ANSWER 2
+  - You eagerly give him your request, yelling at a volume that chalenges the music
+    itself. He smiles and starts pulling up options on his machine. "Alright! Got
+    it queued!"
+  - Not okay answer
+  - You... were unable to hear him. What follows is you two trying to yell over the
+    music, with you getting frustrated that he wouldn't turn it down. He kept mishearing
+    you and you could not hear him. Luckily, you get your song queued up.
+  - You ask if they have your request, knowing full well the song is rarely included
+    in these machines. You make sure to spell out the song and band name. Surprisingly,
+    they do have it. You smile as you walk away, knowing there is something to look
+    forward to.
   punishment: 01000000030000000200000001000000
   scaryMode: 0
   isABoss: 0

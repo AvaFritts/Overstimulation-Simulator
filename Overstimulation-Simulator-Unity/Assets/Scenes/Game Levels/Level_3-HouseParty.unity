@@ -1648,31 +1648,14 @@ MonoBehaviour:
   meterChecker: {fileID: 708760818}
   isBoss: 1
   goodTemplate:
-  - {fileID: 11400000, guid: fa4273640aa5f37438d40a68cb9592b5, type: 2}
+  - {fileID: 11400000, guid: ed0df9cf5df410b43a464b7ecce9dbab, type: 2}
   winningPunishment: 0
   losingPunishment: 5
-  associatedSprite:
-  - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
-  - {fileID: 21300000, guid: 8f7dc1e8297828146b4e4d3a6979a981, type: 3}
-  - {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
-  encounterText:
-  - 'The Cashier waves as you approach their aisle, a small section of droning beeps
-    and conversations. They smile while you put your items on the captivating conveyer
-    belt. ''Hello! Did you find everything you were looking for??'' As you look at
-    the list you folded in your bag, you realize: Yeah... you did find everything!
-    Except for that darn block of cheese.'
-  - '''Really? Well, I''m sorry. I hope you find it next time.'' Their attention
-    slowly returns to the scanner as they bag the slow-moving supply of items. The
-    rest of the time is uneventful, causing your eyes to wander... at least until
-    they ask ''Are you a Stimmart Rewards Member?'' ...Since when did they have a
-    rewards program?'
-  - '''Well, all the information is on our website. Do you want to become a member?''
-    You decline and follow the instructions on the machine as it yells at you to
-    insert and remove your card. As you start to head out, they say one last thing:
-    ''Thank you for shopping at Stimmart! Hope to see you again!'''
+  associatedSprite: []
+  encounterText: []
   correctAnswer: 030000000400000001000000
   scaryTemplate:
-  - {fileID: 11400000, guid: 32d57217dd8bd1b4ab052696a9330591, type: 2}
+  - {fileID: 11400000, guid: d6be80994ff180f4d92f09bb09f1ac64, type: 2}
   canActivate: 0
   scaryMode: 0
   questionsAnswered: 0
@@ -5477,6 +5460,10 @@ PrefabInstance:
     - target: {fileID: 331259941926326996, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
       propertyPath: m_Name
       value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 331259941926326997, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.79
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
