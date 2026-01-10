@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: July 19th 2025
+// Last edited: January 9th 2026
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -18,6 +18,8 @@ public class Encounter_Manager : MonoBehaviour
     public GameObject battleButton; //the button that appears to end the encounter
     public Text battleButtonText;
     public float rotationSpeed;
+    [SerializeField]
+    private ParticleSystem correctFeedback;
 
     [Space(5)]
 
@@ -115,6 +117,7 @@ public class Encounter_Manager : MonoBehaviour
         if (currentTemplate.isABoss && currentPunishment == 0)
         {
             finishedFight = true;
+
         }
         else
         {
@@ -133,6 +136,11 @@ public class Encounter_Manager : MonoBehaviour
         
         //WAIT: THE ENCOUNTER HAS AN UPDATE FUNCTION THAT CHECKS THINGS FOR BATTLE. I'll have it do the checking!
         //Strange that a canvas isn't the one doing it, but oh well.
+    }
+
+    public void TriggerSystem()
+    {
+        correctFeedback.Play();
     }
 
     public void StopEncounter()
