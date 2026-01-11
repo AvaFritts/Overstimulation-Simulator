@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: DJ^2
+  m_EditorClassIdentifier: 
+  encounterText: Despite how loud the music was on the floor, the DJ booth was surprisingly
+    calm. This was mostly due to the DJ, who has pumping his fist to the music whenever
+    he could have it free. As you approach, he puts his hands on his computer. "Oh
+    hey there lil' one!" He says with a smooth voice that almost blends with the
+    music. "You got anything for me?"
+  encounterSprite: {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - Good Response
+  - Sadness as Emma can't gather the courage to ask her request.
+  - The music frustrates Emma too much.
+  - Good response
+  punishment: 00000000000000000000000000000000
+  scaryMode: 0
+  isABoss: 0
