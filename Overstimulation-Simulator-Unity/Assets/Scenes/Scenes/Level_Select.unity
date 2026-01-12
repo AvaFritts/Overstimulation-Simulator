@@ -5862,7 +5862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coming Soon!
+  m_Text: WIP!
 --- !u!222 &1350940767
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6960,7 +6960,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1952855818}
   m_OnClick:
     m_PersistentCalls:

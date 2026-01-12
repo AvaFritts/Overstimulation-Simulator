@@ -12,15 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: AngryDrunk
   m_EditorClassIdentifier: 
-  encounterText: This buzzed lady will go on a tirade, accusing Emma of doing things
-    she never did.
+  encounterText: The game was okay- the cheering hurt your ears. But the worst bit
+    was that lady. She barreled through the door and started screaming at you. How
+    you took her purse- her boyfriend- and much much more. It was all a blur... <i>but
+    you didn't do it, right?</i>
   encounterSprite: {fileID: 218720673786834406, guid: 5fdc029d30a4fbc4d9df80544aeb8e63, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - Worst answer.
-  - Okay-ish answer. However, this does NOT stop the lady from harrasing Emma.
-  - Okay-ish answer
-  - Not okay answer
-  punishment: 04000000020000000200000003000000
+  - Your compliments and twitching eyes threw her off. She switched gears- saying
+    you needed therapy <i>and</i> needed help. The situation was diffused... but
+    at what cost?
+  - You frantically apologize, tearing up on the fears of being wrongly accused.
+    But she keeps going, taking your submission as validation for her invalid claims.
+  - Without a moment to spare, you started yelling back. She was wrong- dead wrong-
+    and you knew it from the start. The screaming match only ended when someone else
+    found her purse.
+  - The screaming hurt more than the cheering. You started screaming back, begging
+    her to stop. You closed your eyes and covered your ears, praying for silence...
+    when you finally opened them, the entire room was staring at you.
+  punishment: 02000000030000000300000004000000
   scaryMode: 1
   isABoss: 0

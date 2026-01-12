@@ -15,8 +15,7 @@ MonoBehaviour:
   encounterText: '"Oh hey girlie!" A stranger''s voice catches your attention as
     a hand slopily grabs your shoulder. "You playing next?? You''d look sooooo good
     in there!" The girl lazily holds her drink, occasionally swaying in her skirt.
-    "It''s a lot of fun. Trust me!" She doesn''t even seem to realize you two are
-    strangers.'
+    "It''s a lot of fun. Trust me!"'
   encounterSprite: {fileID: -6145746601751235461, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
@@ -24,10 +23,10 @@ MonoBehaviour:
     and it turns out your newest friend is a perfect hype girl.
   - You decline the match, listing personal reasons you cannot play. It doesn't feel
     great letting her down, but she quickly gets over it.
-  - You try to ask her to stop touching her shoulder. She doesn't. Eventually, you
-    snap. Not a big snap, but still enough frustration to get her to leave you alone.
-  - You start asking a bunch of questions... even after she throws up on your dress,
-    you decide to make sure she gets the help you need. Luckily, it gets you both
+  - You ask her to stop touching your shoulder. She doesn't. Eventually, you snap.
+    Not a big snap, but still enough to get her to leave you alone.
+  - You start asking a bunch of questions. After she throws up on your dress, you
+    decide to find her someone or something to help her. Luckily, it gets you both
     out of the loud mess.
   punishment: 01000000020000000300000001000000
   scaryMode: 0

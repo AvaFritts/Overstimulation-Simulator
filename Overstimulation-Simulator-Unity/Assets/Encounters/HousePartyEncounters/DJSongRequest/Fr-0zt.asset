@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Fr-0zt
   m_EditorClassIdentifier: 
-  encounterText: The music is blasting in your ears despite how much you try to cover
-    them. The man causing all of this is Fr0zt, the DJ hired to manage this chaos.
-    The icy claws on his gloves look like they could cut you open. The hungry expression
-    on his animalistic mask shows he owns this party. Despite the chills down your
-    spine, you NEED to get your request heard.
+  encounterText: The music is blasting in your ears. It shocks you- almost hurting
+    you. The source? The DJ. The icy claws on his gloves could cut you open. The
+    hungry expression on his animalistic mask shows he owns this party. Despite everything
+    going on, you NEED to get your request heard.
   encounterSprite: {fileID: 21300000, guid: 2d9ee83f864629e42a31f20a17e7ca5a, type: 3}
   nextQuestion: {fileID: 0}
   responses:

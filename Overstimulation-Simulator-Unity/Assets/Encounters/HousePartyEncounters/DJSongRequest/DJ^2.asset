@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: DJ^2
   m_EditorClassIdentifier: 
-  encounterText: Despite how loud the music was on the floor, the DJ booth was surprisingly
-    calm. This was mostly due to the DJ, who has pumping his fist to the music whenever
-    he could have it free. As you approach, he puts his hands on his computer. "Oh
-    hey there lil' one!" He says with a smooth voice that almost blends with the
-    music. "You got anything for me?"
+  encounterText: Despite how loud the music was, the DJ booth was surprisingly calm.
+    The DJ himself was pumping his fist to the music whenever he could. As you approach,
+    he puts his hands on his computer. "Oh hey there lil' one!" He says with a smooth
+    voice that almost blends with the music. "You got anything for me?"
   encounterSprite: {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
