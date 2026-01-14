@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 6th 2022
 
-// Last edited: July 4th, 2025
+// Last edited: January 9th, 2025
 //Description: The UI manager showing how close to a meltdown the player is.
 
 using System.Collections;
@@ -25,8 +25,8 @@ public class Overstimulation : MonoBehaviour
     public Button meltdownButton;
 
     [Header("Set in Inspector: Button activation values")]
-    public float activateSmall;
-    public float activateMedium;
+    //public float activateSmall;
+    //public float activateMedium;
     public float activateLarge;
 
     [Space(10)]
@@ -35,17 +35,18 @@ public class Overstimulation : MonoBehaviour
     public float mediumTimerDuration;
     public float largeTimerDuration;
 
-    public Image smallImage;
-    public Image mediumImage;
-    public Image largeImage;
-    //Timer values start at set duration and count down to 0. Clamped to 0
-    //private float smallTimer;
-    //private float mediumTimer;
-    //private float largeTimer;
+    [Space(10)]
+    [SerializeField]
+    private Image smallImage;
+    [SerializeField]
+    private Image mediumImage;
+    [SerializeField]
+    private Image largeImage;
 
     public GameObject[] stimulantSources;
 
-    public float overStimMult = 0;
+    [SerializeField]
+    private float overStimMult = 0;
 
     [Header("Change Dynamically")]
     public float currentStimMult;
@@ -82,40 +83,10 @@ public class Overstimulation : MonoBehaviour
                 }
             }
 
-            //Timer logic. CHANGE TO THREE PASSES OF ONE FUNCTION;
-            if(smallButton.interactable == false)
-            {
-                smallImage.fillAmount = Mathf.Clamp(smallImage.fillAmount + smallTimerDuration * Time.deltaTime, 0, 1);   
-
-                if(smallImage.fillAmount >= 1)
-                {
-                    smallButton.interactable = true;
-                    smallImage.fillAmount = 0;
-                }
-            }
-            if (mediumButton.interactable == false)
-            {
-                mediumImage.fillAmount = Mathf.Clamp(mediumImage.fillAmount + mediumTimerDuration * Time.deltaTime, 0, 1);
-
-                if (mediumImage.fillAmount >= 1)
-                {
-                    mediumButton.interactable = true;
-                    mediumImage.fillAmount = 0;
-                    //smallImage.get
-                }
-            }
-            if (largeButton.interactable == false)
-            {
-                largeImage.fillAmount = Mathf.Clamp(largeImage.fillAmount + largeTimerDuration * Time.deltaTime, 0, 1);
-
-                if (largeImage.fillAmount >= 1)
-                {
-                    largeButton.interactable = true;
-                    largeImage.fillAmount = 0;
-                    //smallImage.get
-                }
-            }
-
+            //Timer logic
+            ButtonCooldown(smallButton, smallImage, smallTimerDuration);
+            ButtonCooldown(mediumButton, mediumImage, mediumTimerDuration);
+            ButtonCooldown(largeButton, largeImage, largeTimerDuration);
         } //end "If not Paused"
     }
 
@@ -137,13 +108,11 @@ public class Overstimulation : MonoBehaviour
         stateControll.SetTrigger(triggerName);
     }
 
-
     //I need two or three functions. One to pause the game, and another to run the animation. 
     // The last thing needed is a way to reward the player
     public void CalmingDown(float reward)
     {    
         stimulationGauge.value -= reward;
-
            /* if (overStimMult < 0) //if the value isn't going up
             {
                 //Now, this value WILL need to be changed. But it is just a concept.
@@ -208,4 +177,18 @@ public class Overstimulation : MonoBehaviour
         }
         return baseCount; //it will always have a base number. Currently it is 2.
     }
+
+    private void ButtonCooldown (Button stimButton, Image stimImage, float stimTimerDuration)
+    {
+        if (stimButton.interactable == false)
+        {
+            stimImage.fillAmount = Mathf.Clamp(stimImage.fillAmount + stimTimerDuration * Time.deltaTime, 0, 1);
+            if (stimImage.fillAmount >= 1)
+            {
+                stimButton.interactable = true;
+                stimImage.fillAmount = 0;
+            }
+        }
+    } //end ButtonCooldown
+
 }
