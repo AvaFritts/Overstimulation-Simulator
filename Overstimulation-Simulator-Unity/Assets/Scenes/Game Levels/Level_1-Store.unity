@@ -1820,6 +1820,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5573130059647266076, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: playerOBJ
+      value: 
+      objectReference: {fileID: 384343498}
     - target: {fileID: 7549738855693607051, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: Employee Encounter Body
@@ -6300,6 +6304,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5573130059647266076, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: playerOBJ
+      value: 
+      objectReference: {fileID: 384343498}
     - target: {fileID: 7549738855693607051, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: Butcher Encounter Body
@@ -7105,6 +7113,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2912483507959317294, guid: 8002ffe154ec1804188bf43ba38ea4f4, type: 3}
+    - target: {fileID: 5573130059647266076, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
+      propertyPath: playerOBJ
+      value: 
+      objectReference: {fileID: 384343498}
     - target: {fileID: 7549738855693607051, guid: 4f31a98c10ca371459109fa94b364733, type: 3}
       propertyPath: m_Name
       value: Friend Encounter Body
@@ -7386,7 +7398,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3787471121528573389, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -402.75467
+      value: -402.75464
       objectReference: {fileID: 0}
     - target: {fileID: 3787471121528573390, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_IsActive
@@ -7402,7 +7414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479000, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73.00003
+      value: -73.000015
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479001, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_Layer
