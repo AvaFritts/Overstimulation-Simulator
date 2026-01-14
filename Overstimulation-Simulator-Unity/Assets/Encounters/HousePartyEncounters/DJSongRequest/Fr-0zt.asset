@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
+  m_Name: Fr-0zt
+  m_EditorClassIdentifier: 
+  encounterText: The music is blasting in your ears. It shocks you- almost hurting
+    you. The source? The DJ. The icy claws on his gloves could cut you open. The
+    hungry expression on his animalistic mask shows he owns this party. Despite everything
+    going on, you NEED to get your request heard.
+  encounterSprite: {fileID: 21300000, guid: 2d9ee83f864629e42a31f20a17e7ca5a, type: 3}
+  nextQuestion: {fileID: 0}
+  responses:
+  - The desire takes over Emma. While it seems Fr0zt stares at her, he's actually
+    worried for her.
+  - She starts crying as she forces the request out. Fr0zt comes over to try and
+    calm her down. It helps, but she <i>needs</i> to find some silence.
+  - She doesn't walk over to ask the request. Instead, she gets into a fight with
+    someone on the way there.
+  - 'Everything makes Emma too nervous. She '
+  punishment: 01000000030000000200000002000000
+  scaryMode: 1
+  isABoss: 0
