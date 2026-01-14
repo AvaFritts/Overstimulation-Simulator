@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 17th 2022
 
-// Last edited: October 22nd, 2023
+// Last edited: January 9th, 2026
 // Description: The base script for all encounters.
 using System.Collections;
 using System.Collections.Generic;
@@ -202,6 +202,7 @@ public class Encounter : MonoBehaviour
     {
         conversationStarter.currentTemplate = conversationStarter.currentTemplate.nextQuestion;
         conversationStarter.StartEncounter();
+        conversationStarter.TriggerSystem();
     }
 
 
