@@ -81,22 +81,23 @@ public class Level_Select_Manager : MonoBehaviour
             case 0: //Tutorial
                 levelDescription.text = "Ah. Home sweet home: A great place to relax without the gaze of total strangers.";
                 destinationPosition = new Vector3(3f, -1.33f, 0f);
-                GameManager.GM.difficulty = 0;
+                GameManager.GM.taskDifficulty = 0;
                 break;
             case 1: //The Store
                 levelDescription.text = "Every human needs to get groceries somehow. Sadly, your time is now.";
                 destinationPosition = new Vector3(-2.37f, 3.59f, 0f);
-                GameManager.GM.difficulty = 0;
+                GameManager.GM.taskDifficulty = 0;
                 break;
             case 3: //The Office
                 levelDescription.text = "Humans have jobs. Hope you survive yours.";
                 destinationPosition = new Vector3(6.25f, 2.15f, 0f);
+                GameManager.GM.taskDifficulty = 10;
                 break;
             case 2: //The Party
                 levelDescription.text = "<i>It seems certain assets are placeholders...</i> the party must be getting set up.";
                 //levelDescription.text = "Humans go to parties to be seen as 'social'."; //the official text.
                 destinationPosition = new Vector3(-2.5f, -1f, 0f);
-                GameManager.GM.difficulty = 5;
+                GameManager.GM.taskDifficulty = 5;
                 break;
             case 4: //Endless.
                 levelDescription.text = "You found the park, huh? Seems it's under construction.";

@@ -5358,6 +5358,10 @@ PrefabInstance:
       value: Camera
       objectReference: {fileID: 0}
     - target: {fileID: 331259941051996516, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
+      propertyPath: toDoList
+      value: 
+      objectReference: {fileID: 481030587}
+    - target: {fileID: 331259941051996516, guid: 90a3169b72c614a4f97f3658ff03d535, type: 3}
       propertyPath: taskDescription
       value: Photo-Op!
       objectReference: {fileID: 0}
@@ -8912,7 +8916,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3787471121528573389, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -402.7545
+      value: -402.75446
       objectReference: {fileID: 0}
     - target: {fileID: 3787471121528573390, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_IsActive
@@ -8932,7 +8936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479000, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73.00003
+      value: -73.000015
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479001, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_Layer

@@ -33,7 +33,7 @@ public class Task_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switch (GameManager.GM.difficulty) //the difficulty determines how many tasks are needed.
+        switch (GameManager.GM.taskDifficulty) //the difficulty determines how many tasks are needed.
         {
             case 0: //Easy
                 numberTasks = 2;

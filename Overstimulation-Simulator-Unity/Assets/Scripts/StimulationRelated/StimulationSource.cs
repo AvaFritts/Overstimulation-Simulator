@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: July 21st 2025
+// Last edited: March 25th 2026
 // Description: The script for the sources of stimulation
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ public class StimulationSource : MonoBehaviour
     private ParticleSystem _stimulationSystem;
     private AudioReverbFilter muffler;
     public int minParticles;
-    //public int normalParticles; //uncomment if the particle number doesn't reset between rounds.
+    public int normalParticles;
 
     [Header("Set Dynamically")]
     public bool paused;
@@ -49,10 +49,24 @@ public class StimulationSource : MonoBehaviour
             multModifier = maxModifier;
         }
 
-        if (GameManager.GM.stilumationReducer) //if the stimulation reducer is on, reduce particles
+        var main = _stimulationSystem.main;
+
+        switch (GameManager.GM.stimulationDifficulty) //if the stimulation reducer is on, reduce particles
         {
-            var main = _stimulationSystem.main;
-            main.maxParticles = minParticles;
+
+            case 0:
+                Debug.Log("Max particles. Nothing happens");
+                break;
+            case 1:
+                main.maxParticles = normalParticles;
+                break;
+            case 2:
+                main.maxParticles = minParticles;
+                break;
+            default:
+                Debug.Log("error in build. Nothing happens");
+                break;
+
         }
         _stimulationSystem.Stop();
         GameManager.GM.MuffledNoises.AddListener(ActivateMuffle);

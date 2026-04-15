@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: Feb 16th 2023
+// Last edited: Feb 16th 2023 //Technically March 24th 2026.
 // Description: The UI manager for the Game Over canvas.
 using System.Collections;
 using System.Collections.Generic;
@@ -62,8 +62,8 @@ public class Ending_Canvas : MonoBehaviour
         {
             endingSprite.sprite = sadSprite;
 
-            topButton.transform.localPosition = new Vector3(-553.5f, -4.31f, 0);
-            midButton.transform.localPosition = new Vector3(553.5f, -4.31f, 0);
+            midButton.transform.localPosition = new Vector3(-553.5f, -4.31f, 0);
+            topButton.transform.localPosition = new Vector3(553.5f, -4.31f, 0);
             bottomButton.transform.localPosition = new Vector3(553.5f, -397.95f, 0);
 
         }
