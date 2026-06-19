@@ -15,7 +15,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject tutorialPanel;
     public GameObject mainPick;
     public GameObject[] arrows;
-    
+
     void Awake()
     {
         //if players have played the tutorial before, close out.
@@ -25,7 +25,7 @@ public class TutorialManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-   void PauseMeter()
+    void PauseMeter()
     {
 
     }

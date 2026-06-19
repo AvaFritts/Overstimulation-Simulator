@@ -11,6 +11,7 @@ using UnityEngine;
 public class Convo_Task_Obj : ScriptableObject
 {
     //MAKE SINGLE LINES, NOT ARRAYS
+    [TextArea]
     public string encounterText;
     public Sprite encounterSprite;
     public Convo_Task_Obj nextQuestion;
@@ -18,6 +19,7 @@ public class Convo_Task_Obj : ScriptableObject
     [Space(15)]
 
     //After pressing a button
+    [TextArea(1,10)]
     public string[] responses;
     public int[] punishment;
 

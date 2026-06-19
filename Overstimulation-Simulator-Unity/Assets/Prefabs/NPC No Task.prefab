@@ -64,9 +64,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multModifier: 0
   maxModifier: 1
+  staticValue: 0
   playerChar: {fileID: 0}
   objectCollider: {fileID: 2279702976697077760}
   minParticles: 1
+  normalParticles: 2
   paused: 0
   badAudio: {fileID: 0}
 --- !u!198 &2279702976697077766

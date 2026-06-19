@@ -14,12 +14,12 @@ public class Starting_Canvas : MonoBehaviour
 
     GameManager GM;
 
-    public Text titleText;
+    //public Text titleText;
 
-    void Start()
+    /*void Start()
     {
         titleText.text = GameManager.GM.gameTitle;
-    }
+    }*/
 
     public void LoadSettings()
     {

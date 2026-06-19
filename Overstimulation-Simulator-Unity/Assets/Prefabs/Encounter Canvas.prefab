@@ -971,7 +971,6 @@ MonoBehaviour:
   - {fileID: 7422354500766985651, guid: 3395befc29ac64b45af01ce5e80d4e7c, type: 3}
   battleQuestion: {fileID: 4701190612263179648}
   numberOfQuestions: 0
-  rotatZ: 0
   currentTemplate: {fileID: 0}
   currentSprite: {fileID: 0}
   currentPunishment: 0
@@ -1262,7 +1261,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 55
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

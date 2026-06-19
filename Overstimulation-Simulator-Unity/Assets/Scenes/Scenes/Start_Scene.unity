@@ -586,7 +586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efae0e63537d5d48a5e7636f2366b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 731488952}
 --- !u!95 &383951992
 Animator:
   serializedVersion: 3
@@ -776,6 +775,9 @@ MonoBehaviour:
   sadSong: {fileID: 8300000, guid: d7780c5fc80df6744bcf59967129abf6, type: 3}
   victorySong: {fileID: 8300000, guid: a34e29c4923b9a344bce5bb83e97f3da, type: 3}
   deathSong: {fileID: 0}
+  mainVolume: 0
+  musicVolume: 0
+  effectVolume: 0
 --- !u!4 &645096674
 Transform:
   m_ObjectHideFlags: 0
@@ -1021,6 +1023,7 @@ MonoBehaviour:
   copyrightDate: Copyright 2022
   recordHighScore: 0
   defaultHighScore: 1000
+  levelType: Tutorial
   levelLost: 0
   defaultEndMessage: Game Over
   loseMessage: You Lose

@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (gm == null)
         {
             gm = this; //set gm to this gm of the game object
-            Debug.Log(gm);
+            //Debug.Log(gm);
         }
         else //else if gm is not null a Game Manager must already exsist
         {
@@ -55,8 +55,11 @@ public class GameManager : MonoBehaviour
     public bool recordHighScore = false; //is the High Score recorded
 
     [SerializeField] //Access to private variables in editor
-    private int defaultHighScore = 1000;
-    static public int highScore = 1000; // the default High Score
+    private int defaultHighScore = 0;
+    static public int highScore = 0; // the default High Score
+
+    public static readonly String[] levelTypes = { "Tutorial", "Shop", "Work", "Party", "Endless" }; //String array of  level types.
+    [HideInInspector] public String levelType = levelTypes[0];//current game state
     public int HighScore { get { return highScore; } set { highScore = value; } }//access to private variable highScore [get/set methods]
 
     [Space(10)]
@@ -146,6 +149,9 @@ public class GameManager : MonoBehaviour
         //Get the saved high score
         GetHighScore();
 
+        //Get the levels completed.
+        GetLevelProgress();
+
         //Events for the noises!
         MuffledNoises = new UnityEvent();
         NormalNoises = new UnityEvent();
@@ -218,7 +224,7 @@ public class GameManager : MonoBehaviour
             score = 0; //set starting score
 
             //set High Score
-            if (recordHighScore) //if we are recording highscore
+            if (recordHighScore && levelType == "Endless") //if we are recording highscore
             {
                 //if the high score is less than the default high score
                 if (highScore <= defaultHighScore)
@@ -262,7 +268,12 @@ public class GameManager : MonoBehaviour
     {
         gameState = gameStates.GameOver; //set the game state to gameOver
         
-        if (playerWon) { endMsg = winMessage; isHappy = true; } else { endMsg = loseMessage; isHappy = false; } //set the end message
+        if (playerWon) {
+            endMsg = winMessage;
+            isHappy = true;
+            //CheckUnlockState(levelType);
+        }
+        else { endMsg = loseMessage; isHappy = false; } //set the end message
 
         SceneManager.LoadScene(gameOverScene); //load the game over scene
         AudioManager.AM.LevelEndMusic();
@@ -271,6 +282,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over");
     }
 
+    /*void UnlockState(String levelOrder)
+    {
+        if (!PlayerPrefs.HasKey(levelOrder))
+        {
+            PlayerPrefs.ReferenceEquals()
+        }
+    }*/
 
     /**GO TO THE NEXT LEVEL
     void NextLevel()
@@ -292,6 +310,14 @@ public class GameManager : MonoBehaviour
 
     }end NextLevel()**/
 
+    void GetLevelProgress()
+    {
+        if (PlayerPrefs.HasKey("MadeProgress"))
+        {
+
+        }
+    }
+
     void CheckScore()
     { //This method manages the score on update. Right now it just checks if we are greater than the high score.
 
@@ -300,6 +326,7 @@ public class GameManager : MonoBehaviour
         {
             highScore = score; //set the high score to the current score
             PlayerPrefs.SetInt("HighScore", highScore); //set the playerPref for the high score
+            //PlayerPrefs.Save();
         }//end if(score > highScore)
 
     }//end CheckScore()
@@ -310,7 +337,7 @@ public class GameManager : MonoBehaviour
         //if the PlayerPref already exists for the high score
         if (PlayerPrefs.HasKey("HighScore"))
         {
-            Debug.Log("Has Key");
+            Debug.Log("Has Key: Score");
             highScore = PlayerPrefs.GetInt("HighScore"); //set the high score to the saved high score
         }//end if (PlayerPrefs.HasKey("HighScore"))
 

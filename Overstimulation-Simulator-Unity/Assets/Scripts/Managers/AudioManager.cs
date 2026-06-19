@@ -3,9 +3,10 @@
  * Date Created: November ??, 2022
  * 
  * Last Edited by: Ava Fritts
- * Last Edited: December 2nd, 2022
+ * Last Edited: May 10th, 2026 (Privated variables and added three main control variables.)
+ * Before that: December 2nd, 2022
  * 
- * Description: Basic Audio Manager I made. 
+ * Description: Basic Audio Manager I made.
 ****/
 using System.Collections;
 using System.Collections.Generic;
@@ -34,22 +35,30 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject); //In this case you need to delete this gm
         }
         DontDestroyOnLoad(this); //Do not delete the GameManager when scenes load
-        Debug.Log(am);
+        //Debug.Log(am);
     }//end CheckGameManagerIsInScene()
     #endregion
 
     private AudioSource mainSongMaker;
     [Header("GENERAL SONGS")]
+
     [Tooltip("Order the songs in the exact same way as the levels in the Level Select Scene")]
-    public AudioClip[] levelSongs;
+    [SerializeField]
+    private AudioClip[] levelSongs;
     [Tooltip("This song plays throughout the menus")]
-    public AudioClip menuSong;
+    [SerializeField]
+    private AudioClip menuSong;
     [Tooltip("The game over song")]
     public AudioClip sadSong;
     [Tooltip("The victory song")]
     public AudioClip victorySong;
     [Tooltip("The Song when you're about to Meltdown")]
     public AudioClip deathSong;
+
+    [Header("AudioValues")]
+    public float mainVolume;
+    public float musicVolume;
+    public float effectVolume;
 
 
 
@@ -94,5 +103,11 @@ public class AudioManager : MonoBehaviour
         mainSongMaker.Stop();
         mainSongMaker.clip = deathSong;
         mainSongMaker.Play();
+    }
+
+    // Called whenever updating the music volume in settings.
+    public void updateMusic()
+    {
+        mainSongMaker.volume = mainVolume * musicVolume; 
     }
 }

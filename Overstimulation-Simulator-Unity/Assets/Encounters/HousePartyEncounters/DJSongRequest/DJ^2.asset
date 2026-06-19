@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DJ^2
   m_EditorClassIdentifier: 
   encounterText: Despite how loud the music was, the DJ booth was surprisingly calm.
-    The DJ himself was pumping his fist to the music whenever he could. As you approach,
-    he puts his hands on his computer. "Oh hey there lil' one!" He says with a smooth
-    voice that almost blends with the music. "You got anything for me?"
+    The DJ was pumping his fist to the beat, smiling. As you approach, he puts his
+    hands on his computer. "Oh hey there lil' one!" He says with a smooth voice.
+    "You got anything for me?"
   encounterSprite: {fileID: 3484184639304537256, guid: 3d7f417aed9ac54438377ebe7281112d, type: 3}
   nextQuestion: {fileID: 0}
   responses:
@@ -23,6 +23,6 @@ MonoBehaviour:
   - Sadness as Emma can't gather the courage to ask her request.
   - The music frustrates Emma too much.
   - Good response
-  punishment: 00000000000000000000000000000000
+  punishment: 02000000030000000400000002000000
   scaryMode: 0
   isABoss: 0

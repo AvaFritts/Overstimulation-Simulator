@@ -387,6 +387,7 @@ MonoBehaviour:
   copyrightDate: Copyright 2022
   recordHighScore: 0
   defaultHighScore: 1000
+  levelType: Tutorial
   levelLost: 0
   defaultEndMessage: Game Over
   loseMessage: You Lose
@@ -411,7 +412,8 @@ MonoBehaviour:
       m_Calls: []
   isHappy: 0
   playerWon: 0
-  difficulty: 0
+  taskDifficulty: 0
+  stimulationDifficulty: 5
   stilumationReducer: 0
 --- !u!4 &69887576
 Transform:
@@ -1318,54 +1320,6 @@ PrefabInstance:
     - target: {fileID: 1925591520582106997, guid: 20158464715063845813c2d11602499a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 169.53998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -46.149902
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925591520986453459, guid: 20158464715063845813c2d11602499a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -59.400024
       objectReference: {fileID: 0}
     - target: {fileID: 1925591521496289986, guid: 20158464715063845813c2d11602499a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4396,6 +4350,10 @@ PrefabInstance:
     - target: {fileID: 7826268463433142079, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: maxModifier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826268463433142079, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
+      propertyPath: normalParticles
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8587484824043203193, guid: 3f8b34b98feaaa640a90ccf58600529f, type: 3}
       propertyPath: MaxDistance

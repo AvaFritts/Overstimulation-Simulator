@@ -38,12 +38,13 @@ public class StimulationSource : MonoBehaviour
     void Awake()
     {
         badAudio = GetComponent<AudioSource>();
+        badAudio.volume = AudioManager.AM.mainVolume * AudioManager.AM.effectVolume;
         paused = true;
         muffler = this.GetComponent<AudioReverbFilter>();
 
         _stimulationSystem = GetComponent<ParticleSystem>(); //get the particle system
 
-        //As the static value only needs to me calculated once...
+        //As the static value only needs to be calculated once...
         if (staticValue)
         {
             multModifier = maxModifier;

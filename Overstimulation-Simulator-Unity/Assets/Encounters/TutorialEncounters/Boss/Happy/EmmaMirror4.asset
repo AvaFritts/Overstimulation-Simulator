@@ -19,7 +19,7 @@ MonoBehaviour:
   - Maybe I can check my to-do list! That always helps me!
   - Of course, I always forget this stuff... Back to square one, I suppose...
   - Ugh- I really need to remember this stuff!
-  - CORRECT ANSWER
-  punishment: 01000000020000000300000000000000
+  - Oh, yeah! That's it! It's time to head out!
+  punishment: 010000000200000003000000ffffffff
   scaryMode: 0
   isABoss: 1

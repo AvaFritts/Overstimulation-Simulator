@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 10th 2022
 
-// Last edited: March 25th 2026
+// Last edited: May 10th, 2026
 // Description: The UI manager for the settings.
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +12,10 @@ public class Settings_Manager : MonoBehaviour
 {
 
     GameManager GM; //reference to the game manager.
+    AudioManager AM;
+
+    private bool resetSettings = false;
+    private bool resetProgress = false;
 
     //[Header ("Change Dynamically")]
     [Header("Visual Settings")]
@@ -25,6 +29,9 @@ public class Settings_Manager : MonoBehaviour
     [SerializeField]
     private Image difficultyButton;
     private float difficultyMode = 0; //is it easy, medium, or hard?
+    [SerializeField]
+    [Tooltip("Master is first, Music is second, SFX is third.")]
+    private Slider[] audioSliders; 
     //[Space(10)]
 
     [Header("All Pages")]
@@ -44,6 +51,13 @@ public class Settings_Manager : MonoBehaviour
         {
         }
     }
+    public AudioManager AudioManager
+    {
+        get => default;
+        set
+        {
+        }
+    }
 
     // Start is called before the first frame update
     void Awake()
@@ -51,6 +65,8 @@ public class Settings_Manager : MonoBehaviour
         difficultyMode = GameManager.GM.stimulationDifficulty; //gets the difficulty from the GM
         LoadDifficulty(); //Loads the current Difficulty. THE DIFFICULTY WILL BE THE PARTICLE COUNT. THIS NEEDS TO BE EDITED.
         StimulationLoader(); //loads the stimulation toggle
+        AudioLoader();
+        ChangePage(0); //Close the other pages.
     }
 
     // Changes how many particles the player will see during gameplay.
@@ -59,6 +75,31 @@ public class Settings_Manager : MonoBehaviour
         difficultyMode+= 1; //adds 1 to the difficulty
         LoadDifficulty();
         //on each case, change the difficulty 
+    }
+
+    //Does not call the update music function, because nothing is changing.
+    private void AudioLoader()
+    {
+        audioSliders[0].value = AudioManager.AM.mainVolume;
+        audioSliders[1].value = AudioManager.AM.musicVolume;
+        audioSliders[2].value = AudioManager.AM.effectVolume;
+    }
+
+    public void ChangeMainVolume()
+    {
+        AudioManager.AM.mainVolume = audioSliders[0].value;
+        AudioManager.AM.updateMusic();
+    }
+
+    public void ChangeMusicAudio()
+    {
+        AudioManager.AM.musicVolume = audioSliders[1].value;
+        AudioManager.AM.updateMusic();
+    }
+
+    public void ChangeStimulationAudio()
+    {
+        AudioManager.AM.effectVolume = audioSliders[2].value;
     }
 
     // Changes which setting is being accessed.
@@ -79,6 +120,9 @@ public class Settings_Manager : MonoBehaviour
                 break;
             case 3:
                 pageColor = new Vector4(0.7960784f, 1f, 0.9153805f, 1f); //green.
+                break;
+            case 4:
+                pageColor = new Vector4(1f, 0.682f, 0.4514358f, 1f); //Bold red.
                 break;
             default:
                 backgroundPage.color = new Vector4(1f, 1f, 1f, 1f); //make the text easier to see.
@@ -134,7 +178,7 @@ public class Settings_Manager : MonoBehaviour
                 difficultyButton.color = Color.green;
                 break;
             case 1:
-                difficultyText.text = "Average (Default)";
+                difficultyText.text = "Average (Medium)";
                 difficultyText.color = Color.black;
                 difficultyButton.color = Color.yellow;
                 break;
@@ -172,5 +216,23 @@ public class Settings_Manager : MonoBehaviour
     {
         //go back to the start screen
         GameManager.GM.ExitGame(); //despite the name, the function just loads the start screen.
+    }
+
+    public void resetData()
+    {
+        Debug.Log("Button Pressed. Make it work ASAP.");
+        //Basically check for the toggle and then reset the appropriate data.
+    }
+
+    //Resets the settings data.
+    public void ResetPreferences(bool resetToggle)
+    {
+        resetSettings = resetToggle;
+    }
+
+    //Resets the level data.
+    public void ResetProgress(bool resetToggle)
+    {
+        resetProgress = resetToggle;
     }
 }

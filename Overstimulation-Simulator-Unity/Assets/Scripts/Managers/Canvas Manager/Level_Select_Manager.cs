@@ -33,7 +33,8 @@ public class Level_Select_Manager : MonoBehaviour
     //Awake is called when the game loads (before Start).  Awake only once during the lifetime of the script instance.
     void Awake()
     {
-        destinationPosition = new Vector3(3f, -1.33f, 0f); //sprite is placed at Home
+        destinationPosition = new Vector3(0f, .92f, 0f); //sprite is placed at Home
+
         UpdateLevel(-1);
     }
 
@@ -76,33 +77,38 @@ public class Level_Select_Manager : MonoBehaviour
         {
             case -1:
                 levelDescription.text = "Click a location to select it.";
-                destinationPosition = new Vector3(3f, -1.33f, 0f);
+                destinationPosition = new Vector3(0f, .92f, 0f);
                 break;
             case 0: //Tutorial
                 levelDescription.text = "Ah. Home sweet home: A great place to relax without the gaze of total strangers.";
-                destinationPosition = new Vector3(3f, -1.33f, 0f);
+                destinationPosition = new Vector3(-3.55f, 2.97f, 0f);
                 GameManager.GM.taskDifficulty = 0;
+                //GameManager.GM.levelType = "Tutorial";
                 break;
             case 1: //The Store
                 levelDescription.text = "Every human needs to get groceries somehow. Sadly, your time is now.";
-                destinationPosition = new Vector3(-2.37f, 3.59f, 0f);
+                destinationPosition = new Vector3(2.82f, 2.15f, 0f);
                 GameManager.GM.taskDifficulty = 0;
+                //GameManager.GM.levelType = GameManager.levelTypes.Shop;
                 break;
             case 3: //The Office
                 levelDescription.text = "Humans have jobs. Hope you survive yours.";
-                destinationPosition = new Vector3(6.25f, 2.15f, 0f);
+                destinationPosition = new Vector3(-2.5f, -1f, 0f);
                 GameManager.GM.taskDifficulty = 10;
+                //GameManager.GM.levelType = GameManager.levelTypes.Work;
                 break;
             case 2: //The Party
                 levelDescription.text = "<i>It seems certain assets are placeholders...</i> the party must be getting set up.";
                 //levelDescription.text = "Humans go to parties to be seen as 'social'."; //the official text.
-                destinationPosition = new Vector3(-2.5f, -1f, 0f);
+                destinationPosition = new Vector3(3f, -1.33f, 0f);
                 GameManager.GM.taskDifficulty = 5;
+                //GameManager.GM.levelType = GameManager.levelTypes.Party;
                 break;
             case 4: //Endless.
                 levelDescription.text = "You found the park, huh? Seems it's under construction.";
                 //levelDescription.text = "You always loved theme parks. Felt like you could spend forever there..."; //the official text.
                 destinationPosition = new Vector3(7.75f, -3.09f, 0f);
+                //GameManager.GM.levelType = GameManager.levelTypes.Endless;
                 break;
             default:
                 levelDescription.text = "An Error has occured. Please try again.";

@@ -131,6 +131,7 @@ public class Encounter : MonoBehaviour
 
     public void IncorrectResponse() //Only used for Bosses
     {
+        Debug.Log("IncorrectResponse()");
         meterChecker.stimulationGauge.value += losingPunishment;
 
         //set game state to "Playing"  
@@ -141,14 +142,14 @@ public class Encounter : MonoBehaviour
 
         battleCanvas.SetActive(false);
 
-        if (!isBoss)
+        /*if (!isBoss)
         {
             associatedTask.UpdateTask(); //wait why do I have this in a Boss Exclusive piece?
         }
         else
-        {
-            questionsAnswered = 0; //reset the boss if you failed it.
-        }
+        {*/
+        questionsAnswered = 0; //reset the boss if you failed it.
+        //}
         //maybe put some text in?
     } //end incorrect response
 
@@ -211,17 +212,18 @@ public class Encounter : MonoBehaviour
         //set game state to "Playing"
         if(isBoss)
         {
-            if (conversationStarter.currentPunishment.Equals(0))
+            if (conversationStarter.currentPunishment.CompareTo(0) <= 0)
             {
                 CorrectResponse();
             }
             else
             {
-                IncorrectResponse();
+                IncorrectResponse(); //Is used during runtime
             } 
         }
         else
         {
+            Debug.Log("SendConversationData is used to stop encounters.");
             GameManager.GM.gameState = GameManager.gameStates.Playing;
             meterChecker.stimulationGauge.value += conversationStarter.currentPunishment;
             //deactivate the encounter camera

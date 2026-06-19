@@ -52,6 +52,9 @@ MonoBehaviour:
   sadSong: {fileID: 8300000, guid: d7780c5fc80df6744bcf59967129abf6, type: 3}
   victorySong: {fileID: 8300000, guid: a34e29c4923b9a344bce5bb83e97f3da, type: 3}
   deathSong: {fileID: 8300000, guid: ed044031a15c0b147903372172dc2b39, type: 3}
+  mainVolume: 0.5
+  musicVolume: 0.5
+  effectVolume: 0.5
 --- !u!82 &8468354315142643921
 AudioSource:
   m_ObjectHideFlags: 0
@@ -196,6 +199,7 @@ MonoBehaviour:
   copyrightDate: Copyright 2022
   recordHighScore: 0
   defaultHighScore: 1000
+  levelType: Tutorial
   levelLost: 0
   defaultEndMessage: Game Over
   loseMessage: ' '
@@ -221,7 +225,8 @@ MonoBehaviour:
       m_Calls: []
   isHappy: 0
   playerWon: 0
-  difficulty: 0
+  taskDifficulty: 0
+  stimulationDifficulty: 0
   stilumationReducer: 0
 --- !u!1 &4857784157283475089
 GameObject:

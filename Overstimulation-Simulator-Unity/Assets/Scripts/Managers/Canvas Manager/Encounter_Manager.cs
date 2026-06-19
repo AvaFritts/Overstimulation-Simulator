@@ -1,7 +1,7 @@
 // Creator: Ava Fritts
 //Date Created: May 16th 2022
 
-// Last edited: January 9th 2026
+// Last edited: May 25th 2026
 // Description: The script to manage any encounter in a given level.
 using System.Collections;
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ public class Encounter_Manager : MonoBehaviour
 
     [Header("Set Dynamically")]
     public int numberOfQuestions = 0; //Bosses usually have multiple: everyone else has one.
-    public float rotatZ;
+    private float rotatZ = 0;
 
     [Space(10)]
 
@@ -48,8 +48,29 @@ public class Encounter_Manager : MonoBehaviour
     public GameObject enemySprite;
     public bool finishedFight = false; //Used to tell the Encounter when to disable the fight.
 
+    void Awake()
+    {
+        var main = correctFeedback.main;
+        switch (GameManager.GM.stimulationDifficulty) //if the stimulation reducer is on, reduce particles
+        {
 
-    public void Update() //All this does is rotate the Spiral background
+            case 0:
+                main.maxParticles = 20;
+                break;
+            case 1:
+                main.maxParticles = 15;
+                break;
+            case 2:
+                main.maxParticles = 10;
+                break;
+            default:
+                Debug.Log("error in build. Nothing happens");
+                main.maxParticles = 15;
+                break;
+        }
+    }
+
+    void Update() //All this does is rotate the Spiral background
     {
         if (!GameManager.GM.stilumationReducer) //if IRL stimultaion Reduction is turned off
         {
@@ -116,20 +137,11 @@ public class Encounter_Manager : MonoBehaviour
         currentPunishment = currentTemplate.punishment[choice];
         if (currentTemplate.isABoss && currentPunishment == 0)
         {
-            finishedFight = true;
-
+             finishedFight = true; //Skips to the next question.
         }
         else
         {
-            battleQuestion.text = currentTemplate.responses[choice];
-            for (int i = 0; i < 4; i++)
-            {
-                //theFourButtons[i].text = theAnxiousChoices[i];
-                theFourButtons[i].SetActive(false);
-            }
-            battleButton.SetActive(true);
-            battleButtonText.text = "+" + currentPunishment.ToString() + " Stimulation"; //Show the effect of their actions
-            battleButtonText.fontStyle = FontStyle.BoldAndItalic;
+            ShowResponse(currentPunishment, choice); //Works on Bosses and non-bosses.
         }
        
         //and then something for the point awarding.... you know.
@@ -141,6 +153,26 @@ public class Encounter_Manager : MonoBehaviour
     public void TriggerSystem()
     {
         correctFeedback.Play();
+    }
+
+    private void ShowResponse(int currPun, int choice)
+    {
+        battleQuestion.text = currentTemplate.responses[choice];
+        for (int i = 0; i < 4; i++)
+        {
+            //theFourButtons[i].text = theAnxiousChoices[i];
+            theFourButtons[i].SetActive(false);
+        }
+        battleButton.SetActive(true);
+        battleButtonText.fontStyle = FontStyle.BoldAndItalic;
+        if (currPun < 0) //The final encounter in a boss will have a "correct answer" of -1.
+        {
+            battleButtonText.text = "Head out!";
+        }
+        else
+        {
+            battleButtonText.text = "+" + currentPunishment.ToString() + " Stimulation"; //Show the effect of their actions
+        }
     }
 
     public void StopEncounter()

@@ -19,7 +19,8 @@ MonoBehaviour:
   encounterSprite: {fileID: 3586827522683076098, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - CORRECT RESPONSE
+  - You smile, going through your script as always. It was a hassle grabbing the
+    bags, but you eventually get out to your car.
   - You freeze up, knowing the rest of your day wasn't going to be as good. You wait
     for so long that the cashier's session expires. Looks like you'll need to check
     out again.
@@ -29,6 +30,6 @@ MonoBehaviour:
     need to get some new stuff and try again.
   - As you start to walk out, the dread hits you... "Did you buy everything on your
     list?" You rush back inside, afraid to know the answer.
-  punishment: 00000000010000000400000002000000
+  punishment: ffffffff010000000400000002000000
   scaryMode: 0
   isABoss: 1

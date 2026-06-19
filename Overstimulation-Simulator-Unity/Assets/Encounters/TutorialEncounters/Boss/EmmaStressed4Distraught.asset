@@ -19,10 +19,11 @@ MonoBehaviour:
   responses:
   - <i>But this crying turns into an insane laughter... thank goodness nobody was
     there to witness this.</i>
-  - CORRECT RESPONSE
+  - <i>She cries for what seems like hours, even if it was only 10 minutes. Finally,
+    she wipes her eyes, blows her nose, and walks out the door.</i>
   - <i>She's unable to think... She always hated the sound of her tears and could
     not handle that she couldn't quiet down. She punches the wall and walks off.</i>
   - '"What if someone saw me?? I... no... not today... I can''t go out like this-"'
-  punishment: 03000000000000000200000001000000
+  punishment: 03000000ffffffff0200000001000000
   scaryMode: 1
   isABoss: 1
