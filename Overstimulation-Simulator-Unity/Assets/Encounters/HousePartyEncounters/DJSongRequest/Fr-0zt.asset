@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: Fr-0zt
   m_EditorClassIdentifier: 
-  encounterText: The music is blasting in your ears. It shocks you- almost hurting
-    you. The source? The DJ. The icy claws on his gloves could cut you open. The
-    hungry expression on his animalistic mask shows he owns this party. Despite everything
-    going on, you NEED to get your request heard.
+  encounterText: The music is blasting in your ears- almost hurting you. The source?
+    The DJ. The icy claws on his gloves could cut you open. The hungry expression
+    on his animalistic mask shows he owns this party. Despite everything going on,
+    you NEED to get your request heard.
   encounterSprite: {fileID: 21300000, guid: 2d9ee83f864629e42a31f20a17e7ca5a, type: 3}
   nextQuestion: {fileID: 0}
   responses:
@@ -23,8 +23,9 @@ MonoBehaviour:
     worried for her.
   - She starts crying as she forces the request out. Fr0zt comes over to try and
     calm her down. It helps, but she <i>needs</i> to find some silence.
-  - She doesn't walk over to ask the request. Instead, she gets into a fight with
-    someone on the way there.
+  - But you don't get that chance. Someone ran into you on the way there, and now
+    the two of you are going to be arguing about if that tear in your dress was always
+    there.
   - 'Everything makes Emma too nervous. She '
   punishment: 01000000030000000200000002000000
   scaryMode: 1

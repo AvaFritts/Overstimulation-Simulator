@@ -567,7 +567,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: b42d6f9bc1310574792d1e57f2f7e9fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3fcb90be9763a2a45b70319e3b73d7fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7837,6 +7837,7 @@ MonoBehaviour:
   copyrightDate: Copyright 2022
   recordHighScore: 0
   defaultHighScore: 1000
+  levelType: Tutorial
   levelLost: 0
   defaultEndMessage: Game Over
   loseMessage: ' '
@@ -7861,7 +7862,8 @@ MonoBehaviour:
       m_Calls: []
   isHappy: 0
   playerWon: 0
-  difficulty: 0
+  taskDifficulty: 0
+  stimulationDifficulty: 5
   stilumationReducer: 0
 --- !u!4 &1898189552
 Transform:
@@ -8916,7 +8918,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3787471121528573389, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -402.75446
+      value: -402.75443
       objectReference: {fileID: 0}
     - target: {fileID: 3787471121528573390, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_IsActive
@@ -8936,7 +8938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479000, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73.000015
+      value: -73.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3787471122059479001, guid: 511fb2900b70a754ea8a7f2b54f16dcc, type: 3}
       propertyPath: m_Layer

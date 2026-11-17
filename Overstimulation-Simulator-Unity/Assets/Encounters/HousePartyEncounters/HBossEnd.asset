@@ -23,6 +23,6 @@ MonoBehaviour:
   - NO CLUE, BUT IT ISN'T THAT GOOD.
   - You start to walk off, only to realize you left your purse inside. You back in
     to grab it.
-  punishment: 00000000010000000200000001000000
+  punishment: ffffffff010000000200000001000000
   scaryMode: 0
   isABoss: 1

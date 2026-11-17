@@ -19,12 +19,14 @@ MonoBehaviour:
   responses:
   - She is failing to keep it together. The laughing disturbs people, and Emma decides
     she will try to leave. She breaks free from everyone.
-  - CORRECT ANSWER.
+  - You cry in this room for what feels like forever... and yet you find yourself
+    smiling. You'll leave once the outside quiets down, but for now you can rest
+    assured that your friends truly care for you.
   - You punch Michael, leaving everyone to stare at you. He looks at you with betrayal
     written all over him, hand covering his nose. You walk off, hoping he will get
     the memo.
   - They have to take you by force. Everyone's eyes turn to look at you as you kick
     and scream, begging to be set down.
-  punishment: 01000000000000000100000001000000
+  punishment: 01000000ffffffff0100000001000000
   scaryMode: 1
   isABoss: 1

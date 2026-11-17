@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be775904db28fe4a999c7896671bd83, type: 3}
   m_Name: ScaryStranger
   m_EditorClassIdentifier: 
-  encounterText: <b>They accuse Emma of stealing their phone.</b>
+  encounterText: You've asked almost everyone if they lost their phone. This man,
+    however, comes up to you, asking why you have <b>his</b> phone. The questions
+    turn to yelling, telling everyone you're some sort of thief.
   encounterSprite: {fileID: -6277604055286359576, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
-  - You smile and try to play it cool, but you are barely keeping it together.
+  - You smile and try to play it cool, saying how you found it on the dance floor,
+    but you are barely keeping it together.
   - You try to defend yourself, but the stranger swipes the phone out of your hands
     and walks off. You don't even realize you are crying until their words get out
     of your head.

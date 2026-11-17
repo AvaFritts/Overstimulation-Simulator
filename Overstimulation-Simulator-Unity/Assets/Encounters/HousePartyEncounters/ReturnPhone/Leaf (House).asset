@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Leaf (House)
   m_EditorClassIdentifier: 
   encounterText: They have a neutral expression from the moment you tap their shoulder
-    to the moment you ask if they lost their phone. They slowly take it out of your
-    hands, turning it over before unlocking it. A slight smile appears on their face.
-    "Yeah... this is mine....... thanks."
+    to the moment you show them the lost phone. They slowly take it out of your hands,
+    turning it over before unlocking it. A slight smile appears on their face. "Yeah...
+    this is mine....... thanks."
   encounterSprite: {fileID: -7164865462702370174, guid: 1d74c8b7b626c1646875a32f605e4f87, type: 3}
   nextQuestion: {fileID: 0}
   responses:
   - You nod, acknowledging their gratitude before swiftly heading off. Before you
     know it, you realize you're also smiling.
-  - It's hard to register the happiness. You know they are, but it doesn't feel like
-    it. You hand the phone and walk off, feeling like your efforts were unrecognized.
-  - You are cold and uncaring back, ignoring the happiness because of how subtle
-    it is.
+  - It's hard to register their expression. You're sure they're happy, but there's
+    doubt. You walk off, feeling like your efforts were unrecognized.
+  - You are cold and uncaring in your response, ignoring their gratefulness because
+    of how subtle it is.
   - You start asking questions, confusing the stranger farther.... but you two have
     a good conversation after that.
   punishment: 01000000030000000200000002000000
